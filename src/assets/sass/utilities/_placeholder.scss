@@ -1,0 +1,6 @@
+%no-padding--mobile {
+  @media(max-width: 991px) {
+    padding: 0;
+    margin: -15px;
+  }
+}
