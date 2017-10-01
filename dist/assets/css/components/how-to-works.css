@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,800i");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,800i");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,800i");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,800i");
 .nav.nav-tabs li.active a {
   background-color: #ffffff;
   border-top-left-radius: 10px;
@@ -10,20 +9,6 @@
   border-bottom: 0;
   height: 80px;
   width: 80px; }
-
-.red-button.add-active {
-  background-color: #670909;
-  color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
-  padding: 15px 35px;
-  margin: 15px 0; }
-
-.green-button.add-inactive {
-  background-color: #70c75c;
-  color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
-  padding: 15px 35px;
-  margin: 15px 0; }
 
 .nav.nav-tabs li.active a {
   background-color: #ffffff;
@@ -99,6 +84,9 @@
     padding: 15px 0;
     margin: 0; }
 
-header {
-  background-color: #b71c1c;
-  height: 60px; }
+.how-works h1 {
+  color: #455a64;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 30px;
+  line-height: 30px; }

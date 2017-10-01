@@ -4,3 +4,30 @@
     margin: -15px;
   }
 }
+
+%arrow-select {
+  content: "";
+  width: $space-md;
+  height: $space-md;
+  background: url('../svg/arrow-select-fake.png') no-repeat;
+  top: $space-md - 7px;
+  right: $space-md + $space-sm;
+  position: absolute;
+  display: inline-block;
+}
+
+%links {
+  color: $blue-dark;
+  font-size: $space-sm;
+  text-decoration: none;
+}
+
+%tabs-works {
+  background-color: $white;
+  border-top-left-radius:  $space-xs + $space-xs;
+  border-top-right-radius: $space-xs + $space-xs;
+  border:0;
+  border-bottom: 0;
+  height: $space-lg +  $space-md;
+  width: $space-xl - 20px;
+}

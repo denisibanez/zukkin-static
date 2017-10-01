@@ -1,0 +1,99 @@
+// variables
+@import "../variables/_pallete";
+@import "../variables/_variables";
+
+//utilities
+@import "../utilities/_placeholder";
+@import "../utilities/_mixins";
+@import "../utilities/_button";
+@import "../utilities/_fonts";
+
+.content-pills {
+
+  ol.carousel-indicators {
+    background-color: white;
+    opacity: 0.8;
+    padding: $space-sm $space-xs;
+    width: $space-xl +25px;
+    position: absolute;
+    bottom: -10px;
+    left: auto;
+    right: 0;
+
+
+    li{
+      background-color: $red;
+      opacity: 0.5;
+      &.active {
+        background-color: $red;
+        opacity: 1;
+      }
+    }
+  }
+
+}
+
+.mCSB_horizontal.mCSB_inside>.mCSB_container {
+  display: flex !important;
+  min-width: 700px !important;
+  -ms-display: inline-block !important;
+}
+
+.product-list {
+  .mCustomScrollBox  {
+    background-color: $gray;
+  }
+
+  .mCSB_scrollTools {
+    &.mCSB_scrollTools_horizontal {
+      .mCSB_dragger {
+        .mCSB_dragger_bar {
+          background-color: $lead;
+          margin-top: 7px;
+          height: 5px;
+        }
+      }
+    }
+  }
+
+
+  .mCSB_scrollTools {
+    &.mCSB_scrollTools_horizontal {
+      .mCSB_draggerRail {
+        height: 5px;
+        background-color: $lead-light;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.nav.nav-tabs {
+  margin-left: $space-sm + 10px;
+  border: 0;
+
+  li {
+    background-color: transparent;
+
+    &.active {
+      a {
+        @extend %tabs-works ;
+      }
+
+    }
+  }
+}
+
+.tab-content {
+  color:$blue-dark;
+  font-size: $space-sm ;
+  background-color: $white;
+  padding: $space-sm;
+  text-align: justify;
+
+  h1 {
+    font-size: $space-sm + 3px;
+    padding: $space-sm 0;
+    margin: 0;
+  }
+}

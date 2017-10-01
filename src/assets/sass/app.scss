@@ -5,20 +5,23 @@
 //utilities
 @import "utilities/_placeholder";
 @import "utilities/_mixins";
-@import "utilities/_button";
 @import "utilities/replace";
+@import "utilities/_fonts";
+@import "utilities/_button";
 
 //base
 //@import "base/normalize";
 @import "base/base";
 
 //components
+@import "components/vitrine.scss";
+@import "components/how-to-works.scss";
 
 //layout
-@import "layout/media";
-@import "layout/menu";
+//@import "layout/media";
+//@import "layout/menu";
 @import "layout/footer";
-@import "layout/header";
+//@import "layout/header";
 
 //remover após o termino do projeto, csss já esta´incluindo inline
-@import "layout/firstfold";
+//@import "layout/firstfold";

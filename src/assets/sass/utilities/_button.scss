@@ -1,0 +1,22 @@
+// variables
+@import "../variables/_pallete";
+@import "../variables/_variables";
+
+//utilities
+@import "../utilities/_fonts";
+
+.red-button.add-active {
+    background-color: $red-dark;
+    color: $white;
+    font-family: 'Open Sans', sans-serif;
+    padding: $space-sm $space-md + 5px;
+    margin: $space-sm 0;
+}
+
+.green-button.add-inactive {
+    background-color: $green;
+    color: $white;
+    font-family: 'Open Sans', sans-serif;
+    padding: $space-sm $space-md + 5px;
+    margin: $space-sm 0;
+}

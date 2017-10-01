@@ -1,0 +1,55 @@
+// variables
+@import "../variables/_pallete";
+@import "../variables/_variables";
+
+//utilities
+@import "../utilities/_placeholder";
+@import "../utilities/_mixins";
+@import "../utilities/_button";
+@import "../utilities/replace";
+@import "../utilities/_fonts";
+
+footer{
+  text-align: center;
+
+  .no-padding-mobile {
+    @extend %no-padding--mobile ;
+  }
+
+  .bg-white {
+    .list-links {
+      padding: $space-md 0;
+      background-color: $white;
+      list-style: none;
+
+      li {
+        line-height: $space-md;
+        a {
+          color:$blue-dark;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: $space-sm + 2px;
+        }
+      }
+    }
+  }
+
+  .collapse-footer {
+    border-bottom:1px solid $gray-light;
+
+    .collapse-btn {
+      text-align: left;
+      width: 100%;
+      display: block;
+      background-color: $gray;
+      border: 0;
+      color: $blue-dark;
+      font-weight: bold;
+      font-size: $space-sm + 3px;
+      height: $space-lg + $space-sm;
+      border-top:1px solid $gray-light;
+      padding: 0 $space-md;
+    }
+  }
+
+}

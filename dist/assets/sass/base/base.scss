@@ -7,7 +7,28 @@
 @import "../utilities/_mixins";
 @import "../utilities/_button";
 @import "../utilities/replace";
+@import "../utilities/_fonts";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 
 .bg-gray {
   background-color: $gray;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-white {
+    background-color:$white;
+}
+
+.bg-red-light {
+  background-color: $red-light;
+}
+
+.banner-fluid {
+  margin: $space-sm 0;
 }

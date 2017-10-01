@@ -5,11 +5,15 @@
 //utilities
 @import "../utilities/_placeholder";
 @import "../utilities/_mixins";
-@import "../utilities/_button";
 @import "../utilities/replace";
 @import "../utilities/_fonts";
 
-header{
-  background-color: $red;
-  height: 60px;
+.how-works {
+  h1 {
+    color:$blue-dark;
+    font-size: $space-sm + 7px;
+    font-weight: bold;
+    margin: $space-md;
+    line-height: $space-md;
+  }
 }
