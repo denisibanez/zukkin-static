@@ -25,9 +25,7 @@
       margin-top: 0;
     a {
       font-family: 'Open Sans', sans-serif;
-      font-size: $space-sm;
-      color: $blue-dark;
-      text-decoration: none;
+      @extend %links ;
     }
   }
 
@@ -95,9 +93,9 @@
             position: relative;
             text-align: center;
 
-            &::after {
-              @extend %arrow-select ;
-            }
+            // &::after {
+            //   @extend %arrow-select ;
+            // }
 
             select {
               width: $space-lg + 10px;

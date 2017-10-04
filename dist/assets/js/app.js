@@ -8,10 +8,16 @@
   var scrollBar = {
     init: function(){
       this.ScrollBar();
+      this.arrowCollapseButton();
     },
     ScrollBar: function(){
       $(".content").mCustomScrollbar({
         axis:"x"
+      });
+    },
+    arrowCollapseButton: function(){
+      $('body').on('click', '.collapse-btn', function(){
+        $(this).toggleClass('arrow-up');
       });
     }
   }

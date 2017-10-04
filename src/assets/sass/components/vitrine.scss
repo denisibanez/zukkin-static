@@ -93,9 +93,9 @@
             position: relative;
             text-align: center;
 
-            &::after {
-              @extend %arrow-select ;
-            }
+            // &::after {
+            //   @extend %arrow-select ;
+            // }
 
             select {
               width: $space-lg + 10px;

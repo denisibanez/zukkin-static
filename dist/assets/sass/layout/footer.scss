@@ -25,8 +25,7 @@ footer{
       li {
         line-height: $space-md;
         a {
-          color:$blue-dark;
-          text-decoration: none;
+          @extend %links ;
           font-weight: bold;
           font-size: $space-sm + 2px;
         }
@@ -37,18 +36,33 @@ footer{
   .collapse-footer {
     border-bottom:1px solid $gray-light;
 
-    .collapse-btn {
+    .collapse {
+      ul {
+        list-style: none;
+        text-align: left;
+        padding: 0 $space-md;
+
+        li {
+          line-height:  $space-md;
+
+          a {
+            @extend %links ;
+          }
+        }
+      }
+    }
+  }
+
+  .bg-red-light {
+    height: $space-xl + 20px;
+    padding: $space-md;
+
+    p {
+      padding: 0;
+      color: $white;
       text-align: left;
-      width: 100%;
-      display: block;
-      background-color: $gray;
-      border: 0;
-      color: $blue-dark;
-      font-weight: bold;
-      font-size: $space-sm + 3px;
-      height: $space-lg + $space-sm;
-      border-top:1px solid $gray-light;
-      padding: 0 $space-md;
+      font-size: $space-sm - 5px;
+      line-height: $space-md - 10px;;
     }
   }
 

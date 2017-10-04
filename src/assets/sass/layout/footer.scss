@@ -36,20 +36,6 @@ footer{
   .collapse-footer {
     border-bottom:1px solid $gray-light;
 
-    .collapse-btn {
-      text-align: left;
-      width: 100%;
-      display: block;
-      background-color: $gray;
-      border: 0;
-      color: $blue-dark;
-      font-weight: bold;
-      font-size: $space-sm + 3px;
-      height: $space-lg + $space-sm;
-      border-top:1px solid $gray-light;
-      padding: 0 $space-md;
-    }
-
     .collapse {
       ul {
         list-style: none;

@@ -9,11 +9,15 @@
   content: "";
   width: $space-md;
   height: $space-md;
-  background: url('../svg/arrow-select-fake.png') no-repeat;
-  top: $space-md - 7px;
-  right: $space-md + $space-sm;
-  position: absolute;
+  background: url('../../../assets/images/static/png-sprites/arrow-select-fake.png') no-repeat;
+  float: right;
   display: inline-block;
+  position: relative;
+  top: $space-xs +  3px;
+}
+
+%arrow-up {
+  background: url('../../../assets/images/static/png-sprites/arrow-select-fake-up.png') no-repeat;
 }
 
 %links {

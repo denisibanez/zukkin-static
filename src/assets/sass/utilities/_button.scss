@@ -20,3 +20,27 @@
     padding: $space-sm $space-md + 5px;
     margin: $space-sm 0;
 }
+
+.collapse-btn {
+  text-align: left;
+  width: 100%;
+  display: block;
+  background-color: $gray;
+  border: 0;
+  color: $blue-dark;
+  font-weight: bold;
+  font-size: $space-sm + 3px;
+  height: $space-lg + $space-sm;
+  border-top:1px solid $gray-light;
+  padding: 0 $space-md;
+
+  &:after {
+    @extend %arrow-select;
+  }
+
+  &.arrow-up {
+    &:after {
+      @extend %arrow-up;
+    }
+  }
+}

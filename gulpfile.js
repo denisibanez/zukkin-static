@@ -11,6 +11,7 @@ autoprefixer = require('gulp-autoprefixer'),
 //imagem e svg sprites
 imagemin = require('gulp-imagemin'),
 svgSprite = require("gulp-svg-sprites"),
+pngSprite = require('png-sprite'),
 
 //sass, server e validador de código
 sass = require('gulp-sass'),
@@ -22,7 +23,7 @@ browserSync = require ('browser-sync').create();
 
 //default
 gulp.task('default', ['copy'], function() {
-  gulp.start('build-img' , 'usemin', 'sprites', 'server');
+  gulp.start('build-img' , 'usemin', 'server');
 });
 
 //build copy
@@ -44,12 +45,23 @@ gulp.task('build-img', function() {
     .pipe(gulp.dest('dist/assets/images'));
 });
 
-//svgsprites
-gulp.task('sprites', function () {
-    return gulp.src('src/assets/svg/*.svg')
-        .pipe(svgSprite())
-        .pipe(gulp.dest('src/assets/images/icons'));
+//pngSprites
+gulp.task('pngSprite', function (done) {
+  return gulp.src('src/assets/images/static/png-sprites/**/*.png')
+      .pipe(pngSprite.gulp({
+        cssPath: 'sprites.scss',
+        pngPath: 'sprites.png',
+        namespace: 'sprites'
+      }))
+      .pipe(gulp.dest('src/assets/sass'))
 });
+
+//svgsprites
+// gulp.task('sprites', function () {
+//     return gulp.src('src/assets/svg/*.svg')
+//         .pipe(svgSprite())
+//         .pipe(gulp.dest('src/assets/images/icons'));
+// });
 
 //minificar verificanso mas
 gulp.task('usemin', function() {

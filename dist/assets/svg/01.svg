@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #90a4ae;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="_01.svg" data-name="01.svg" class="cls-1" d="M14.6,325.879h6.3v-6.263H14.6v6.263ZM12.579,311H6v6.507h6.578V311Zm-0.834,5.62H6.866v-4.752h4.878v4.752ZM6,326h6.581v-6.51H6V326Zm0.864-5.625h4.9v4.731h-4.9v-4.731Zm7.575-9.352v6.471H21v-6.471h-6.56Zm5.709,5.6H15.272v-4.725h4.876v4.725Z" transform="translate(-6 -311)"/>
+</svg>
