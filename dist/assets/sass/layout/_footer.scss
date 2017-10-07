@@ -1,14 +1,3 @@
-// variables
-@import "../variables/_pallete";
-@import "../variables/_variables";
-
-//utilities
-@import "../utilities/_placeholder";
-@import "../utilities/_mixins";
-@import "../utilities/_button";
-@import "../utilities/replace";
-@import "../utilities/_fonts";
-
 footer{
   text-align: center;
 
@@ -65,5 +54,16 @@ footer{
       line-height: $space-md - 10px;;
     }
   }
+
+  .payfor {
+    h1 {
+
+    }
+
+    ul {
+      
+    }
+  }
+
 
 }

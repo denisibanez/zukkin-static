@@ -4,11 +4,14 @@
   content: "";
   width: 30px;
   height: 30px;
-  background: url("../../../assets/images/static/png-sprites/arrow-select-fake.png") no-repeat;
+  background: url("assets/images/static/png-sprites/arrow-select-fake.png") no-repeat;
   float: right;
   display: inline-block;
   position: relative;
   top: 8px; }
+
+.collapse-btn.arrow-up:after {
+  background: url("assets/images/static/png-sprites/arrow-select-fake-up.png") no-repeat; }
 
 .nav.nav-tabs li.active a {
   background-color: #ffffff;

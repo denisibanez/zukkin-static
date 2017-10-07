@@ -1,10 +1,3 @@
-// variables
-@import "../variables/_pallete";
-@import "../variables/_variables";
-
-//utilities
-@import "../utilities/_fonts";
-
 .red-button.add-active {
     background-color: $red-dark;
     color: $white;
@@ -39,6 +32,8 @@
   }
 
   &.arrow-up {
+    &:after {
       @extend %arrow-up;
+    }
   }
 }

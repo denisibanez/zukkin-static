@@ -11,16 +11,16 @@
 
 //base
 //@import "base/normalize";
-@import "base/base";
+@import "base/_base";
 
 //components
-@import "components/vitrine.scss";
-@import "components/how-to-works.scss";
+@import "components/_vitrine.scss";
+@import "components/_how-to-works.scss";
 
 //layout
 //@import "layout/media";
 //@import "layout/menu";
-@import "layout/footer";
+@import "layout/_footer";
 //@import "layout/header";
 
 //remover após o termino do projeto, csss já esta´incluindo inline

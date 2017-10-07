@@ -1,16 +1,25 @@
 .sprites-money-ico,
-.sprites-pig-ico,
 .sprites-smartstore-ico,
+.sprites-pig-ico,
+.sprites-american-express-bandeira,
+.sprites-dinner-bandeira,
+.sprites-elo-bandeira,
 .sprites-zukkin-logo-mobile,
+.sprites-boleto,
 .sprites-cart-icon,
+.sprites-arrow-select-fake,
+.sprites-arrow-select-fake-up,
+.sprites-master-bandeira,
 .sprites-list,
+.sprites-change-store,
+.sprites-search-mobile-icon,
 .sprites-user-icon,
-.sprites-arrow-select-fake {
+.sprites-visa {
   background-image: url("sprites.png");
   display: inline-block;
   background-repeat: no-repeat;
   overflow: hidden;
-  background-size: 212px 54px; }
+  background-size: 386px 54px; }
 
 .sprites-money-ico {
   background-position: 0px 0px;
@@ -18,44 +27,98 @@
   height: 54px;
   text-indent: 56px; }
 
-.sprites-pig-ico {
-  background-position: -56px 0px;
-  width: 56px;
-  height: 52px;
-  text-indent: 56px; }
-
 .sprites-smartstore-ico {
-  background-position: -112px 0px;
+  background-position: -56px 0px;
   width: 52px;
   height: 52px;
   text-indent: 52px; }
 
-.sprites-zukkin-logo-mobile {
+.sprites-pig-ico {
+  background-position: -108px 0px;
+  width: 56px;
+  height: 52px;
+  text-indent: 56px; }
+
+.sprites-american-express-bandeira {
   background-position: -164px 0px;
+  width: 30px;
+  height: 30px;
+  text-indent: 30px; }
+
+.sprites-dinner-bandeira {
+  background-position: -164px -30px;
+  width: 28px;
+  height: 22px;
+  text-indent: 28px; }
+
+.sprites-elo-bandeira {
+  background-position: -194px 0px;
+  width: 27px;
+  height: 27px;
+  text-indent: 27px; }
+
+.sprites-zukkin-logo-mobile {
+  background-position: -194px -27px;
   width: 26px;
   height: 25px;
   text-indent: 26px; }
 
+.sprites-boleto {
+  background-position: -221px 0px;
+  width: 32px;
+  height: 22px;
+  text-indent: 32px; }
+
 .sprites-cart-icon {
-  background-position: -164px -25px;
+  background-position: -221px -22px;
   width: 23px;
   height: 21px;
   text-indent: 23px; }
 
+.sprites-arrow-select-fake {
+  background-position: -221px -43px;
+  width: 11px;
+  height: 10px;
+  text-indent: 11px; }
+
+.sprites-arrow-select-fake-up {
+  background-position: -232px -43px;
+  width: 10px;
+  height: 9px;
+  text-indent: 10px; }
+
+.sprites-master-bandeira {
+  background-position: -253px 0px;
+  width: 35px;
+  height: 22px;
+  text-indent: 35px; }
+
 .sprites-list {
-  background-position: -190px 0px;
+  background-position: -253px -22px;
   width: 22px;
   height: 21px;
   text-indent: 22px; }
 
+.sprites-change-store {
+  background-position: -288px 0px;
+  width: 16px;
+  height: 20px;
+  text-indent: 16px; }
+
+.sprites-search-mobile-icon {
+  background-position: -304px 0px;
+  width: 17px;
+  height: 18px;
+  text-indent: 17px; }
+
 .sprites-user-icon {
-  background-position: -190px -21px;
+  background-position: -321px 0px;
   width: 18px;
   height: 18px;
   text-indent: 18px; }
 
-.sprites-arrow-select-fake {
-  background-position: -190px -39px;
-  width: 11px;
-  height: 10px;
-  text-indent: 11px; }
+.sprites-visa {
+  background-position: -339px 0px;
+  width: 47px;
+  height: 15px;
+  text-indent: 47px; }

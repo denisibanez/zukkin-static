@@ -11,14 +11,14 @@
   content: "";
   width: 30px;
   height: 30px;
-  background: url("../../../assets/images/static/png-sprites/arrow-select-fake.png") no-repeat;
+  background: url("assets/images/static/png-sprites/arrow-select-fake.png") no-repeat;
   float: right;
   display: inline-block;
   position: relative;
   top: 8px; }
 
 .collapse-btn.arrow-up:after {
-  background: url("../../../assets/images/static/png-sprites/arrow-select-fake-up.png") no-repeat; }
+  background: url("assets/images/static/png-sprites/arrow-select-fake-up.png") no-repeat; }
 
 footer .bg-white .list-links li a, footer .collapse-footer .collapse ul li a {
   color: #455a64;
@@ -70,14 +70,14 @@ footer .bg-white .list-links li a, footer .collapse-footer .collapse ul li a {
   content: "";
   width: 30px;
   height: 30px;
-  background: url("../../../assets/images/static/png-sprites/arrow-select-fake.png") no-repeat;
+  background: url("assets/images/static/png-sprites/arrow-select-fake.png") no-repeat;
   float: right;
   display: inline-block;
   position: relative;
   top: 8px; }
 
 .collapse-btn.arrow-up:after {
-  background: url("../../../assets/images/static/png-sprites/arrow-select-fake-up.png") no-repeat; }
+  background: url("assets/images/static/png-sprites/arrow-select-fake-up.png") no-repeat; }
 
 footer .bg-white .list-links li a, footer .collapse-footer .collapse ul li a {
   color: #455a64;

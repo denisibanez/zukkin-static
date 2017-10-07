@@ -10,7 +10,7 @@ autoprefixer = require('gulp-autoprefixer'),
 
 //imagem e svg sprites
 imagemin = require('gulp-imagemin'),
-svgSprite = require("gulp-svg-sprites"),
+//svgSprite = require("gulp-svg-sprites"),
 pngSprite = require('png-sprite'),
 
 //sass, server e validador de código
