@@ -37,3 +37,52 @@
     }
   }
 }
+
+.search-footer-button {
+  background-color: $red-light;
+  width: $space-lg - $space-xs;
+  height: $space-lg - $space-xs;
+}
+
+.btn-red--comparar {
+  background-color: $red-ultra-dark;
+  width: 100%;
+  height: 40px;
+  padding: $space-xs + $space-xs;
+  color: $white;
+
+  &:before {
+    @extend %arrow-select;
+    background: url('../images/static/png-sprites/arrow-select-white.png') no-repeat;
+    top: 6px;
+    left: 15px;
+  }
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.btn-blue--confirm {
+  background-color: $blue-ultra-dark;
+  color: $white;
+  height: $space-md + 10px;
+  padding: 0 $space-sm;
+
+  &:hover {
+    color: $white;
+    background-color: $blue;
+  }
+}
+
+.btn-blue--new {
+  background-color: $lead-ultra-light;
+  color: $white;
+  height: $space-md + 10px;
+  padding: 0 $space-sm;
+
+  &:hover {
+    color: $white;
+    background-color: $lead;
+  }
+}

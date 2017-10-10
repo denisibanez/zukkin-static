@@ -61,6 +61,7 @@ footer{
   }
 
   .payfor {
+    height: 250px;
     h1 {
       color:$lead;
       font-size: $space-sm;
@@ -91,7 +92,7 @@ footer{
   .footer-fixe {
     position: fixed;
     bottom: 0;
-    
+
     .search-footer {
       margin-bottom: $space-lg + 10px;
     }

@@ -15,13 +15,13 @@
 
 //components
 @import "components/_vitrine.scss";
-@import "components/_how-to-works.scss";
+@import "components/_how-to-works";
+@import "components/_modais";
 
 //layout
-//@import "layout/media";
-//@import "layout/menu";
-@import "layout/_footer";
-//@import "layout/header";
-
 //remover após o termino do projeto, csss já esta´incluindo inline
-//@import "layout/firstfold";
+@import "layout/media";
+@import "layout/_menu";
+@import "layout/_footer";
+@import "layout/header";
+@import "layout/firstfold";

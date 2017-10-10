@@ -1,0 +1,98 @@
+//geral
+.modal-dialog {
+  margin: 0;
+  height: 100%;
+  .modal-content {
+    border-radius: 0;
+    height: 100%;
+    padding:0  $space-sm;
+
+    .modal-header {
+      padding: $space-sm 0;
+
+      h4 {
+        color: $blue-dark;
+        font-weight: bold;
+      }
+
+      .close {
+        margin-top: -7px;
+        font-size: $space-md + $space-xs;
+        font-weight: lighter;
+        color: $blue-dark;
+      }
+    }
+
+    .formulario {
+      label {
+        color:$lead-ultra-light;
+        font-size: $space-sm - 2px;
+        font-weight: normal;
+      }
+
+      input {
+        height: $space-md + 10px;
+      }
+
+      .container-btn--confirm {
+        margin-top: $space-md - 6px;
+      }
+    }
+
+    .modal-body {
+      padding: $space-sm 0;
+
+      .modal-body-text {
+        color: $lead;
+        font-size: $space-sm + 2px;
+        margin: 0;
+
+        &.span {
+          color:$lead-ultra-light;
+          font-weight: normal;
+          font-size: $space-xs + 7px;
+          margin: 0;
+          padding: $space-xs 0;
+          .span-item  {
+
+          }
+        }
+      }
+
+      .link-content {
+        padding: $space-xs 0;
+
+        .link {
+          font-size: $space-xs + 7px;
+          color:$lead-ultra-light;
+
+        }
+      }
+    }
+
+    .modal-footer{
+      padding: $space-sm 0;
+
+      .container-btn--confirm {
+        padding: 0 $space-sm;
+        .btn-blue--confirm {
+          @extend %100tt;
+        }
+      }
+    }
+  }
+}
+
+
+//alteraCadastro
+#alteraCadastro {
+  display: none;
+}
+
+#editarLista {
+  display: none;
+}
+
+#carrinho {
+  display: none;
+}

@@ -5,11 +5,17 @@
   }
 }
 
+%100tt {
+  @media(max-width: 991px){
+    width: 100%;
+  }
+}
+
 %arrow-select {
   content: "";
   width: $space-md;
   height: $space-md;
-  background: url('assets/images/static/png-sprites/arrow-select-fake.png') no-repeat;
+  background: url('../../images/static/png-sprites/arrow-select-fake.png') no-repeat;
   float: right;
   display: inline-block;
   position: relative;
@@ -17,7 +23,7 @@
 }
 
 %arrow-up {
-  background: url('assets/images/static/png-sprites/arrow-select-fake-up.png') no-repeat;
+  background: url('../../images/static/png-sprites/arrow-select-fake-up.png') no-repeat;
 }
 
 %links {
