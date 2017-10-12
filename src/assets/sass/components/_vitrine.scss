@@ -77,31 +77,7 @@
         .products-group--select {
           padding: $space-sm 0 0;
 
-          .selectdiv {
-            position: relative;
-            text-align: center;
-
-            // &::after {
-            //   @extend %arrow-select ;
-            // }
-
-            select {
-              width: $space-lg + 10px;
-              height: $space-lg   + 5px;
-              margin: 0 auto;
-              text-align: center;
-              color:$blue-light;
-              font-size: $space-sm;
-              font-family: 'Open Sans', sans-serif;
-              font-weight: bold;
-              -webkit-appearance: none;
-              -moz-appearance: none;
-
-              &::-ms-expand {
-                display: none;
-              }
-            }
-          }
+          @extend %selectDiv;
         }
       }
     }

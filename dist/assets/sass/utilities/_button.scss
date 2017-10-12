@@ -66,7 +66,7 @@
 .btn-blue--confirm {
   background-color: $blue-ultra-dark;
   color: $white;
-  height: $space-md + 10px;
+  height: $space-md + 20px;
   padding: 0 $space-sm;
 
   &:hover {
@@ -85,4 +85,11 @@
     color: $white;
     background-color: $lead;
   }
+}
+
+.gray-button {
+  background-color: $gray-ultra-light;
+  color: $blue-dark;
+  padding: 10px 25px;
+  border: 1px solid #ccc;
 }

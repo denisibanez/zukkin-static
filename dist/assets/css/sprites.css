@@ -1,33 +1,37 @@
 .sprites-money-ico,
-.sprites-pig-ico,
 .sprites-smartstore-ico,
+.sprites-pig-ico,
 .sprites-american-express-bandeira,
-.sprites-dinner-bandeira,
-.sprites-elo-bandeira,
-.sprites-zukkin-logo-mobile,
-.sprites-menu-hamburguer,
+.sprites-all-dp-cart,
+.sprites-bebida-cart,
 .sprites-close,
+.sprites-clean-cart,
+.sprites-elo-bandeira,
+.sprites-menu-hamburguer,
+.sprites-frios-cart,
+.sprites-zukkin-logo-mobile,
+.sprites-cart-icon,
 .sprites-arrow-select-white,
-.sprites-master-bandeira,
-.sprites-boleto,
+.sprites-dinner-bandeira,
+.sprites-white-list,
 .sprites-arrow-select-fake,
 .sprites-arrow-select-fake-up,
-.sprites-lati,
-.sprites-change-store,
-.sprites-cart-icon,
-.sprites-white-list,
+.sprites-master-bandeira,
+.sprites-boleto,
 .sprites-list,
+.sprites-lati,
 .sprites-bebi,
 .sprites-horti,
-.sprites-perfum,
-.sprites-all-dp,
+.sprites-change-store,
 .sprites-merce,
-.sprites-user-white,
+.sprites-all-dp,
+.sprites-perfum,
 .sprites-pedidos,
+.sprites-cere,
+.sprites-user-white,
+.sprites-search-mobile-icon,
 .sprites-user-icon,
 .sprites-matin,
-.sprites-search-mobile-icon,
-.sprites-cere,
 .sprites-higi,
 .sprites-sobre,
 .sprites-carnes,
@@ -37,7 +41,7 @@
   display: inline-block;
   background-repeat: no-repeat;
   overflow: hidden;
-  background-size: 516px 54px; }
+  background-size: 561px 54px; }
 
 .sprites-money-ico {
   background-position: 0px 0px;
@@ -45,17 +49,17 @@
   height: 54px;
   text-indent: 56px; }
 
-.sprites-pig-ico {
-  background-position: -56px 0px;
-  width: 56px;
-  height: 52px;
-  text-indent: 56px; }
-
 .sprites-smartstore-ico {
-  background-position: -112px 0px;
+  background-position: -56px 0px;
   width: 52px;
   height: 52px;
   text-indent: 52px; }
+
+.sprites-pig-ico {
+  background-position: -108px 0px;
+  width: 56px;
+  height: 52px;
+  text-indent: 56px; }
 
 .sprites-american-express-bandeira {
   background-position: -164px 0px;
@@ -63,188 +67,212 @@
   height: 30px;
   text-indent: 30px; }
 
-.sprites-dinner-bandeira {
+.sprites-all-dp-cart {
   background-position: -164px -30px;
+  width: 23px;
+  height: 23px;
+  text-indent: 23px; }
+
+.sprites-bebida-cart {
+  background-position: -194px 0px;
+  width: 29px;
+  height: 28px;
+  text-indent: 29px; }
+
+.sprites-close {
+  background-position: -194px -28px;
   width: 28px;
-  height: 22px;
+  height: 26px;
+  text-indent: 28px; }
+
+.sprites-clean-cart {
+  background-position: -223px 0px;
+  width: 28px;
+  height: 27px;
   text-indent: 28px; }
 
 .sprites-elo-bandeira {
-  background-position: -194px 0px;
+  background-position: -223px -27px;
   width: 27px;
   height: 27px;
   text-indent: 27px; }
 
-.sprites-zukkin-logo-mobile {
-  background-position: -194px -27px;
-  width: 26px;
-  height: 25px;
-  text-indent: 26px; }
-
 .sprites-menu-hamburguer {
-  background-position: -221px 0px;
+  background-position: -251px 0px;
   width: 36px;
   height: 26px;
   text-indent: 36px; }
 
-.sprites-close {
-  background-position: -221px -26px;
-  width: 28px;
-  height: 26px;
-  text-indent: 28px; }
+.sprites-frios-cart {
+  background-position: -251px -26px;
+  width: 33px;
+  height: 25px;
+  text-indent: 33px; }
+
+.sprites-zukkin-logo-mobile {
+  background-position: -287px 0px;
+  width: 26px;
+  height: 25px;
+  text-indent: 26px; }
+
+.sprites-cart-icon {
+  background-position: -287px -25px;
+  width: 23px;
+  height: 21px;
+  text-indent: 23px; }
 
 .sprites-arrow-select-white {
-  background-position: -249px -26px;
+  background-position: -287px -46px;
   width: 8px;
   height: 7px;
   text-indent: 8px; }
 
-.sprites-master-bandeira {
-  background-position: -257px 0px;
-  width: 35px;
+.sprites-dinner-bandeira {
+  background-position: -313px 0px;
+  width: 28px;
   height: 22px;
-  text-indent: 35px; }
+  text-indent: 28px; }
 
-.sprites-boleto {
-  background-position: -257px -22px;
-  width: 32px;
-  height: 22px;
-  text-indent: 32px; }
+.sprites-white-list {
+  background-position: -313px -22px;
+  width: 22px;
+  height: 21px;
+  text-indent: 22px; }
 
 .sprites-arrow-select-fake {
-  background-position: -257px -44px;
+  background-position: -313px -43px;
   width: 11px;
   height: 10px;
   text-indent: 11px; }
 
 .sprites-arrow-select-fake-up {
-  background-position: -268px -44px;
+  background-position: -324px -43px;
   width: 10px;
   height: 9px;
   text-indent: 10px; }
 
+.sprites-master-bandeira {
+  background-position: -341px 0px;
+  width: 35px;
+  height: 22px;
+  text-indent: 35px; }
+
+.sprites-boleto {
+  background-position: -341px -22px;
+  width: 32px;
+  height: 22px;
+  text-indent: 32px; }
+
+.sprites-list {
+  background-position: -376px 0px;
+  width: 22px;
+  height: 21px;
+  text-indent: 22px; }
+
 .sprites-lati {
-  background-position: -292px 0px;
+  background-position: -376px -21px;
   width: 21px;
   height: 21px;
   text-indent: 21px; }
 
-.sprites-change-store {
-  background-position: -292px -21px;
-  width: 16px;
-  height: 20px;
-  text-indent: 16px; }
-
-.sprites-cart-icon {
-  background-position: -313px 0px;
-  width: 23px;
-  height: 21px;
-  text-indent: 23px; }
-
-.sprites-white-list {
-  background-position: -313px -21px;
-  width: 22px;
-  height: 21px;
-  text-indent: 22px; }
-
-.sprites-list {
-  background-position: -336px 0px;
-  width: 22px;
-  height: 21px;
-  text-indent: 22px; }
-
 .sprites-bebi {
-  background-position: -336px -21px;
+  background-position: -398px 0px;
   width: 22px;
   height: 20px;
   text-indent: 22px; }
 
 .sprites-horti {
-  background-position: -358px 0px;
+  background-position: -398px -20px;
   width: 19px;
   height: 20px;
   text-indent: 19px; }
 
-.sprites-perfum {
-  background-position: -358px -20px;
-  width: 18px;
+.sprites-change-store {
+  background-position: -420px 0px;
+  width: 16px;
+  height: 20px;
+  text-indent: 16px; }
+
+.sprites-merce {
+  background-position: -420px -20px;
+  width: 15px;
   height: 19px;
-  text-indent: 18px; }
+  text-indent: 15px; }
 
 .sprites-all-dp {
-  background-position: -358px -39px;
+  background-position: -420px -39px;
   width: 15px;
   height: 15px;
   text-indent: 15px; }
 
-.sprites-merce {
-  background-position: -377px 0px;
-  width: 15px;
-  height: 19px;
-  text-indent: 15px; }
-
-.sprites-user-white {
-  background-position: -392px 0px;
+.sprites-perfum {
+  background-position: -436px 0px;
   width: 18px;
-  height: 18px;
+  height: 19px;
   text-indent: 18px; }
 
 .sprites-pedidos {
-  background-position: -392px -18px;
+  background-position: -436px -19px;
   width: 18px;
   height: 18px;
   text-indent: 18px; }
 
+.sprites-cere {
+  background-position: -436px -37px;
+  width: 17px;
+  height: 17px;
+  text-indent: 17px; }
+
+.sprites-user-white {
+  background-position: -454px 0px;
+  width: 18px;
+  height: 18px;
+  text-indent: 18px; }
+
+.sprites-search-mobile-icon {
+  background-position: -454px -18px;
+  width: 17px;
+  height: 18px;
+  text-indent: 17px; }
+
 .sprites-user-icon {
-  background-position: -392px -36px;
+  background-position: -454px -36px;
   width: 18px;
   height: 18px;
   text-indent: 18px; }
 
 .sprites-matin {
-  background-position: -410px 0px;
+  background-position: -472px 0px;
   width: 20px;
   height: 18px;
   text-indent: 20px; }
 
-.sprites-search-mobile-icon {
-  background-position: -410px -18px;
-  width: 17px;
-  height: 18px;
-  text-indent: 17px; }
-
-.sprites-cere {
-  background-position: -410px -36px;
-  width: 17px;
-  height: 17px;
-  text-indent: 17px; }
-
 .sprites-higi {
-  background-position: -430px 0px;
+  background-position: -472px -18px;
   width: 17px;
   height: 17px;
   text-indent: 17px; }
 
 .sprites-sobre {
-  background-position: -430px -17px;
+  background-position: -472px -35px;
   width: 16px;
   height: 16px;
   text-indent: 16px; }
 
 .sprites-carnes {
-  background-position: -447px 0px;
+  background-position: -492px 0px;
   width: 22px;
   height: 17px;
   text-indent: 22px; }
 
 .sprites-frio {
-  background-position: -447px -17px;
+  background-position: -492px -17px;
   width: 21px;
   height: 15px;
   text-indent: 21px; }
 
 .sprites-visa {
-  background-position: -469px 0px;
+  background-position: -514px 0px;
   width: 47px;
   height: 15px;
   text-indent: 47px; }

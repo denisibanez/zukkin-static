@@ -55,7 +55,27 @@
 
   //ready
   $(document).ready(function(){
-    //myFunc.init();
+    var myVar = setInterval(function(){ myTimer() }, 1000);
+
+    function myTimer() {
+
+      //chama modal
+      $('#myModal').on('shown.bs.modal', function () {
+        $(".content").mCustomScrollbar({
+          axis:"x"
+        });
+      });
+
+      $('#myModal').on('shown.bs.modal', function () {
+        $(".content-vertical").mCustomScrollbar({
+          axis:"y"
+        });
+      });
+    }
+
+    function myStopFunction() {
+      clearInterval(myVar);
+    }
   });
 
   //load

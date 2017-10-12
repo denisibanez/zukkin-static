@@ -88,68 +88,66 @@ footer{
       }
     }
   }
+}
 
-  .footer-fixe {
-    position: fixed;
-    bottom: 0;
+.footer-fixe {
+  position: fixed;
+  bottom: 0;
 
-    .search-footer {
-      margin-bottom: $space-lg + 10px;
+  .search-footer {
+    margin-bottom: $space-lg + 10px;
+  }
+
+  .line-address--footer {
+    color:$white;
+    font-size: $space-xs + 8px;
+    @extend %no-padding--mobile;
+    padding: $space-xs + 8px;
+
+    strong {
+      text-overflow:ellipsis;
+      white-space:nowrap;
+      overflow:visible;
+      width: $space-xl + $space-xl;
     }
 
-    .line-address--footer {
+    .line-address--edit {
       color:$white;
-      font-size: $space-xs + 8px;
-      @extend %no-padding--mobile;
-      padding: $space-xs + 8px;
-
-      strong {
-        text-overflow:ellipsis;
-        white-space:nowrap;
-        overflow:visible;
-        width: $space-xl + $space-xl;
-      }
-
-      .line-address--edit {
-        color:$white;
-        text-transform: uppercase;
-      }
-    }
-
-    .you-are {
-      .you-are--text {
-        p{
-          color:$lead-dark;
-          font-size: $space-sm;
-          text-align: left;
-          font-weight: bold;
-          padding: 12px 0;
-          line-height: $space-sm - 3px;
-        }
-      }
-
-      .you-are--store {
-        background-color: $white;
-        border: 1px solid $gray-light;
-        border-radius: $space-xs;
-        height: $space-lg;
-        margin-top: $space-xs;
-        padding: 13px 10px;
-        display: flex;
-        flex-wrap: nowrap;
-
-
-        .content-left {
-          text-align:left;
-          width: 80%;
-        }
-
-        .content-right {
-          width: 20%;
-        }
-      }
+      text-transform: uppercase;
     }
   }
 
+  .you-are {
+    .you-are--text {
+      p{
+        color:$lead-dark;
+        font-size: $space-sm;
+        text-align: left;
+        font-weight: bold;
+        padding: 12px 0;
+        line-height: $space-sm - 3px;
+      }
+    }
 
+    .you-are--store {
+      background-color: $white;
+      border: 1px solid $gray-light;
+      border-radius: $space-xs;
+      height: $space-lg;
+      margin-top: $space-xs;
+      padding: 13px 10px;
+      display: flex;
+      flex-wrap: nowrap;
+
+
+      .content-left {
+        text-align:left;
+        width: 80%;
+      }
+
+      .content-right {
+        width: 20%;
+      }
+    }
+  }
 }

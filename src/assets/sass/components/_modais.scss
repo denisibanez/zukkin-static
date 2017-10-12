@@ -7,6 +7,18 @@
     height: 100%;
     padding:0  $space-sm;
 
+    @extend %mcustomGeral;
+
+    .error-input {
+      background-color: $red-ultra-light;
+      border-color: $red-light;
+      color: $red-light;
+
+      &::placeholder {
+        color: $red-light;
+      }
+    }
+
     .modal-header {
       padding: $space-sm 0;
 
@@ -17,6 +29,7 @@
 
       .close {
         margin-top: -7px;
+        opacity: 1;
         font-size: $space-md + $space-xs;
         font-weight: lighter;
         color: $blue-dark;
@@ -24,13 +37,17 @@
     }
 
     .formulario {
-      label {
+      label, span {
         color:$lead-ultra-light;
         font-size: $space-sm - 2px;
         font-weight: normal;
       }
 
       input {
+        height: $space-md + 10px;
+      }
+
+      select {
         height: $space-md + 10px;
       }
 
@@ -74,7 +91,6 @@
       padding: $space-sm 0;
 
       .container-btn--confirm {
-        padding: 0 $space-sm;
         .btn-blue--confirm {
           @extend %100tt;
         }
@@ -87,6 +103,36 @@
 //alteraCadastro
 #alteraCadastro {
   display: none;
+  .modal-content {
+    .modal-header {
+      padding: $space-sm 0 0 0;
+      border-bottom: 0;
+    }
+
+    .modal-body {
+      .formulario {
+        margin-top: $space-md;
+
+        label, span {
+          color:$blue-dark;
+          font-size: $space-sm;
+        }
+
+        .select-sex {
+          margin-bottom: $space-sm;
+        }
+
+        .nasc {
+          margin-bottom: $space-xs;
+        }
+      }
+
+    }
+
+    .modal-footer {
+      border-top: 0;
+    }
+  }
 }
 
 #editarLista {
@@ -95,4 +141,185 @@
 
 #carrinho {
   display: none;
+
+  .modal-content {
+    .modal-header {
+      border-bottom: 0;
+
+      .close {
+        color: $black;
+        margin-top: $space-xs + 3px;
+      }
+
+      .footer-fixe {
+        position: relative;
+
+        .you-are {
+          .you-are--text {
+            p {
+              font-size: $space-sm + 3px;
+              color:$lead;
+              line-height: $space-sm + 3px;
+            }
+          }
+
+          .you-are--store {
+            height: $space-lg - 7px;
+            padding: 9px 10px;
+
+            .content-right {
+              .change-store {
+                &:after {
+                  @extend %arrow-select;
+                  top: 7px;
+                  left: $space-sm;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .itens-compra--content {
+        .mCSB_container {
+          padding-top:$space-sm;
+        }
+
+        ul {
+          display: flex;
+          height: $space-lg + 20px;
+          li {
+            padding: 0 $space-sm;
+            position: relative;
+
+            &:first-child {
+              padding: 0 $space-sm 0 0;
+            }
+
+            .carret-red {
+              background: $red-light;
+              width: $space-md - 8px;
+              height: $space-md - 8px;
+              border-radius: 50%;
+              position: relative;
+              bottom: $space-md + 10px;
+              left: $space-sm + 3px;
+
+              span {
+                color:$white;
+                text-align: center;
+                position: relative;
+                left: $space-xs + 2px;
+                font-size: $space-sm - 2px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .modal-body {
+      .all-product {
+        background-color: $gray;
+        color: $lead-ultra-light;
+        margin: 0 -15px;
+        padding: $space-sm;
+        font-weight: bold;
+
+        h1 {
+          font-size: $space-sm;
+          margin: 0;
+        }
+      }
+
+      .content-vertical {
+        max-height: 250px;
+      }
+
+      .product-list-cart {
+        padding: $space-sm 0;
+        .content-vertical--wrap {
+          display: flex;
+          margin: $space-sm 0;
+
+          .product-list-item {
+            width: 15%;
+          }
+
+          .product-list-name {
+            width: 25%;
+            p {
+              color:$blue;
+            }
+          }
+
+          .product-list-select {
+            width: 25%;
+
+            @extend %selectDiv;
+            .sprites-arrow-select-fake {
+              position: relative;
+              right: 0;
+              bottom: 0;
+              left: -21px;
+
+            }
+
+            select {
+              width: $space-lg !important;
+              height: $space-sm + $space-md !important;
+            }
+          }
+
+          .product-list-prices {
+            width: 20%;
+            .prices {
+              .price-strike {
+                text-decoration: line-through;
+              }
+
+              .price {
+                color: $red-light;
+                font-size: $space-sm + $space-xs;
+                font-weight: bold;
+              }
+            }
+          }
+
+          .product-list-close {
+            width: 15%;
+
+            .close {
+              font-size: $space-md + $space-xs;
+              font-weight: lighter;
+              color:$blue-dark;
+            }
+          }
+        }
+      }
+    }
+
+    .modal-footer {
+      border-top: 0;
+        .total-itens {
+          font-size: $space-sm - 3px;
+          margin: 0;
+          margin-top: $space-sm;
+
+          .valor-maior {
+            font-size: $space-sm;
+          }
+        }
+
+      .total {
+        color: $green;
+        font-size: $space-md - 10px;
+        font-weight: bold;
+      }
+
+      .green-button {
+        width: 100%;
+      }
+    }
+  }
 }

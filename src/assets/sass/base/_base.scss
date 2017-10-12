@@ -39,3 +39,7 @@ a {
 .show-app {
   display: block !important;
 }
+
+.btn:focus {
+  outline: none !important;
+}
