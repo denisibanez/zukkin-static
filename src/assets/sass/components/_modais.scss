@@ -1,7 +1,7 @@
 //geral
 .modal-dialog {
   margin: 0;
-  height: 100%;
+  height: auto;
   .modal-content {
     border-radius: 0;
     height: 100%;
@@ -99,7 +99,6 @@
   }
 }
 
-
 //alteraCadastro
 #alteraCadastro {
   display: none;
@@ -110,23 +109,7 @@
     }
 
     .modal-body {
-      .formulario {
-        margin-top: $space-md;
-
-        label, span {
-          color:$blue-dark;
-          font-size: $space-sm;
-        }
-
-        .select-sex {
-          margin-bottom: $space-sm;
-        }
-
-        .nasc {
-          margin-bottom: $space-xs;
-        }
-      }
-
+      @extend %formulario;
     }
 
     .modal-footer {
@@ -135,10 +118,12 @@
   }
 }
 
+//edita lista
 #editarLista {
   display: none;
 }
 
+//minicart
 #carrinho {
   display: none;
 
@@ -320,6 +305,204 @@
       .green-button {
         width: 100%;
       }
+    }
+  }
+}
+
+//cadastro
+#cadastro {
+  display: none;
+
+  .modal-content {
+    .modal-header {
+      border-bottom: 0;
+    }
+
+    .modal-body {
+      @extend %formulario;
+      .formulario {
+        margin-top: -15px;
+      }
+    }
+
+    .modal-footer {
+      border-top: 0;
+    }
+  }
+}
+
+//cadastr-2
+#cadastro-2 {
+  display: none;
+
+  .modal-content {
+    .modal-header {
+      border-bottom: 0;
+
+      .sprites-back {
+        margin-top: $space-xs;
+      }
+    }
+
+    .modal-body {
+      @extend %formulario;
+      .formulario {
+        margin-top: -15px;
+      }
+    }
+
+    .modal-footer {
+      border-top: 0;
+    }
+  }
+}
+
+//editar-enderecos
+#editar-enderecos {
+  display: none;
+
+  .modal-content {
+    .modal-header {
+      border-bottom: 0;
+      padding: $space-sm 0 0 0;
+    }
+
+    .modal-body {
+      padding: $space-sm 0 0 0;
+
+      @extend %formulario;
+
+      .formulario-header {
+        .formulario-header--content {
+          display: flex;
+
+          a {
+            margin: $space-sm $space-xs;
+          }
+
+          .formulario-header--item {
+            background-color: $gray;
+            font-weight: bold;
+            padding:10px;
+            color:$lead;
+            height: $space-lg;
+            border-top-left-radius:$space-xs;
+            border-top-right-radius:$space-xs;
+          }
+        }
+      }
+
+      .formulario {
+        background-color: $gray;
+        margin: 0 -15px;
+        padding: $space-sm;
+      }
+
+      h2 {
+        font-size: $space-sm;
+        color: $lead;
+        font-weight: bold;
+      }
+    }
+
+    .modal-footer {
+      border-top: 0;
+      background-color: $gray;
+      padding: $space-sm;
+      margin: 0 -15px;
+    }
+  }
+}
+
+//Filtrar estabelecimentos
+#filtrar-estabelecimentos{
+  display: none;
+
+  .modal-content {
+    .modal-header {
+      border-bottom: 0;
+      @extend %range-filter;
+      @extend %formulario;
+
+      .select-range {
+        margin-top: $space-sm;
+        margin-bottom: $space-sm;
+        height: $space-sm + $space-xs;
+
+        .select-range--text {
+          color: $lead;
+          font-size: $space-sm;
+          font-weight: bold;
+        }
+      }
+
+      .formulario {
+        .glyphicon-search {
+          font-size: $space-sm + 3px;
+        }
+
+        .form-control-feedback {
+          top: $space-xs - 2px;
+          right: $space-sm + 3px;
+        }
+      }
+    }
+
+    .modal-body {
+      .stores-content {
+        border: 1px solid $lead-light;
+        border-radius: $space-xs;
+        padding-bottom: $space-sm;
+
+        .content-vertical {
+          max-height: 250px;
+
+          .mCSB_inside>.mCSB_container {
+            margin-right: -50px;
+            padding-top: $space-sm;
+          }
+
+          .mCSB_scrollTools .mCSB_draggerContainer {
+            top:$space-sm;
+          }
+        }
+
+        .stores-content--item {
+          display: flex;
+          padding: $space-sm;
+
+          .stores-content--img {
+            width: 20%;
+          }
+
+          .stores-content--text {
+            width: 55%;
+            h1 {
+              margin: 0;
+              padding: 0;
+              color: $lead;
+              font-size: $space-sm;
+              font-weight: bold;
+            }
+
+            p {
+              margin: 0;
+              padding: 0;
+              font-size: $space-sm - 3px;
+              color: $lead;
+            }
+          }
+
+          .stores-content--chose {
+            width: 25%;
+            line-height: $space-lg + $space-sm;
+          }
+        }
+      }
+    }
+
+    .modal-footer {
+      border-top:0;
     }
   }
 }

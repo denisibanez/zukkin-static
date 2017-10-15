@@ -68,6 +68,49 @@
   background-color: #eceff1;
   width: 6px; }
 
+#alteraCadastro .modal-content .modal-body .formulario, #cadastro .modal-content .modal-body .formulario, #cadastro-2 .modal-content .modal-body .formulario, #editar-enderecos .modal-content .modal-body .formulario, #filtrar-estabelecimentos .modal-content .modal-header .formulario {
+  margin-top: 30px; }
+  #alteraCadastro .modal-content .modal-body .formulario label, #cadastro .modal-content .modal-body .formulario label, #cadastro-2 .modal-content .modal-body .formulario label, #editar-enderecos .modal-content .modal-body .formulario label, #filtrar-estabelecimentos .modal-content .modal-header .formulario label, #alteraCadastro .modal-content .modal-body .formulario span, #cadastro .modal-content .modal-body .formulario span, #cadastro-2 .modal-content .modal-body .formulario span, #editar-enderecos .modal-content .modal-body .formulario span, #filtrar-estabelecimentos .modal-content .modal-header .formulario span {
+    color: #455a64;
+    font-size: 15px; }
+  #alteraCadastro .modal-content .modal-body .formulario .select-sex, #cadastro .modal-content .modal-body .formulario .select-sex, #cadastro-2 .modal-content .modal-body .formulario .select-sex, #editar-enderecos .modal-content .modal-body .formulario .select-sex, #filtrar-estabelecimentos .modal-content .modal-header .formulario .select-sex {
+    margin-bottom: 15px; }
+  #alteraCadastro .modal-content .modal-body .formulario .nasc, #cadastro .modal-content .modal-body .formulario .nasc, #cadastro-2 .modal-content .modal-body .formulario .nasc, #editar-enderecos .modal-content .modal-body .formulario .nasc, #filtrar-estabelecimentos .modal-content .modal-header .formulario .nasc {
+    margin-bottom: 5px; }
+
+#filtrar-estabelecimentos .modal-content .modal-header #slidecontainer-range {
+  width: 100%; }
+
+#filtrar-estabelecimentos .modal-content .modal-header .slider-range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #cfd8dc;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s; }
+
+#filtrar-estabelecimentos .modal-content .modal-header .slider-range:hover {
+  opacity: 1; }
+
+#filtrar-estabelecimentos .modal-content .modal-header .slider-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ed2c2a;
+  cursor: pointer; }
+
+#filtrar-estabelecimentos .modal-content .modal-header .slider-range::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer; }
+
 .content-pills ol.carousel-indicators {
   background-color: white;
   opacity: 0.8;
@@ -172,7 +215,8 @@
   background-color: #3d68af;
   color: #ffffff;
   height: 50px;
-  padding: 0 15px; }
+  padding: 0 15px;
+  line-height: 50px; }
   .btn-blue--confirm:hover {
     color: #ffffff;
     background-color: #0066c4; }
@@ -225,6 +269,10 @@ a {
 
 .btn:focus {
   outline: none !important; }
+
+input, select {
+  color: #37474f !important;
+  font-family: 'Open Sans', sans-serif !important; }
 
 .content-product--vitrine h1 {
   font-family: 'Open Sans', sans-serif;
@@ -293,7 +341,7 @@ a {
 
 .modal-dialog {
   margin: 0;
-  height: 100%; }
+  height: auto; }
   .modal-dialog .modal-content {
     border-radius: 0;
     height: 100%;
@@ -350,15 +398,6 @@ a {
   #alteraCadastro .modal-content .modal-header {
     padding: 15px 0 0 0;
     border-bottom: 0; }
-  #alteraCadastro .modal-content .modal-body .formulario {
-    margin-top: 30px; }
-    #alteraCadastro .modal-content .modal-body .formulario label, #alteraCadastro .modal-content .modal-body .formulario span {
-      color: #455a64;
-      font-size: 15px; }
-    #alteraCadastro .modal-content .modal-body .formulario .select-sex {
-      margin-bottom: 15px; }
-    #alteraCadastro .modal-content .modal-body .formulario .nasc {
-      margin-bottom: 5px; }
   #alteraCadastro .modal-content .modal-footer {
     border-top: 0; }
 
@@ -468,6 +507,115 @@ a {
       font-weight: bold; }
     #carrinho .modal-content .modal-footer .green-button {
       width: 100%; }
+
+#cadastro {
+  display: none; }
+  #cadastro .modal-content .modal-header {
+    border-bottom: 0; }
+  #cadastro .modal-content .modal-body .formulario {
+    margin-top: -15px; }
+  #cadastro .modal-content .modal-footer {
+    border-top: 0; }
+
+#cadastro-2 {
+  display: none; }
+  #cadastro-2 .modal-content .modal-header {
+    border-bottom: 0; }
+    #cadastro-2 .modal-content .modal-header .sprites-back {
+      margin-top: 5px; }
+  #cadastro-2 .modal-content .modal-body .formulario {
+    margin-top: -15px; }
+  #cadastro-2 .modal-content .modal-footer {
+    border-top: 0; }
+
+#editar-enderecos {
+  display: none; }
+  #editar-enderecos .modal-content .modal-header {
+    border-bottom: 0;
+    padding: 15px 0 0 0; }
+  #editar-enderecos .modal-content .modal-body {
+    padding: 15px 0 0 0; }
+    #editar-enderecos .modal-content .modal-body .formulario-header .formulario-header--content {
+      display: flex; }
+      #editar-enderecos .modal-content .modal-body .formulario-header .formulario-header--content a {
+        margin: 15px 5px; }
+      #editar-enderecos .modal-content .modal-body .formulario-header .formulario-header--content .formulario-header--item {
+        background-color: #eceff1;
+        font-weight: bold;
+        padding: 10px;
+        color: #37474f;
+        height: 50px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px; }
+    #editar-enderecos .modal-content .modal-body .formulario {
+      background-color: #eceff1;
+      margin: 0 -15px;
+      padding: 15px; }
+    #editar-enderecos .modal-content .modal-body h2 {
+      font-size: 15px;
+      color: #37474f;
+      font-weight: bold; }
+  #editar-enderecos .modal-content .modal-footer {
+    border-top: 0;
+    background-color: #eceff1;
+    padding: 15px;
+    margin: 0 -15px; }
+
+#filtrar-estabelecimentos {
+  display: none; }
+  #filtrar-estabelecimentos .modal-content .modal-header {
+    border-bottom: 0; }
+    #filtrar-estabelecimentos .modal-content .modal-header .select-range {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      height: 20px; }
+      #filtrar-estabelecimentos .modal-content .modal-header .select-range .select-range--text {
+        color: #37474f;
+        font-size: 15px;
+        font-weight: bold; }
+    #filtrar-estabelecimentos .modal-content .modal-header .formulario .glyphicon-search {
+      font-size: 18px; }
+    #filtrar-estabelecimentos .modal-content .modal-header .formulario .form-control-feedback {
+      top: 3px;
+      right: 18px; }
+  #filtrar-estabelecimentos .modal-content .modal-body .stores-content {
+    border: 1px solid #cfd8dc;
+    border-radius: 5px;
+    padding-bottom: 15px; }
+    #filtrar-estabelecimentos .modal-content .modal-body .stores-content .content-vertical {
+      max-height: 250px; }
+      #filtrar-estabelecimentos .modal-content .modal-body .stores-content .content-vertical .mCSB_inside > .mCSB_container {
+        margin-right: -50px;
+        padding-top: 15px; }
+      #filtrar-estabelecimentos .modal-content .modal-body .stores-content .content-vertical .mCSB_scrollTools .mCSB_draggerContainer {
+        top: 15px; }
+    #filtrar-estabelecimentos .modal-content .modal-body .stores-content .stores-content--item {
+      display: flex;
+      padding: 15px; }
+      #filtrar-estabelecimentos .modal-content .modal-body .stores-content .stores-content--item .stores-content--img {
+        width: 20%; }
+      #filtrar-estabelecimentos .modal-content .modal-body .stores-content .stores-content--item .stores-content--text {
+        width: 55%; }
+        #filtrar-estabelecimentos .modal-content .modal-body .stores-content .stores-content--item .stores-content--text h1 {
+          margin: 0;
+          padding: 0;
+          color: #37474f;
+          font-size: 15px;
+          font-weight: bold; }
+        #filtrar-estabelecimentos .modal-content .modal-body .stores-content .stores-content--item .stores-content--text p {
+          margin: 0;
+          padding: 0;
+          font-size: 12px;
+          color: #37474f; }
+      #filtrar-estabelecimentos .modal-content .modal-body .stores-content .stores-content--item .stores-content--chose {
+        width: 25%;
+        line-height: 65px; }
+  #filtrar-estabelecimentos .modal-content .modal-footer {
+    border-top: 0; }
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    margin: 30px auto; } }
 
 #pm_menu {
   position: fixed;
@@ -670,6 +818,10 @@ a {
   100% {
     opacity: 1;
     -webkit-transform: translateX(0px); } }
+
+.content-logo--body {
+  text-align: center;
+  padding: 50px 0; }
 
 footer {
   text-align: center; }

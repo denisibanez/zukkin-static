@@ -43,3 +43,8 @@ a {
 .btn:focus {
   outline: none !important;
 }
+
+input, select {
+  color: $lead !important;
+    font-family: 'Open Sans', sans-serif !important;
+}
