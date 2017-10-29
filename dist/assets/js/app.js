@@ -10,6 +10,29 @@
       this.menuMobile();
       this.getModal();
       this.choseModal();
+      this.owlCarousel();
+    },
+    owlCarousel: function(){
+      $(".owl-carousel").owlCarousel({
+        loop:true,
+        responsiveClass:true,
+        responsiveClass:true,
+        responsive:{
+          0:{
+            items:1,
+            nav:true
+          },
+          600:{
+            items:3,
+            nav:false
+          },
+          1000:{
+            items:5,
+            nav:true,
+            loop:false
+          }
+        }
+      });
     },
     ScrollBar: function(){
       $(".content").mCustomScrollbar({
@@ -18,6 +41,10 @@
     },
     arrowCollapseButton: function(){
       $('.collapse-btn').click( function(){
+        $(this).toggleClass('arrow-up');
+      });
+
+      $('.accordion-name').click( function(){
         $(this).toggleClass('arrow-up');
       });
     },

@@ -256,20 +256,7 @@
             }
           }
 
-          .product-list-prices {
-            width: 20%;
-            .prices {
-              .price-strike {
-                text-decoration: line-through;
-              }
-
-              .price {
-                color: $red-light;
-                font-size: $space-sm + $space-xs;
-                font-weight: bold;
-              }
-            }
-          }
+          @extend %prices;
 
           .product-list-close {
             width: 15%;
@@ -503,6 +490,103 @@
 
     .modal-footer {
       border-top:0;
+    }
+  }
+}
+
+//Obrigado
+#obrigado {
+  display: none;
+
+  .modal-content {
+    .modal-header {
+      border-bottom: 0;
+      padding: $space-xl 0 $space-sm 0;
+
+      h4 {
+        color: $blue-dark;
+        font-weight: bold;
+      }
+
+      .close {
+        color: $blue-dark;
+      }
+    }
+
+    .modal-body {
+      padding: 0 100px 0 0;
+
+
+    }
+
+    .modal-footer {
+      min-height: 300px;
+      border-top: 0;
+      padding: $space-sm;
+      margin: 0 -15px;
+
+      .btn-red--light {
+
+      }
+    }
+  }
+}
+
+//Login
+#login {
+  display: none;
+
+  .modal-content {
+    .modal-header {
+      padding: $space-sm 0;
+
+      h4 {
+        color: $blue-dark;
+        font-weight: bold;
+      }
+
+      .close {
+        color: $blue-dark;
+      }
+    }
+
+    .modal-body {
+      padding: $space-sm 0;
+      @extend %formulario;
+
+      .form-control-feedback {
+        background: url('/assets/images/static/png-sprites/eye.png') no-repeat;
+        width: 40px;
+        height: 40px;
+        margin-right: $space-sm;
+        margin-top: $space-sm;
+      }
+
+      span {
+        &.lost-senha{
+          margin-top: $space-sm;
+          font-size: $space-sm - $space-xs;
+        }
+      }
+
+      .btn-blue--confirm {
+        height: $space-md + 10px;
+        line-height: $space-md + 10px;
+        width: 100%;
+      }
+    }
+
+    .modal-footer {
+      min-height: 300px;
+      padding: $space-sm 0;
+
+      .btn-transparent {
+        background-color: transparent;
+        border: 1px solid $blue-ultra-dark;
+        color:$blue-ultra-dark;
+        height: $space-md + 10px;
+        width: 100%;
+      }
     }
   }
 }

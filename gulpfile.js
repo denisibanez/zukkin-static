@@ -45,6 +45,50 @@ gulp.task('build-img', function() {
     .pipe(gulp.dest('dist/assets/images'));
 });
 
+//svgsprites
+gulp.task('sprites', function () {
+    return gulp.src('src/assets/svg/*.svg')
+        .pipe(svgSprite())
+        .pipe(gulp.dest('src/assets/images/icons'));
+});
+
+//minificar verificanso mas
+gulp.task('usemin', function() {
+  return gulp.src('dist/index.html')
+    .pipe(usemin({
+      css: [ cleanCss(), rev(), autoprefixer() ],
+      html: [ function () {return htmlmin({ collapseWhitespace: true });} ],
+      js: [ uglify(), rev() ],
+      inlinejs: [ uglify() ],
+      inlinecss: [ cleanCss(), 'concat' ]
+    }))
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('useminProd', function() {
+  return gulp.src('dist/produto.html')
+    .pipe(usemin({
+      css: [ cleanCss(), rev(), autoprefixer() ],
+      html: [ function () {return htmlmin({ collapseWhitespace: true });} ],
+      js: [ uglify(), rev() ],
+      inlinejs: [ uglify() ],
+      inlinecss: [ cleanCss(), 'concat' ]
+    }))
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('useminCatal', function() {
+  return gulp.src('dist/catalogo.html')
+    .pipe(usemin({
+      css: [ cleanCss(), rev(), autoprefixer() ],
+      html: [ function () {return htmlmin({ collapseWhitespace: true });} ],
+      js: [ uglify(), rev() ],
+      inlinejs: [ uglify() ],
+      inlinecss: [ cleanCss(), 'concat' ]
+    }))
+    .pipe(gulp.dest('dist'));
+});
+
 //pngSprites
 gulp.task('pngSprite', function (done) {
   return gulp.src('src/assets/images/static/png-sprites/**/*.png')
@@ -62,19 +106,6 @@ gulp.task('pngSprite', function (done) {
 //         .pipe(svgSprite())
 //         .pipe(gulp.dest('src/assets/images/icons'));
 // });
-
-//minificar verificanso mas
-gulp.task('usemin', function() {
-  return gulp.src('dist/**/*.html')
-    .pipe(usemin({
-      css: [ cleanCss(), rev(), autoprefixer() ],
-      html: [ function () {return htmlmin({ collapseWhitespace: true });} ],
-      js: [ uglify(), rev() ],
-      inlinejs: [ uglify() ],
-      inlinecss: [ cleanCss(), 'concat' ]
-    }))
-    .pipe(gulp.dest('dist'));
-});
 
 //server
 gulp.task('server', function() {

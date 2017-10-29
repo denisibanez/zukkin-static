@@ -1,6 +1,6 @@
 .sprites-money-ico,
-.sprites-smartstore-ico,
 .sprites-pig-ico,
+.sprites-smartstore-ico,
 .sprites-american-express-bandeira,
 .sprites-all-dp-cart,
 .sprites-bebida-cart,
@@ -8,45 +8,65 @@
 .sprites-clean-cart,
 .sprites-elo-bandeira,
 .sprites-menu-hamburguer,
-.sprites-frios-cart,
+.sprites-gps-payment,
+.sprites-arrow-left-fake,
+.sprites-arrow-right-fake,
 .sprites-zukkin-logo-mobile,
 .sprites-white-list,
 .sprites-arrow-select-white,
+.sprites-frios-cart,
+.sprites-dinner-bandeira,
 .sprites-master-bandeira,
 .sprites-boleto,
 .sprites-arrow-select-fake,
 .sprites-arrow-select-fake-up,
-.sprites-dinner-bandeira,
-.sprites-lati,
-.sprites-arrow-right-fake,
-.sprites-arrow-left-fake,
-.sprites-check,
-.sprites-check-in,
 .sprites-list,
-.sprites-bebi,
+.sprites-lati,
+.sprites-check-in,
 .sprites-cart-icon,
+.sprites-check,
+.sprites-card-payment,
+.sprites-left-arrow-carrousel,
 .sprites-change-store,
-.sprites-horti,
+.sprites-bebi,
+.sprites-change-storeRed,
+.sprites-change-storeWhite,
 .sprites-merce,
 .sprites-all-dp,
+.sprites-horti,
+.sprites-arrow-product-left,
 .sprites-perfum,
-.sprites-search-mobile-icon,
-.sprites-cere,
-.sprites-matin,
-.sprites-user-white,
-.sprites-pedidos,
-.sprites-user-icon,
-.sprites-higi,
+.sprites-right-arrow-carrousel,
 .sprites-sobre,
+.sprites-0-stars-extra-large,
+.sprites-arrow-product-right,
+.sprites-matin,
+.sprites-higi,
+.sprites-user-icon,
+.sprites-cere,
+.sprites-user-white,
+.sprites-big-arrow-down,
+.sprites-search-mobile-icon,
+.sprites-big-arrow-up,
+.sprites-user-payment,
+.sprites-percent,
+.sprites-pedidos,
 .sprites-carnes,
-.sprites-frio,
 .sprites-back,
-.sprites-visa {
+.sprites-5-stars-large,
+.sprites-frio,
+.sprites-visa,
+.sprites-0-stars-mediun,
+.sprites-4-stars-small,
+.sprites-3-stars-small,
+.sprites-2-stars-small,
+.sprites-5-stars-small,
+.sprites-1-stars-small {
   background-image: url("sprites.png");
   display: inline-block;
   background-repeat: no-repeat;
   overflow: hidden;
-  background-size: 619px 54px; }
+  background-size: 1047px 54px; }
 
 .sprites-money-ico {
   background-position: 0px 0px;
@@ -54,17 +74,17 @@
   height: 54px;
   text-indent: 56px; }
 
-.sprites-smartstore-ico {
-  background-position: -56px 0px;
-  width: 52px;
-  height: 52px;
-  text-indent: 52px; }
-
 .sprites-pig-ico {
-  background-position: -108px 0px;
+  background-position: -56px 0px;
   width: 56px;
   height: 52px;
   text-indent: 56px; }
+
+.sprites-smartstore-ico {
+  background-position: -112px 0px;
+  width: 52px;
+  height: 52px;
+  text-indent: 52px; }
 
 .sprites-american-express-bandeira {
   background-position: -164px 0px;
@@ -108,11 +128,23 @@
   height: 26px;
   text-indent: 36px; }
 
-.sprites-frios-cart {
+.sprites-gps-payment {
   background-position: -251px -26px;
-  width: 33px;
+  width: 22px;
   height: 25px;
-  text-indent: 33px; }
+  text-indent: 22px; }
+
+.sprites-arrow-left-fake {
+  background-position: -273px -26px;
+  width: 10px;
+  height: 11px;
+  text-indent: 10px; }
+
+.sprites-arrow-right-fake {
+  background-position: -273px -37px;
+  width: 10px;
+  height: 11px;
+  text-indent: 10px; }
 
 .sprites-zukkin-logo-mobile {
   background-position: -287px 0px;
@@ -132,182 +164,290 @@
   height: 7px;
   text-indent: 8px; }
 
-.sprites-master-bandeira {
+.sprites-frios-cart {
   background-position: -313px 0px;
+  width: 33px;
+  height: 25px;
+  text-indent: 33px; }
+
+.sprites-dinner-bandeira {
+  background-position: -313px -25px;
+  width: 28px;
+  height: 22px;
+  text-indent: 28px; }
+
+.sprites-master-bandeira {
+  background-position: -346px 0px;
   width: 35px;
   height: 22px;
   text-indent: 35px; }
 
 .sprites-boleto {
-  background-position: -313px -22px;
+  background-position: -346px -22px;
   width: 32px;
   height: 22px;
   text-indent: 32px; }
 
 .sprites-arrow-select-fake {
-  background-position: -313px -44px;
+  background-position: -346px -44px;
   width: 11px;
   height: 10px;
   text-indent: 11px; }
 
 .sprites-arrow-select-fake-up {
-  background-position: -324px -44px;
+  background-position: -357px -44px;
   width: 10px;
   height: 9px;
   text-indent: 10px; }
 
-.sprites-dinner-bandeira {
-  background-position: -348px 0px;
-  width: 28px;
-  height: 22px;
-  text-indent: 28px; }
+.sprites-list {
+  background-position: -381px 0px;
+  width: 22px;
+  height: 21px;
+  text-indent: 22px; }
 
 .sprites-lati {
-  background-position: -348px -22px;
+  background-position: -381px -21px;
   width: 21px;
   height: 21px;
   text-indent: 21px; }
 
-.sprites-arrow-right-fake {
-  background-position: -348px -43px;
-  width: 10px;
-  height: 11px;
-  text-indent: 10px; }
-
-.sprites-arrow-left-fake {
-  background-position: -358px -43px;
-  width: 10px;
-  height: 11px;
-  text-indent: 10px; }
-
-.sprites-check {
-  background-position: -376px 0px;
-  width: 31px;
-  height: 21px;
-  text-indent: 31px; }
-
 .sprites-check-in {
-  background-position: -376px -21px;
+  background-position: -403px 0px;
   width: 31px;
   height: 21px;
   text-indent: 31px; }
-
-.sprites-list {
-  background-position: -407px 0px;
-  width: 22px;
-  height: 21px;
-  text-indent: 22px; }
-
-.sprites-bebi {
-  background-position: -407px -21px;
-  width: 22px;
-  height: 20px;
-  text-indent: 22px; }
 
 .sprites-cart-icon {
-  background-position: -429px 0px;
+  background-position: -403px -21px;
   width: 23px;
   height: 21px;
   text-indent: 23px; }
 
+.sprites-check {
+  background-position: -434px 0px;
+  width: 31px;
+  height: 21px;
+  text-indent: 31px; }
+
+.sprites-card-payment {
+  background-position: -434px -21px;
+  width: 31px;
+  height: 21px;
+  text-indent: 31px; }
+
+.sprites-left-arrow-carrousel {
+  background-position: -465px 0px;
+  width: 17px;
+  height: 20px;
+  text-indent: 17px; }
+
 .sprites-change-store {
-  background-position: -429px -21px;
+  background-position: -465px -20px;
   width: 16px;
   height: 20px;
   text-indent: 16px; }
 
-.sprites-horti {
-  background-position: -452px 0px;
-  width: 19px;
+.sprites-bebi {
+  background-position: -482px 0px;
+  width: 22px;
   height: 20px;
-  text-indent: 19px; }
+  text-indent: 22px; }
+
+.sprites-change-storeRed {
+  background-position: -482px -20px;
+  width: 16px;
+  height: 20px;
+  text-indent: 16px; }
+
+.sprites-change-storeWhite {
+  background-position: -504px 0px;
+  width: 16px;
+  height: 20px;
+  text-indent: 16px; }
 
 .sprites-merce {
-  background-position: -452px -20px;
+  background-position: -504px -20px;
   width: 15px;
   height: 19px;
   text-indent: 15px; }
 
 .sprites-all-dp {
-  background-position: -452px -39px;
+  background-position: -504px -39px;
   width: 15px;
   height: 15px;
   text-indent: 15px; }
 
+.sprites-horti {
+  background-position: -520px 0px;
+  width: 19px;
+  height: 20px;
+  text-indent: 19px; }
+
+.sprites-arrow-product-left {
+  background-position: -520px -20px;
+  width: 17px;
+  height: 20px;
+  text-indent: 17px; }
+
 .sprites-perfum {
-  background-position: -471px 0px;
+  background-position: -539px 0px;
   width: 18px;
   height: 19px;
   text-indent: 18px; }
 
-.sprites-search-mobile-icon {
-  background-position: -471px -19px;
-  width: 17px;
-  height: 18px;
-  text-indent: 17px; }
+.sprites-right-arrow-carrousel {
+  background-position: -539px -19px;
+  width: 16px;
+  height: 19px;
+  text-indent: 16px; }
 
-.sprites-cere {
-  background-position: -471px -37px;
-  width: 17px;
-  height: 17px;
-  text-indent: 17px; }
+.sprites-sobre {
+  background-position: -539px -38px;
+  width: 16px;
+  height: 16px;
+  text-indent: 16px; }
+
+.sprites-0-stars-extra-large {
+  background-position: -557px 0px;
+  width: 178px;
+  height: 19px;
+  text-indent: 178px; }
+
+.sprites-arrow-product-right {
+  background-position: -557px -19px;
+  width: 16px;
+  height: 19px;
+  text-indent: 16px; }
 
 .sprites-matin {
-  background-position: -489px 0px;
+  background-position: -573px -19px;
   width: 20px;
   height: 18px;
   text-indent: 20px; }
 
+.sprites-higi {
+  background-position: -573px -37px;
+  width: 17px;
+  height: 17px;
+  text-indent: 17px; }
+
+.sprites-user-icon {
+  background-position: -593px -19px;
+  width: 18px;
+  height: 18px;
+  text-indent: 18px; }
+
+.sprites-cere {
+  background-position: -593px -37px;
+  width: 17px;
+  height: 17px;
+  text-indent: 17px; }
+
 .sprites-user-white {
-  background-position: -489px -18px;
+  background-position: -611px -19px;
+  width: 18px;
+  height: 18px;
+  text-indent: 18px; }
+
+.sprites-big-arrow-down {
+  background-position: -611px -37px;
+  width: 17px;
+  height: 15px;
+  text-indent: 17px; }
+
+.sprites-search-mobile-icon {
+  background-position: -629px -19px;
+  width: 17px;
+  height: 18px;
+  text-indent: 17px; }
+
+.sprites-big-arrow-up {
+  background-position: -629px -37px;
+  width: 17px;
+  height: 15px;
+  text-indent: 17px; }
+
+.sprites-user-payment {
+  background-position: -646px -19px;
+  width: 18px;
+  height: 18px;
+  text-indent: 18px; }
+
+.sprites-percent {
+  background-position: -664px -19px;
   width: 18px;
   height: 18px;
   text-indent: 18px; }
 
 .sprites-pedidos {
-  background-position: -489px -36px;
+  background-position: -682px -19px;
   width: 18px;
   height: 18px;
   text-indent: 18px; }
-
-.sprites-user-icon {
-  background-position: -509px 0px;
-  width: 18px;
-  height: 18px;
-  text-indent: 18px; }
-
-.sprites-higi {
-  background-position: -509px -18px;
-  width: 17px;
-  height: 17px;
-  text-indent: 17px; }
-
-.sprites-sobre {
-  background-position: -509px -35px;
-  width: 16px;
-  height: 16px;
-  text-indent: 16px; }
 
 .sprites-carnes {
-  background-position: -527px 0px;
+  background-position: -700px -19px;
   width: 22px;
   height: 17px;
   text-indent: 22px; }
 
-.sprites-frio {
-  background-position: -527px -17px;
-  width: 21px;
-  height: 15px;
-  text-indent: 21px; }
-
 .sprites-back {
-  background-position: -549px 0px;
+  background-position: -700px -36px;
   width: 23px;
   height: 16px;
   text-indent: 23px; }
 
+.sprites-5-stars-large {
+  background-position: -735px 0px;
+  width: 140px;
+  height: 15px;
+  text-indent: 140px; }
+
+.sprites-frio {
+  background-position: -735px -15px;
+  width: 21px;
+  height: 15px;
+  text-indent: 21px; }
+
 .sprites-visa {
-  background-position: -572px 0px;
+  background-position: -756px -15px;
   width: 47px;
   height: 15px;
   text-indent: 47px; }
+
+.sprites-0-stars-mediun {
+  background-position: -875px 0px;
+  width: 81px;
+  height: 13px;
+  text-indent: 81px; }
+
+.sprites-4-stars-small {
+  background-position: -956px 0px;
+  width: 91px;
+  height: 11px;
+  text-indent: 91px; }
+
+.sprites-3-stars-small {
+  background-position: -956px -11px;
+  width: 91px;
+  height: 11px;
+  text-indent: 91px; }
+
+.sprites-2-stars-small {
+  background-position: -956px -22px;
+  width: 91px;
+  height: 10px;
+  text-indent: 91px; }
+
+.sprites-5-stars-small {
+  background-position: -956px -32px;
+  width: 91px;
+  height: 10px;
+  text-indent: 91px; }
+
+.sprites-1-stars-small {
+  background-position: -956px -42px;
+  width: 91px;
+  height: 10px;
+  text-indent: 91px; }
