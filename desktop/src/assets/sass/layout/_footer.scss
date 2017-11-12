@@ -1,0 +1,159 @@
+footer {
+  background-color: $gray;
+
+  .footer-line {
+    .container {
+      .container-footer-line {
+        background-color: $white;
+        padding: $space-lg - 10px;
+        height: $space-xl + 25px;
+
+        ul {
+          &.menu-footer--line {
+            display: flex;
+            margin-top: $space-xs + $space-xs;
+            height: $space-md - 10px;
+
+            li{
+              padding: 0 10px;
+              border-right: 2px solid $blue-dark;
+
+              &:last-child {
+                border-right: 0;
+              }
+
+              a {
+                color: $blue-dark;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-content {
+    .container {
+      .footer-container{
+        background: $gray-super-light;
+        color:$blue-dark;
+        padding: $space-lg - 10px;
+
+        h1 {
+          font-weight: bold;
+          font-size: $space-sm;
+        }
+
+        ul {
+          margin-top: $space-md;
+          li {
+            line-height: $space-sm + 10px;
+
+            a {
+              color:$blue-dark;
+              font-size: $space-sm - 2
+              px;
+            }
+          }
+        }
+
+        .content-flex {
+          display: flex;
+
+          .content-left, .content-right {
+            width: 50%;
+          }
+        }
+      }
+
+      .footer-second-container {
+        &.line-warning {
+          background-color: $red-live;
+          width: 100%;
+          height: $space-md;
+
+          .content-warnig {
+            padding: $space-xs $space-sm;
+            color:$white;
+            font-size: $space-sm - $space-xs;
+          }
+        }
+      }
+
+      .footer-third-container {
+          background: $gray-super-light;
+
+          .payment-icons {
+            border-bottom: 1px solid $lead-light;
+            height: 85px;
+            margin: $space-lg 0 $space-sm;
+            ul {
+              display: flex;
+              max-width: 400px;
+              margin: 0 auto;
+
+              li {
+                font-weight: bold;
+                padding:0 $space-xs;
+                color:$blue-dark;
+              }
+            }
+          }
+
+          .copyright-content {
+            p {
+              font-size: $space-sm - 4px;
+              color:$blue-dark;
+            }
+          }
+      }
+    }
+  }
+
+  .footer-fixe{
+    height: $space-lg + 20px;
+    position: static;
+    bottom:0;
+
+    .arrow-info {
+      background-color: $red-opaco;
+      height: $space-lg + 20px;
+      margin-left: -15px;
+      padding: $space-sm 0;
+
+      &:after {
+        content:"";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 35px 0 35px 20px;
+        border-color: transparent transparent transparent #9c2121;
+        line-height: 0px;
+        _border-color: #000000 #000000 #000000 #9c2121;
+        _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+        float: right;
+        position: absolute;
+        right: -5px;
+        top: 0;
+      }
+
+      .title {
+        color:$white;
+        font-size: $space-sm - 2px;
+      }
+
+      .text {
+        color:$white;
+        font-size: $space-sm;
+        font-weight: bold;
+      }
+
+      a {
+        color:$white;
+        text-decoration: underline;
+        margin-top: $space-sm + $space-xs;
+      }
+    }
+  }
+}

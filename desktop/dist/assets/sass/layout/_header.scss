@@ -1,0 +1,197 @@
+header{
+  background-color: $red;
+  height: 210px;
+
+  .header-fixe {
+    height: $space-lg + $space-sm;
+    padding:10px 0;
+    background-color: $white;
+    width: 100%;
+    position: relative;
+    top: 0;
+    transition: all 0.2s;
+
+    &.menu-fixe {
+      position: fixed;
+      width: 100%;
+      z-index: 9999;
+      -webkit-box-shadow: 0px 3px 19px -6px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 3px 19px -6px rgba(0,0,0,0.75);
+      box-shadow: 0px 3px 19px -6px rgba(0,0,0,0.75);
+      padding: $space-sm 0;
+      height: $space-lg + 20px;
+    }
+
+    ul{
+      &.content-logo {
+        display: flex;
+
+        li {
+          #navside{
+            padding-top: $space-sm - 2px;
+          }
+
+          &:last-child {
+            margin-left: $space-sm;
+          }
+        }
+      }
+
+      &.icons-header--fixe {
+        display: flex;
+
+        li {
+          padding: 10px $space-xs;
+        }
+      }
+
+      &.itens{
+        display: flex;
+
+        li {
+          &:last-child {
+            margin-left: $space-sm;
+          }
+
+          @extend %itens-price;
+        }
+      }
+    }
+
+    @extend %store-change--element;
+
+    @extend %searchDiv;
+  }
+
+  .header-bar{
+    height: $space-lg;
+    background: $red-opaco;
+
+    .text-content {
+      padding: 13px 0;
+
+      .header-bar--text {
+        color: $white;
+      }
+    }
+
+    .btn-content{
+      padding: 5px 0;
+
+      .btn-red--comparar  {
+        max-width:170px;
+        height: $space-md + 8px;
+      }
+    }
+
+    ul {
+      display: flex;
+
+      &.list-options  {
+        li {
+          height: $space-md + 20px;
+          padding: 15px 25px;
+          border-left: 1px solid $red-border;
+
+          &:last-child {
+            border-right: 1px solid $red-border;
+          }
+
+          .list-options--item {
+            span {
+              &.text {
+                color: $white;
+                position: relative;
+                bottom: 3px;
+                margin-left: 10px;
+
+                &.list-ico {
+                  bottom:$space-xs;
+                }
+              }
+            }
+          }
+
+          &:hover {
+            background-color: $red-border;
+          }
+        }
+      }
+    }
+  }
+
+  .header-line {
+    height: $space-xl;
+    width: 100%;
+    background: $gray-ultra-light;
+    padding: $space-md 0;
+
+    @extend %searchDiv;
+
+    .fake-select-content {
+      p {
+        font-size: $space-sm - 3px;
+        padding: 0;
+        margin: 0;
+      }
+
+      @extend %dropdown-menu;
+
+      button {
+        &.dropbtn {
+          color:$red-live;
+          font-weight: bold;
+          font-size: $space-sm + 3px;
+
+          &:after{
+            background: url('../images/static/png-sprites/arrow-down-red.png') no-repeat;
+            display: inline-block;
+            content:'';
+            width: $space-xs + 2px;
+            height: $space-xs + 2px;
+            margin-left: $space-sm;
+          }
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .store-buy-content {
+      display: flex;
+      .text {
+        width: 40%;
+
+        p {
+          font-size:10px;
+          text-align: right;
+          margin-right: 3px;
+        }
+      }
+
+      @extend %store-change--element;
+
+      .content-store--header {
+        width: 70%;
+
+        .content-left {
+          width: 90%;
+        }
+      }
+    }
+
+    ul{
+      display: flex;
+
+      li {
+        &:last-child {
+          margin-left: $space-sm;
+        }
+      }
+
+      @extend %itens-price;
+    }
+  }
+}

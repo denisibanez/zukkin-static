@@ -1,0 +1,25 @@
+// variables
+@import "variables/_pallete";
+@import "variables/_variables";
+
+//utilities
+@import "utilities/_placeholder";
+@import "utilities/_mixins";
+@import "utilities/replace";
+@import "utilities/_fonts";
+@import "utilities/_button";
+
+//base
+//@import "base/normalize";
+@import "base/_base";
+
+//components
+@import "components/_vitrine.scss";
+@import "components/_how-to-works";
+@import "components/_modais";
+@import "components/_product-detail";
+@import "components/_breadcrumbie";
+@import "components/_filter-catalog";
+@import "components/_checkout";
+@import "components/_pedidos";
+@import "components/_comparativo";
