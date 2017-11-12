@@ -653,6 +653,18 @@ input[type="checkbox"]:checked + span .fake-checkbox:after {
   .btn-gray--header:focus {
     color: #ffffff; }
 
+.btn-footer-hide {
+  display: none;
+  width: 45px;
+  height: 45px;
+  background: #9c2121;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px; }
+
 body {
   font-family: 'Open Sans', sans-serif; }
 

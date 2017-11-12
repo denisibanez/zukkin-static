@@ -873,6 +873,17 @@ footer {
         position: absolute;
         right: -5px;
         top: 0; }
+      footer .footer-fixe .arrow-info .title {
+        color: #ffffff;
+        font-size: 13px; }
+      footer .footer-fixe .arrow-info .text {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: bold; }
+      footer .footer-fixe .arrow-info a {
+        color: #ffffff;
+        text-decoration: underline;
+        margin-top: 20px; }
 
 header {
   background-color: #b71c1c;

@@ -140,13 +140,19 @@ footer {
 
       .title {
         color:$white;
-        font-size: $space-sm - 3px;
+        font-size: $space-sm - 2px;
       }
 
       .text {
         color:$white;
-        font-size: $space-sm - 3px;
+        font-size: $space-sm;
         font-weight: bold;
+      }
+
+      a {
+        color:$white;
+        text-decoration: underline;
+        margin-top: $space-sm + $space-xs;
       }
     }
   }
