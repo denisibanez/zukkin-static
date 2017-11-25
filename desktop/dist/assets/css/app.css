@@ -1,4 +1,42 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,800i");
+.comparativo.comparacao-page .body .product-list-select, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select {
+  width: 50%;
+  display: flex; }
+  .comparativo.comparacao-page .body .product-list-select select, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select select {
+    border: 1px solid #cfd8dc;
+    padding: 5px;
+    height: 50px;
+    width: 35px;
+    text-align: center;
+    color: #546e7a;
+    font-weight: bold;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    border-radius: 5px; }
+  .comparativo.comparacao-page .body .product-list-select .controller, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller {
+    margin-left: 5px; }
+    .comparativo.comparacao-page .body .product-list-select .controller .more, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller .more {
+      background-color: #009c87;
+      width: 35px;
+      height: 25px;
+      color: #ffffff;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+      border-radius: 5px;
+      margin-bottom: 1px; }
+    .comparativo.comparacao-page .body .product-list-select .controller .minus, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller .minus {
+      background-color: #00bfa5;
+      width: 35px;
+      height: 25px;
+      color: #ffffff;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+      border-radius: 5px; }
+
 @media (max-width: 991px) {
   .modal-dialog .modal-content .modal-footer .container-btn--confirm .btn-blue--confirm {
     width: 100%; } }
@@ -538,10 +576,6 @@ input[type="checkbox"]:checked + span .fake-checkbox:after {
     border: 1px solid #1268b3;
     margin-top: 15px;
     font-weight: normal; }
-  .comparativo.comparacao-page .body .more {
-    background-color: #0089e9 !important; }
-  .comparativo.comparacao-page .body .minus {
-    background-color: #6fcbfb !important; }
 
 .red-button.add-active {
   background-color: #670909;
@@ -653,6 +687,18 @@ input[type="checkbox"]:checked + span .fake-checkbox:after {
   .btn-gray--header:focus {
     color: #ffffff; }
 
+.btn-footer-hide {
+  display: none;
+  width: 45px;
+  height: 45px;
+  background: #9c2121;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px; }
+
 body {
   font-family: 'Open Sans', sans-serif; }
 
@@ -672,7 +718,7 @@ body {
   background-color: #ed2c2a; }
 
 .banner-fluid {
-  margin: 15px 0; }
+  margin: 30px 0; }
 
 ul {
   list-style: none;
@@ -693,6 +739,9 @@ a {
 input, select {
   color: #37474f !important;
   font-family: 'Open Sans', sans-serif !important; }
+
+.wrapper-secound-fold {
+  margin: 50px 0; }
 
 .content-product--vitrine h1 {
   font-family: 'Open Sans', sans-serif;
@@ -717,10 +766,11 @@ input, select {
     border: 1px solid #cfd8dc;
     width: auto;
     /*scrolllbar activ*/
-    min-width: 172px;
-    padding: 5px;
+    width: 20%;
     text-align: center;
     background-color: #ffffff; }
+    .content-product--vitrine .product-list .products-group .products-group--item.pd {
+      padding: 5px; }
     .content-product--vitrine .product-list .products-group .products-group--item .products-group--img {
       margin: 0 auto;
       width: 100%;
@@ -751,21 +801,48 @@ input, select {
         font-size: 15px; }
     .content-product--vitrine .product-list .products-group .products-group--item .products-group--select {
       padding: 15px 0 0; }
+    .content-product--vitrine .product-list .products-group .products-group--item .product-list-select {
+      width: 100%;
+      padding: 0 10px;
+      margin: 15px 0; }
+      .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller {
+        width: 100%;
+        margin-right: 5px; }
+        .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller.red-btn .more {
+          background: #ff2a28; }
+        .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller.red-btn .minus {
+          background: #ff2a28;
+          opacity: 0.5; }
+      .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .red-button.add-active, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .green-button.add-inactive {
+        padding: 15px 20px;
+        margin: 0; }
 
-.how-works h1 {
-  color: #455a64;
-  font-size: 22px;
-  font-weight: bold;
-  margin: 30px;
-  line-height: 30px; }
+.wrapper-work {
+  margin-top: 30px; }
+  .wrapper-work .how-works {
+    padding: 10px 100px;
+    height: 500px; }
+    .wrapper-work .how-works h1 {
+      color: #455a64;
+      font-size: 30px;
+      font-weight: bold;
+      margin: 50px 0; }
+    .wrapper-work .how-works h2 {
+      color: #455a64;
+      font-size: 15px;
+      font-weight: bold;
+      margin: 15px 0; }
 
 .modal-dialog {
   margin: 0;
-  height: auto; }
+  height: auto;
+  width: 550px; }
+  .modal-dialog.modal-lg {
+    width: 900px; }
   .modal-dialog .modal-content {
-    border-radius: 0;
+    border-radius: 5px;
     height: 100%;
-    padding: 0 15px; }
+    padding: 15px 45px; }
     .modal-dialog .modal-content .error-input {
       background-color: #ffebee;
       border-color: #ed2c2a;
@@ -805,11 +882,9 @@ input, select {
           font-size: 12px;
           margin: 0;
           padding: 5px 0; }
-      .modal-dialog .modal-content .modal-body .link-content {
-        padding: 5px 0; }
-        .modal-dialog .modal-content .modal-body .link-content .link {
-          font-size: 12px;
-          color: #90a4ae; }
+      .modal-dialog .modal-content .modal-body .link-content .link {
+        font-size: 12px;
+        color: #90a4ae; }
     .modal-dialog .modal-content .modal-footer {
       padding: 15px 0; }
 
@@ -823,6 +898,15 @@ input, select {
 
 #editarLista {
   display: none; }
+  #editarLista .modal-footer {
+    border-top: 0; }
+    #editarLista .modal-footer .btn-blue--new {
+      margin-top: 25px;
+      width: 100%; }
+    #editarLista .modal-footer .btn-blue--confirm {
+      width: 100%;
+      height: 40px;
+      line-height: 40px; }
 
 #carrinho {
   display: none; }
@@ -943,8 +1027,9 @@ input, select {
 #editar-enderecos {
   display: none; }
   #editar-enderecos .modal-content .modal-header {
-    border-bottom: 0;
     padding: 15px 0 0 0; }
+    #editar-enderecos .modal-content .modal-header .gray-button {
+      margin-bottom: 15px; }
   #editar-enderecos .modal-content .modal-body {
     padding: 15px 0 0 0; }
     #editar-enderecos .modal-content .modal-body .formulario-header .formulario-header--content {
@@ -961,7 +1046,7 @@ input, select {
         border-top-right-radius: 5px; }
     #editar-enderecos .modal-content .modal-body .formulario {
       background-color: #eceff1;
-      margin: 0 -15px;
+      margin: 0 -45px;
       padding: 15px; }
     #editar-enderecos .modal-content .modal-body h2 {
       font-size: 15px;
@@ -1103,7 +1188,6 @@ input, select {
 #select-cidades {
   display: none; }
   #select-cidades .modal-content .modal-header {
-    border-bottom: 0;
     margin-bottom: 0; }
     #select-cidades .modal-content .modal-header .close {
       color: #455a64; }
@@ -1114,8 +1198,10 @@ input, select {
       margin-right: 15px; }
     #select-cidades .modal-content .modal-body .formulario {
       margin-top: 0; }
+      #select-cidades .modal-content .modal-body .formulario input {
+        height: 50px; }
     #select-cidades .modal-content .modal-body ul li {
-      margin: 15px 0; }
+      margin: 5px 0; }
       #select-cidades .modal-content .modal-body ul li a.active {
         color: #37474f;
         font-weight: bold; }
@@ -1123,6 +1209,8 @@ input, select {
     text-align: left; }
     #select-cidades .modal-content .modal-footer .formulario {
       margin-top: 0; }
+      #select-cidades .modal-content .modal-footer .formulario input {
+        height: 50px; }
     #select-cidades .modal-content .modal-footer h4, #select-cidades .modal-content .modal-footer p {
       color: #37474f; }
     #select-cidades .modal-content .modal-footer h4 {
@@ -1815,3 +1903,12 @@ input, select {
   color: #ff2a28; }
   .comparacao-page .body .change-store .btn-transparent .sprites-change-storeRed {
     margin-right: 15px; }
+
+.wrapper-anuncio {
+  position: relative;
+  top: -70px; }
+  .wrapper-anuncio .linha {
+    margin-top: 25px; }
+
+.wrapper-anuncio-secound {
+  margin-bottom: 50px; }

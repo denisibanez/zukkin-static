@@ -1,0 +1,76 @@
+.first-fold {
+  background: $gray-ultra-light;
+
+  .content-firstfold {
+    background: $white;
+    border:1px solid $gray-light;
+    padding: 10px 0;
+
+    .menu-sidebar {
+
+      ul {
+        li{
+          border-bottom: 1px solid $gray-light;
+          line-height: $space-md - 4px;
+
+          &:last-child {
+            border-bottom: 0
+          }
+
+          a{
+            color:$blue-dark;
+            font-size: $space-sm - 1px;
+              span {
+                margin-right: $space-sm + $space-xs;
+                vertical-align: middle;
+              }
+          }
+        }
+      }
+    }
+
+    #carousel-example-captions {
+      &.principal-slide {
+        margin: $space-sm 0;
+      }
+    }
+  }
+
+  .content-icons-firstfold {
+    margin: $space-md 0 ;
+    ul {
+      display: flex;
+      justify-content: center;
+      li{
+        padding: 0 $space-md;
+        font-size: $space-sm - 3px;
+        color:$blue-dark;
+
+        span {
+          vertical-align: middle;
+          margin-right: $space-sm;
+        }
+      }
+    }
+  }
+
+  .container-brands-firstfold {
+    ul {
+      display: flex;
+      position: relative;
+      top: $space-sm + 10px;
+      li {
+        background: $white;
+        border:1px solid $gray-light;
+        min-width: $space-xl + 26px;
+        height: $space-lg;
+        text-align: center;
+        padding: $space-xs 0;
+        margin: 0 2px;
+        img {
+
+        }
+      }
+    }
+  }
+}

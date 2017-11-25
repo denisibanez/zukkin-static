@@ -1,9 +1,21 @@
-.how-works {
-  h1 {
-    color:$blue-dark;
-    font-size: $space-sm + 7px;
-    font-weight: bold;
-    margin: $space-md;
-    line-height: $space-md;
+.wrapper-work {
+  margin-top: $space-md;
+  .how-works {
+    padding: 10px $space-xl;
+    height: 500px;
+
+    h1 {
+      color:$blue-dark;
+      font-size: $space-md;
+      font-weight: bold;
+      margin: $space-lg 0;
+    }
+
+    h2 {
+      color:$blue-dark;
+      font-size: $space-sm;
+      font-weight: bold;
+      margin: $space-sm 0;
+    }
   }
 }

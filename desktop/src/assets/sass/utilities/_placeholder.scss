@@ -1,3 +1,53 @@
+%controller {
+  .product-list-select {
+    width: 50%;
+    display: flex;
+
+    select {
+      border: 1px solid $gray-light;
+      padding: $space-xs;
+      height: $space-lg;
+      width: $space-md + $space-xs;
+      text-align: center;
+      color: #546e7a;;
+      font-weight: bold;
+      -webkit-appearance: none;
+       -moz-appearance: none;
+       text-indent: 1px;
+       text-overflow: '';
+       border-radius: $space-xs;
+    }
+
+    .controller {
+      margin-left: $space-xs;
+
+      .more {
+        background-color: #009c87;
+        width: $space-md + $space-xs;
+        height: $space-md - $space-xs;
+        color:$white;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        border-radius: $space-xs;
+        margin-bottom: 1px;
+
+      }
+
+      .minus {
+        background-color: #00bfa5;
+        width: $space-md + $space-xs;
+        height: $space-md - $space-xs;
+        color:$white;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        border-radius: $space-xs;
+      }
+    }
+  }
+}
+
 %itens-price {
   .total-itens {
     font-size: $space-sm - 3px;

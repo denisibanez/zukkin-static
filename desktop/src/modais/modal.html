@@ -120,20 +120,20 @@
             </div>
           </div>
           <div class="col-xs-4 link-content">
-            <a href="#" class="link">Remover</a>
+            <a href="#" class="link  pull-right">Remover</a>
           </div>
         </div>
 
         <form role="form" class="formulario form-inline">
           <div class="row">
-            <div class="form-group col-xs-7 col-sm-10">
+            <div class="form-group col-xs-7 col-sm-10 col-md-5">
               <label for="editar-nome">Editar nome:</label>
               <input type="text" class="form-control" id="editar-nome" placeholder="Digite o novo nome">
             </div>
 
-            <div class="form-group col-xs-5 col-sm-2">
+            <div class="form-group col-xs-5 col-sm-2 col-md-3">
               <div class="container-btn--confirm">
-                <button type="submit" class="btn btn-blue--confirm ">Ok</button>
+                <button type="submit" class="btn btn-blue--new ">Ok</button>
               </div>
             </div>
           </div>
@@ -141,14 +141,11 @@
 
 
         <div class="row">
-          <div class="col-xs-12">
+          <div class="col-xs-8">
             <div class="modal-body-text">Bolo de macaxeira
               <span class="modal-body-text span">(<span class="span-item">15</span> itens)</span>
             </div>
           </div>
-        </div>
-
-        <div class="row">
           <div class="col-xs-2">
             <div class="link-content">
               <a href="#" class="link">Editar</a>
@@ -167,10 +164,11 @@
         <form role="form" class="form-inline formulario">
           <div class="row">
             <div class="form-group col-xs-7">
+              <label class="pull-left">Criar nova lista:</label>
               <input type="text" class="form-control" id="digite-nome" placeholder="Digite um nome">
             </div>
             <div class="form-group col-xs-5">
-              <div class="pull-left">
+              <div>
                 <button  class="btn btn-blue--new">Criar nova</button>
               </div>
             </div>
@@ -178,7 +176,7 @@
         </form>
 
         <div class="row">
-          <div class="col-xs-12">
+          <div class="col-md-offset-7 col-md-5">
             <div class="container-btn--confirm">
               <button class="btn btn-blue--confirm">Salvar alterações</button>
             </div>
@@ -685,22 +683,34 @@
   <!--/Cadastro-2-->
 
   <!--Editar Endereços-->
-  <div class="modal-dialog" id="editar-enderecos">
+  <div class="modal-dialog modal-lg" id="editar-enderecos">
     <div class="modal-content">
       <div class="modal-header">
-        <a href="#" class="close closeModal" data-dismiss="modal" aria-hidden="true">&times;</a>
-        <h4 class="modal-title" id="">Editar endereço</h4>
+        <div class="row">
+          <div class="col-md-3">
+            <h4 class="modal-title" id="">Editar endereço</h4>
+          </div>
+
+          <div class="col-md-7">
+            <button class="btn gray-button"> Editar dados pessoais</button>
+          </div>
+
+          <div class="col-md-2">
+            <a href="#" class="close closeModal" data-dismiss="modal" aria-hidden="true">&times;</a>
+          </div>
+        </div>
       </div>
       <div class="modal-body">
-
-        <button class="btn gray-button"> Editar dados pessoais</button>
 
         <h2>Meus Endereços:</h2>
 
         <div class="row">
           <div class="formulario-header">
-            <div class="col-xs-6">
+            <div class="col-xs-5">
               <button class="btn gray-button"> Novo</button>
+            </div>
+            <div class="col-xs-1">
+              <span>Editar:</span>
             </div>
             <div class="col-xs-6 formulario-header--content">
               <a href="" class="sprites-arrow-left-fake">left</a>
@@ -714,69 +724,66 @@
 
         <form role="form" class="form-inline formulario">
           <div class="row">
-            <div class="form-group col-xs-6">
+            <div class="form-group col-xs-3">
               <label for="">Nome do endereço*</label>
               <input type="text" class="form-control" id="cep" placeholder="Minha casa">
             </div>
           </div>
 
           <div class="row">
-            <div class="form-group col-xs-6">
+            <div class="form-group col-xs-3">
               <label for="">Cep*</label>
               <input type="text" class="form-control" id="cep" placeholder="Digite seu cep">
             </div>
-          </div>
 
-          <div class="row">
-            <div class="form-group col-xs-12">
+            <div class="form-group col-xs-6">
               <label for="">Endereço*</label>
               <input type="text" class="form-control" id="endereco" placeholder="Aguardando cep">
             </div>
-          </div>
 
-          <div class="row">
             <div class="col-xs-3">
               <div class="form-group">
                 <label for="">Numero</label>
                 <input type="text" class="form-control" id="numero" placeholder="">
               </div>
             </div>
+          </div>
 
-            <div class="col-xs-9">
+          <div class="row">
+            <div class="col-xs-4">
               <div class="form-group">
                 <label for="">Complemento</label>
                 <input type="text" class="form-control" id="complemento" placeholder="Ex:Casa">
               </div>
             </div>
-          </div>
 
-          <div class="row">
-            <div class="form-group col-xs-12">
+            <div class="form-group col-xs-8">
               <label for="">Bairro*</label>
               <input type="text" class="form-control" id="bairro" placeholder="Aguardando cep">
             </div>
           </div>
 
           <div class="row">
-            <div class="form-group col-xs-6">
+            <div class="form-group col-xs-3">
               <label for="">Cidade*</label>
               <input type="text" class="form-control" id="cidade" placeholder="Aguardando cep">
             </div>
-            <div class="form-group col-xs-6">
+            <div class="form-group col-xs-3">
               <label for="">Estado*</label>
               <input type="text" class="form-control" id="estado" placeholder="Aguardando cep">
             </div>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="container-btn--confirm">
-              <a class="btn btn-blue--confirm">Salvar cadastro</a>
+
+            <div class="col-md-4">
+              <span class="text-required">* Preenchimento obrigatório</span>
+            </div>
+
+            <div class="col-xs-2">
+              <div class="container-btn--confirm pull-right">
+                <a class="btn btn-blue--confirm">Salvar alterações</a>
+              </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -960,7 +967,7 @@
   <!--/Obrigado-->
 
   <!--Login-->
-  <div class="modal-dialog" id="login">
+  <div class="modal-dialog modal-sm" id="login">
     <div class="modal-content">
       <div class="modal-header">
         <a href="#" class="close closeModal" data-dismiss="modal" aria-hidden="true">&times;</a>
@@ -1092,7 +1099,7 @@
               </div>
 
               <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-6">
                   <ul>
                     <li><a href="">Belo Horizonte | MG</a></li>
                     <li><a href="">Fortaleza | CE</a></li>
@@ -1100,6 +1107,11 @@
                     <li><a href="">São Bernardo do Campo | SP</a></li>
                     <li><a href="">Brasília | DF</a></li>
                     <li><a href="">Governador Valadares | MG</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-xs-6">
+                  <ul>
                     <li><a href="">Campinas | SP</a></li>
                     <li><a href="">Porto Alegre | RS</a></li>
                     <li><a href="">Porto Alegre | RS</a></li>
@@ -1118,17 +1130,15 @@
         <p>Deixe sua <strong>cidade e email</strong> que iremos lhe informar quando estiver disponivel:</p>
         <form role="form" class="form-inline formulario">
           <div class="row">
-            <div class="form-group col-xs-6">
+            <div class="form-group col-xs-4">
               <input type="text" class="form-control" id="cidade" placeholder="Cidade">
             </div>
 
-            <div class="form-group col-xs-6">
+            <div class="form-group col-xs-4">
               <input type="email" class="form-control" id="email" placeholder="Email">
             </div>
-          </div>
 
-          <div class="row">
-            <div class="col-xs-12">
+            <div class="col-xs-3">
               <button class="btn btn-blue--confirm">Enviar</button>
             </div>
           </div>

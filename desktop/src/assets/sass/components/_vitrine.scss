@@ -28,10 +28,13 @@
       .products-group--item {
         border: 1px solid $gray-light;
         width: auto;/*scrolllbar activ*/
-        min-width: 172px;
-        padding: $space-xs;
+        width: 20%;
         text-align: center;
         background-color: $white;
+
+        &.pd {
+          padding: $space-xs;
+        }
 
         .products-group--img {
           margin: 0 auto;
@@ -78,6 +81,39 @@
           padding: $space-sm 0 0;
 
           @extend %selectDiv;
+        }
+
+        @extend %controller;
+
+        .product-list-select {
+          width: 100%;
+          padding: 0 10px;
+          margin: $space-sm 0;
+
+          .select-item-vitrine {
+
+          }
+
+          .controller {
+            width: 100%;
+            margin-right: $space-xs;
+
+            &.red-btn {
+              .more {
+                background: $red-live;
+              }
+
+              .minus {
+                background: $red-live;
+                opacity: 0.5;
+              }
+            }
+          }
+
+          .red-button.add-active, .green-button.add-inactive {
+            padding: 15px 20px;
+            margin: 0;
+          }
         }
       }
     }

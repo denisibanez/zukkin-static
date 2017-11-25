@@ -3,7 +3,7 @@
   console.log('js funcionando');
 
   // your code here
-  var myFunc = {
+  var onLoadFun = {
     init: function(){
       this.ScrollBar();
       this.arrowCollapseButton();
@@ -125,38 +125,68 @@
     }
   }
 
-  //ready
-  $(document).ready(function(){
-    var myVar = setInterval(function(){ myTimer() }, 1000);
+  var docReadyFun = {
+    init: function (){
+      this.ocultaFooter();
+      this.tempo();
+    },
+    ocultaFooter:function(){
+      $('.ocultar').on('click', function(){
+        $('.footer-fixe').removeClass('show');
+        $('.btn-footer-hide').removeClass('hidden')
 
-    function myTimer() {
+        $('.footer-fixe').addClass('hidden');
+        $('.btn-footer-hide').addClass('show');
 
-      //chama modal
-      $('#myModal').on('shown.bs.modal', function () {
-        $(".content").mCustomScrollbar({
-          axis:"x"
-        });
+        $('footer .footer-content').css('margin-bottom','0px');
       });
 
-      $('#myModal').on('shown.bs.modal', function () {
-        $(".content-vertical").mCustomScrollbar({
-          axis:"y"
-        });
+      $('.btn-footer-hide').on('click', function(){
+        $('.footer-fixe').removeClass('hidden');
+        $('.btn-footer-hide').removeClass('show');
+
+        $('.footer-fixe').addClass('show');
+        $('.btn-footer-hide').addClass('hidden');
+
+        $('footer .footer-content').css('margin-bottom','70xpx');
       });
+    },
+    tempo:function(){
+      var myVar = setInterval(function(){ myTimer() }, 1000);
 
-      //range-filter
-      var slider = document.getElementById("myRange");
-      var output = document.getElementById("demo");
-      output.innerHTML = slider.value;
+      function myTimer() {
 
-      slider.oninput = function() {
-        output.innerHTML = this.value;
+        //chama modal
+        $('#myModal').on('shown.bs.modal', function () {
+          $(".content").mCustomScrollbar({
+            axis:"x"
+          });
+        });
+
+        $('#myModal').on('shown.bs.modal', function () {
+          $(".content-vertical").mCustomScrollbar({
+            axis:"y"
+          });
+        });
+
+        //range-filter
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
       }
-    }
 
-    function myStopFunction() {
       clearInterval(myVar);
     }
+  }
+
+
+  //ready
+  $(document).ready(function(){
+    docReadyFun.init();
 
     FusionCharts.ready(function () {
       var visitChart = new FusionCharts({
@@ -227,7 +257,7 @@
 
   //load
   $(window).on("load",function(){
-    myFunc.init();
+    onLoadFun.init();
   });
 
   $(window).scroll(function () {

@@ -2,10 +2,16 @@
 .modal-dialog {
   margin: 0;
   height: auto;
+  width: 550px;
+
+  &.modal-lg {
+    width: 900px;
+  }
+
   .modal-content {
-    border-radius: 0;
+    border-radius: $space-xs;
     height: 100%;
-    padding:0  $space-sm;
+    padding: $space-sm 45px;
 
     @extend %mcustomGeral;
 
@@ -37,6 +43,7 @@
     }
 
     .formulario {
+
       label, span {
         color:$lead-ultra-light;
         font-size: $space-sm - 2px;
@@ -77,8 +84,6 @@
       }
 
       .link-content {
-        padding: $space-xs 0;
-
         .link {
           font-size: $space-xs + 7px;
           color:$lead-ultra-light;
@@ -121,6 +126,21 @@
 //edita lista
 #editarLista {
   display: none;
+
+  .modal-footer{
+    border-top: 0;
+
+    .btn-blue--new {
+      margin-top: $space-sm + 10px;
+      width: 100%;
+    }
+
+    .btn-blue--confirm {
+      width: 100%;
+      height: $space-md + 10px;
+      line-height: $space-md + 10px;
+    }
+  }
 }
 
 //minicart
@@ -221,7 +241,7 @@
         max-height: 250px;
       }
 
-      
+
 
       .product-list-cart {
         padding: $space-sm 0;
@@ -352,8 +372,11 @@
 
   .modal-content {
     .modal-header {
-      border-bottom: 0;
       padding: $space-sm 0 0 0;
+
+      .gray-button {
+        margin-bottom: $space-sm;
+      }
     }
 
     .modal-body {
@@ -383,7 +406,7 @@
 
       .formulario {
         background-color: $gray;
-        margin: 0 -15px;
+        margin: 0 -45px;
         padding: $space-sm;
       }
 
@@ -644,9 +667,10 @@
   display: none;
 
   .modal-content {
+
     .modal-header {
-      border-bottom: 0;
       margin-bottom: 0;
+
 
       .close {
         color: $blue-dark;
@@ -664,11 +688,15 @@
 
       .formulario {
         margin-top: 0;
+
+        input {
+          height: $space-lg;
+        }
       }
 
       ul {
         li {
-          margin: $space-sm 0;
+          margin: $space-xs 0;
 
           a {
             &.active{
@@ -686,6 +714,10 @@
 
       .formulario {
         margin-top: 0;
+
+        input {
+          height: $space-lg;
+        }
       }
 
       h4, p {

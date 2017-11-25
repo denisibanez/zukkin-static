@@ -1,0 +1,11 @@
+.wrapper-anuncio {
+  position: relative;
+  top: -70px;
+  .linha {
+    margin-top: $space-sm + 10px;
+  }
+}
+
+.wrapper-anuncio-secound {
+  margin-bottom:$space-lg;
+}

@@ -1,4 +1,42 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,800i");
+.comparativo.comparacao-page .body .product-list-select {
+  width: 50%;
+  display: flex; }
+  .comparativo.comparacao-page .body .product-list-select select {
+    border: 1px solid #cfd8dc;
+    padding: 5px;
+    height: 50px;
+    width: 35px;
+    text-align: center;
+    color: #546e7a;
+    font-weight: bold;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    border-radius: 5px; }
+  .comparativo.comparacao-page .body .product-list-select .controller {
+    margin-left: 5px; }
+    .comparativo.comparacao-page .body .product-list-select .controller .more {
+      background-color: #009c87;
+      width: 35px;
+      height: 25px;
+      color: #ffffff;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+      border-radius: 5px;
+      margin-bottom: 1px; }
+    .comparativo.comparacao-page .body .product-list-select .controller .minus {
+      background-color: #00bfa5;
+      width: 35px;
+      height: 25px;
+      color: #ffffff;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+      border-radius: 5px; }
+
 header .header-fixe ul.itens li .total-itens, header .header-line ul .total-itens {
   font-size: 12px;
   margin: 0; }
@@ -443,10 +481,6 @@ input[type="checkbox"]:checked + span .fake-checkbox:after {
     border: 1px solid #1268b3;
     margin-top: 15px;
     font-weight: normal; }
-  .comparativo.comparacao-page .body .more {
-    background-color: #0089e9 !important; }
-  .comparativo.comparacao-page .body .minus {
-    background-color: #6fcbfb !important; }
 
 .red-button.add-active {
   background-color: #670909;
@@ -578,9 +612,6 @@ input[type="checkbox"]:checked + span .fake-checkbox:after {
   .form-inline .form-control {
     display: block;
     width: 100%; }
-  #login .modal-content .modal-body .form-control-feedback {
-    margin-right: 0;
-    margin-top: 35px; }
   #select-stores .modal-body .content-item .item {
     margin: 0 auto; }
   #select-stores .modal-body .content-item .sprites-arrow-product-left {
@@ -957,7 +988,7 @@ header {
     header .header-fixe.menu-fixe {
       position: fixed;
       width: 100%;
-      z-index: 9999;
+      z-index: 999;
       -webkit-box-shadow: 0px 3px 19px -6px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 0px 3px 19px -6px rgba(0, 0, 0, 0.75);
       box-shadow: 0px 3px 19px -6px rgba(0, 0, 0, 0.75);
@@ -1044,3 +1075,47 @@ header {
       display: flex; }
       header .header-line ul li:last-child {
         margin-left: 15px; }
+
+.first-fold {
+  background: #fafafa; }
+  .first-fold .content-firstfold {
+    background: #ffffff;
+    border: 1px solid #cfd8dc;
+    padding: 10px 0; }
+    .first-fold .content-firstfold .menu-sidebar ul li {
+      border-bottom: 1px solid #cfd8dc;
+      line-height: 26px; }
+      .first-fold .content-firstfold .menu-sidebar ul li:last-child {
+        border-bottom: 0; }
+      .first-fold .content-firstfold .menu-sidebar ul li a {
+        color: #455a64;
+        font-size: 14px; }
+        .first-fold .content-firstfold .menu-sidebar ul li a span {
+          margin-right: 20px;
+          vertical-align: middle; }
+    .first-fold .content-firstfold #carousel-example-captions.principal-slide {
+      margin: 15px 0; }
+  .first-fold .content-icons-firstfold {
+    margin: 30px 0; }
+    .first-fold .content-icons-firstfold ul {
+      display: flex;
+      justify-content: center; }
+      .first-fold .content-icons-firstfold ul li {
+        padding: 0 30px;
+        font-size: 12px;
+        color: #455a64; }
+        .first-fold .content-icons-firstfold ul li span {
+          vertical-align: middle;
+          margin-right: 15px; }
+  .first-fold .container-brands-firstfold ul {
+    display: flex;
+    position: relative;
+    top: 25px; }
+    .first-fold .container-brands-firstfold ul li {
+      background: #ffffff;
+      border: 1px solid #cfd8dc;
+      min-width: 126px;
+      height: 50px;
+      text-align: center;
+      padding: 5px 0;
+      margin: 0 2px; }

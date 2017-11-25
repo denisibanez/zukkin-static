@@ -23,7 +23,7 @@ body {
 }
 
 .banner-fluid {
-  margin: $space-sm 0;
+  margin: $space-md 0;
 }
 
 ul {
@@ -51,4 +51,8 @@ a {
 input, select {
   color: $lead !important;
     font-family: 'Open Sans', sans-serif !important;
+}
+
+.wrapper-secound-fold {
+  margin:$space-lg 0;
 }

@@ -95,11 +95,11 @@
           //removeClass('show-app');
         });
 
-        $('#myModal').click(function(e){
-          e.preventDefault();
-          $(this).find("div#" + data).removeClass('show-app');
-          //removeClass('show-app');
-        });
+        // $('#myModal').click(function(e){
+        //   e.preventDefault();
+        //   $(this).find("div#" + data).removeClass('show-app');
+        //   //removeClass('show-app');
+        // });
       });
     },
     openDetail: function(){
@@ -179,7 +179,11 @@
         }
       }
 
-      clearInterval(myVar);
+
+
+      function myStopFunction() {
+        clearInterval(myVar);
+      }
     }
   }
 
@@ -252,7 +256,6 @@
         }
       }).render();
     });
-
   });
 
   //load
