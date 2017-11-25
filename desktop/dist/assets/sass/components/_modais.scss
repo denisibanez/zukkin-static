@@ -318,6 +318,7 @@
   }
 }
 
+
 //cadastro
 #cadastro {
   display: none;
@@ -371,6 +372,10 @@
   display: none;
 
   .modal-content {
+    padding-bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
     .modal-header {
       padding: $space-sm 0 0 0;
 
@@ -385,6 +390,7 @@
       @extend %formulario;
 
       .formulario-header {
+
         .formulario-header--content {
           display: flex;
 
@@ -407,7 +413,12 @@
       .formulario {
         background-color: $gray;
         margin: 0 -45px;
-        padding: $space-sm;
+        padding: $space-sm $space-lg;
+
+        .text-required {
+          top: 35px;
+          position: relative;
+        }
       }
 
       h2 {
@@ -545,7 +556,6 @@
     }
 
     .modal-footer {
-      min-height: 300px;
       border-top: 0;
       padding: $space-sm;
       margin: 0 -15px;
@@ -583,8 +593,8 @@
         background: url('/assets/images/static/png-sprites/eye.png') no-repeat;
         width: 40px;
         height: 40px;
-        margin-right: $space-sm;
-        margin-top: $space-sm;
+        margin-right: 10px;
+        margin-top:39px;
       }
 
       span {
@@ -602,7 +612,6 @@
     }
 
     .modal-footer {
-      min-height: 300px;
       padding: $space-sm 0;
 
       .btn-transparent {
@@ -632,7 +641,6 @@
 
     .modal-body {
       @extend %formulario;
-      min-height: 550px;
 
       .search-footer-button {
         margin-right: 18px;
@@ -781,7 +789,6 @@
     }
 
     .modal-footer {
-      min-height: 300px;
       border-top: 0;
       text-align: center;
 
@@ -819,7 +826,6 @@
 
   .modal-body {
     padding: $space-md 0;
-    min-height: 500px;
 
     h4{
       color: $lead;
@@ -865,7 +871,6 @@
 
   .modal-body {
     padding: $space-md 0;
-    min-height: 500px;
 
     h4{
       color: $lead;
@@ -908,7 +913,6 @@
   }
 
   .modal-body {
-    min-height: 500px;
 
     .content-item {
       display: flex;
@@ -990,7 +994,6 @@
 
   .modal-body {
     padding: $space-md 0;
-    min-height: 500px;
     text-align: center;
 
     h4{
@@ -1042,7 +1045,6 @@
 
   .modal-footer{
     display: flex;
-    min-height: 300px;
 
     .loader {
       display: block;

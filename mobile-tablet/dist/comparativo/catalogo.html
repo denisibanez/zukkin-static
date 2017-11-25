@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Zukkin</title>
+
+  <!-- Vendor -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/vendor/customscrollbar/jquery.mCustomScrollbar.min.css" />
+  <link rel="stylesheet" href="../assets/vendor/owl-carousel/owl.carousel.min.css" />
+  <!-- vendor -->
+
+  <!-- build:css ../assets/css/app.min.css -->
+  <link href="../assets/css/sprites.css" rel="stylesheet">
+  <link href="../assets/css/app.css" rel="stylesheet">
+  <!-- endbuild -->
+
+  <!-- build:inlinecss -->
+  <link href="../assets/css/first-fold-app.css" rel="stylesheet">
+  <!-- endbuild -->
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="comparativo" id="target">
+  <!--Header-->
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-2">
+          <nav id="navside">
+            <a id="open" class="sprites-menu-hamburguer">Open</a>
+
+            <div id="pm_menu" class="pm_close">
+              <div class="pm_menu-header">
+                <div class="col-xs-4">
+                  <span>O que deseja fazer?</span>
+                </div>
+                <div class="col-xs-6">
+                  <a href="#" class="btn btn-red--comparar">Quero comparar</a>
+                </div>
+                <div class="col-xs-2 pull-right">
+                  <a class="pm_overlay pm_hide sprites-close">Fechar</a>
+                </div>
+              </div>
+              <div class="pm_menu-body">
+                <ul>
+                  <li><a href="#" class="carnes"><span class="sprites-carnes"></span>Carnes</a></li>
+                  <li><a href="#" class="bebidas"><span class="sprites-bebi"></span>Bebidas</a></li>
+                  <li><a href="#" class="frios"><span class="sprites-frio"></span>Frios</a></li>
+                  <li><a href="#" class="laticinios"><span class="sprites-lati"></span>Laticinios</a></li>
+                  <li><a href="#" class="matinais"><span class="sprites-matin"></span>Matinais</a></li>
+                  <li><a href="#" class="sobremesas"><span class="sprites-sobre"></span>Sobremesas</a></li>
+                  <li><a href="#" class="perfumaria"><span class="sprites-perfum"></span>Perfumaria</a></li>
+                  <li><a href="#" class="higiene"><span class="sprites-higi"></span>Higiene</a></li>
+                  <li><a href="#" class="cereais"><span class="sprites-cere"></span>Cereais</a></li>
+                  <li><a href="#" class="mercearia"><span class="sprites-merce"></span>Mercearia</a></li>
+                  <li><a href="#" class="hortfruti"><span class="sprites-horti"></span>Hortfruti</a></li>
+                  <li><a href="#" class="all-departaments"><span class="sprites-all-dp"></span><strong>Todos departamentos</strong></a></li>
+                </ul>
+
+                <div class="content-menu--mobile">
+                  <div class="content-menu--lista">
+                    <ul>
+                      <li><a href="" dp-type="aves">Aves</a></li>
+                      <li><a href="" dp-type="bovinas">Bovinas</a></li>
+                      <li><a href="" dp-type="peixes">Peixes e Crustáceos</a></li>
+                      <li><a href="" dp-type="suinas">Suínas</a></li>
+                      <li><a href="" dp-type="linguicas">Linguiças e Salsichas</a></li>
+                      <li><a href="" dp-type="especiais">Exóticas e Especiais</a></li>
+                      <li><a href="" class="see-all" dp-type="tudo">ver tudo</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="content-menu--footer">
+                    <img src="../assets/images/static/banner-menu.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="pm_menu-footer">
+                <ul>
+                  <li><a href=""><span class="sprites-user-white"></span>Minha conta</a></li>
+                  <li><a href=""><span class="sprites-white-list"></span>Minhas listas</a></li>
+                  <li><a href=""><span class="sprites-pedidos"></span>Meus pedidos</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col-xs-3">
+          <a href="/" class="sprites-zukkin-logo-mobile"></a>
+        </div>
+
+        <div class="col-xs-2">
+          <a href="#" class="sprites-account-blue" data-toggle="modal" data-target="#myModal" data-ref="alteraCadastro"></a>
+        </div>
+        <div class="col-xs-2">
+          <a href="" class="sprites-list-blue" data-toggle="modal" data-target="#myModal" data-ref="editarLista"></a>
+        </div>
+        <div class="pull-right item">
+          <div class="compare-item">
+              Comparar
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--/Header-->
+
+  <!--main-->
+  <main class="bg-gray">
+    <!--breadcrumbie-->
+    <section class="breadcrumbie-content">
+      <div class="">
+        <ul>
+          <li><a href="">Zukkin</a> |</li>
+          <li><a href="">Bebidas</a> |</li>
+          <li><a href="" class="active">Delvalle Nectar de ...</a></li>
+        </ul>
+      </div>
+    </section>
+    <!--/breadcrumbie-->
+
+    <!-- Filter Categorias-->
+    <section class="container filter-catalogo">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="filter-catalogo--title">
+            <h1>Hortfruti em <span>Walmart</span></h1>
+            <h2>Filtrar por:</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="" id="accordion-filter" role="tablist" aria-multiselectable="true">
+            <div class="accordion-body">
+              <div class="" role="tab" id="filter-01">
+                <h4 class="">
+                  <a role="button" data-toggle="collapse"
+                  data-parent="#accordion-filter" href="#collapse-01"
+                  aria-expanded="true" aria-controls="collapseOne"
+                  class="accordion-name">
+                    Verduras
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse-01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <ul>
+                      <li><a href="" class="link">Alface</a></li>
+                      <li><a href="" class="link">Alface</a></li>
+                      <li><a href="" class="link">Alface</a></li>
+                      <li><a href="" class="link">Alface</a></li>
+                      <li><a href="" class="link">Alface</a></li>
+                      <li><a href="" class="link">Alface</a></li>
+                      <li><a href="" class="link">Alface</a></li>
+                      <li><a href="" class="link-all">Ver mais</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-body">
+              <div class="" role="tab" id="filter-02">
+                <h4 class="">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion-filter"
+                   href="#collapse-02" aria-expanded="true" aria-controls="collapseOne" class="accordion-name">
+                    Verduras
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse-02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <ul>
+                    <li><a href="" class="link">Alface</a></li>
+                    <li><a href="" class="link">Alface</a></li>
+                    <li><a href="" class="link">Alface</a></li>
+                    <li><a href="" class="link">Alface</a></li>
+                    <li><a href="" class="link">Alface</a></li>
+                    <li><a href="" class="link">Alface</a></li>
+                    <li><a href="" class="link">Alface</a></li>
+                    <li><a href="" class="link-all">Ver mais</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!--/ Filter Categorias-->
+
+    <!-- Produtos -->
+    <div class="container">
+      <div class="row">
+        <div class=" col-xs-12 ">
+          <div class="content-product--vitrine">
+            <div class="product-list">
+              <div class="products-group">
+                <div class="products-group--item">
+                  <div class="products-group--img">
+                    <img src="../assets/images/static/product.jpg" alt="">
+                  </div>
+
+                  <div class="products-group--text">
+                    <h3>Produtor</h3>
+                    <h2>Banana Prata Kilo</h2>
+                    <h4>R$3,90</h4>
+                    <span>até</span><h1>R$13,90</h1>
+                  </div>
+
+                  <div class="products-group--select">
+                    <div class="dropdown">
+                      <form action="">
+                        <div class="selectdiv">
+                          <label>
+                            <select class="fake-select form-control">
+                              <option>01</option>
+                              <option>02</option>
+                              <option>03</option>
+                              <option>04</option>
+                              <option>05</option>
+                            </select>
+                          </label>
+
+                          <div class="sprites-arrow-select-fake"></div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  <button class="btn red-button add-active">
+                    Adicionado
+                  </button>
+                </div>
+
+                <div class="products-group--item">
+                  <div class="products-group--img">
+                    <img src="../assets/images/static/product.jpg" alt="">
+                  </div>
+
+                  <div class="products-group--text">
+                    <h3>Produtor</h3>
+                    <h2>Banana Prata Kilo</h2>
+                    <h4>R$3,90</h4>
+                    <span>até</span><h1>R$13,90</h1>
+                  </div>
+
+                  <div class="products-group--select">
+                    <div class="dropdown">
+                      <form action="">
+                        <div class="selectdiv">
+                          <label>
+                            <select class="fake-select form-control">
+                              <option>01</option>
+                              <option>02</option>
+                              <option>03</option>
+                              <option>04</option>
+                              <option>05</option>
+                            </select>
+                          </label>
+
+                          <div class="sprites-arrow-select-fake"></div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  <button class="btn red-button add-active">
+                    Adicionado
+                  </button>
+                </div>
+              </div>
+
+              <div class="products-group">
+                <div class="products-group--item">
+                  <div class="products-group--img">
+                    <img src="../assets/images/static/product.jpg" alt="">
+                  </div>
+
+                  <div class="products-group--text">
+                    <h3>Produtor</h3>
+                    <h2>Banana Prata Kilo</h2>
+                    <h4>R$3,90</h4>
+                    <span>até</span><h1>R$13,90</h1>
+                  </div>
+
+                  <div class="products-group--select">
+                    <div class="dropdown">
+                      <form action="">
+                        <div class="selectdiv">
+                          <label>
+                            <select class="fake-select form-control">
+                              <option>01</option>
+                              <option>02</option>
+                              <option>03</option>
+                              <option>04</option>
+                              <option>05</option>
+                            </select>
+                          </label>
+
+                          <div class="sprites-arrow-select-fake"></div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  <button class="btn red-button add-active">
+                    Adicionado
+                  </button>
+                </div>
+
+                <div class="products-group--item">
+                  <div class="products-group--img">
+                    <img src="../assets/images/static/product.jpg" alt="">
+                  </div>
+
+                  <div class="products-group--text">
+                    <h3>Produtor</h3>
+                    <h2>Banana Prata Kilo</h2>
+                    <h4>R$3,90</h4>
+                    <span>até</span><h1>R$13,90</h1>
+                  </div>
+
+                  <div class="products-group--select">
+                    <div class="dropdown">
+                      <form action="">
+                        <div class="selectdiv">
+                          <label>
+                            <select class="fake-select form-control">
+                              <option>01</option>
+                              <option>02</option>
+                              <option>03</option>
+                              <option>04</option>
+                              <option>05</option>
+                            </select>
+                          </label>
+
+                          <div class="sprites-arrow-select-fake"></div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  <button class="btn red-button add-active">
+                    Adicionado
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/produto-->
+
+    <!--pagination-->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <nav aria-label="Page navigation" class="nav-page">
+            <ul class="pagination">
+              <li>
+                <a href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li><a href="#" class="active">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!--/pagination-->
+
+    <div class="container-fluid">
+      <section class="row">
+        <div class="col-xs-12">
+          <div class="wrapper">
+
+            <!--logo body-->
+            <div class="content-logo--body">
+              <img src="../assets/images/static/zukkin-logo-mobile-body.png" alt="" >
+            </div>
+            <!--/logo-body-->
+
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!--/main-->
+
+  <!--Footer-->
+  <footer class="bg-gray">
+    <div class="container-fluid">
+      <section class="row">
+        <div class="col-xs-12  bg-white">
+
+          <!--list-links-->
+          <ul class="list-links">
+            <li><a href="#">Cadastro</a></li>
+            <li><a href="">Login</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Zukkin B2B</a></li>
+            <li><a href="">Seja um franqueado</a></li>
+          </ul>
+          <!--/list-links-->
+
+        </div>
+      </section>
+    </div>
+
+    <div class="container-fluid">
+      <section class="row">
+        <div>
+
+          <!--collapse footer-->
+          <div class="collapse-footer">
+            <button type="button"  class="collapse-btn" data-toggle="collapse" data-target="#collapse-footer-1">
+              Institucional
+            </button>
+
+            <div id="collapse-footer-1" class="collapse">
+              <ul class="list-collapse--footer">
+                <li><a href="">Sobre o Zukkin</a></li>
+                <li><a href="">Sobre o Zukkin</a></li>
+                <li><a href="">Sobre o Zukkin</a></li>
+              </ul>
+            </div>
+
+            <button type="button"   class="collapse-btn" data-toggle="collapse" data-target="#collapse-footer-2">
+              Produtos
+            </button>
+
+            <div id="collapse-footer-2" class="collapse">
+              <ul class="list-collapse--footer">
+                <li><a href="">Sobre o Zukkin</a></li>
+                <li><a href="">Sobre o Zukkin</a></li>
+                <li><a href="">Sobre o Zukkin</a></li>
+              </ul>
+            </div>
+
+            <button type="button"  class="collapse-btn" data-toggle="collapse" data-target="#collapse-footer-3">
+              Ajuda e suporte
+            </button>
+
+            <div id="collapse-footer-3" class="collapse">
+              <ul class="list-collapse--footer">
+                <li><a href="">Sobre o Zukkin</a></li>
+                <li><a href="">Sobre o Zukkin</a></li>
+                <li><a href="">Sobre o Zukkin</a></li>
+              </ul>
+            </div>
+
+            <button type="button"   class="collapse-btn" data-toggle="collapse" data-target="#collapse-footer-4">
+              Sobre o serviço
+            </button>
+
+            <div id="collapse-footer-4" class="collapse">
+              <ul class="list-collapse--footer">
+                <li><a href="">Sobre o Zukkin</a></li>
+                <li><a href="">Sobre o Zukkin</a></li>
+                <li><a href="">Sobre o Zukkin</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--/collapse footer-->
+
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="col-xs-12 bg-red-light">
+
+          <!--alert-info-home-->
+          <div class="alert-info--home">
+            <p>
+              Proibida a venda de bebidas alcoólicas para
+              menores de idade, conforme Lei n.° 8069/90, art. 81,
+              inciso II (Estatuto da Criança e do Adolescente).
+            </p>
+          </div>
+          <!--/alert-info-home-->
+
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="col-xs-12">
+
+          <!--Payfor-->
+          <div class="payfor">
+            <h1>Pague com</h1>
+
+            <ul>
+              <li><span class="sprites-visa"></span></li>
+              <li><span class="sprites-master-bandeira"></span></li>
+              <li><span class="sprites-american-express-bandeira"></span></li>
+              <li><span class="sprites-elo-bandeira"></span></li>
+              <li><span class="sprites-dinner-bandeira"></span></li>
+              <li><span class="sprites-boleto"></span></li>
+            </ul>
+
+            <div class="copyright">
+              <div class="text-center">
+                <strong>© 2017 ZUKKIN - TODOS OS DIREITOS RESERVADOS </strong>
+                <p>
+                  Zukkin. - CNPJ: 71.676.316/0001-46 - Inscrição Estadual:
+                  116.827.781.117 Endereço: Av. Fagundes Filho, 300 Cj 22
+                  Vl Monte Alegre - São Paulo/SP
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--/Payfor-->
+
+        </div>
+      </section>
+
+      <section class="row">
+
+        <!--footer fixe-->
+        <div class="footer-fixe">
+          <span class="icon 01"></span>
+          <div class="col-xs-12">
+            <div class="search-footer">
+              <button class="btn search-footer-button pull-right">
+                <span class="sprites-search-mobile-icon"></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-xs-12 bg-red-light bgRed-size2 text-left">
+            <div class="line-address--footer">
+              <span>Seu endereço:</span>
+              <strong>Alameda Rio Negro, 650</strong>
+              <a href="" class="line-address--edit pull-right">Editar</a>
+            </div>
+          </div>
+
+          <div class="col-xs-12 you-are bg-white">
+            <div class="row">
+              <div class="col-xs-8 you-are--text">
+                <a href="" class="sprites-arrow-product-left">prev</a>
+                  <div class="item-store">
+                    <img src="../assets/images/static/store.png" alt="" class="store">
+                    <div class="itens">05 de 05 itens <span>R$42,25</span></div>
+                  </div>
+                <a href="" class="sprites-arrow-product-right">next</a>
+              </div>
+              <div class="col-xs-4">
+                <div class="content-left">
+                    <button class="btn btn-transparent">Ver todos</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/footer fixe-->
+
+      </section>
+    </div>
+  </footer>
+  <!--/Footer-->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="../assets/vendor/jquery1.11.1.min.js"></script>
+
+  <!-- build:js assets/js/vendor.min.js -->
+  <script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../assets/vendor/customscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/vendor/slidemenu/pushmenu.js"></script>
+  <script src="../assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js assets/js/app.min.js -->
+  <script src="../assets/js/app.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:inlinejs -->
+  <script src="../assets/js/async.js"></script>
+  <!-- endbuild -->
+  <!--modais-->
+  <div id="modal"></div>
+  <!--/modais-->
+</body>
+</html>
