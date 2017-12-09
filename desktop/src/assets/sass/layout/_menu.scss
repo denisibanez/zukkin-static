@@ -51,11 +51,11 @@
     top: 62px;
     background-color: $white;
 		height: auto;
-		max-height: 282px;
+		max-height: 270px;
 		display: none;
 
 		.content-menu--lista {
-			padding: 33px 0;
+			padding: $space-md 0;
 
 			ul {
 				li {

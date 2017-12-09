@@ -54,7 +54,28 @@
                     </div>
                     <div class="pm_menu-body">
                       <ul>
-                        <li><a href="#" class="carnes"><span class="sprites-carnes"></span>Carnes</a></li>
+                        <li>
+                          <a href="#" class="carnes">
+                            <span class="sprites-carnes"></span>Carnes
+                          </a>
+                          <div class="content-menu--mobile mobal">
+                            <div class="content-menu--lista">
+                              <ul>
+                                <li><a href="" dp-type="aves">Aves</a></li>
+                                <li><a href="" dp-type="bovinas">Bovinas</a></li>
+                                <li><a href="" dp-type="peixes">Peixes e Crustáceos</a></li>
+                                <li><a href="" dp-type="suinas">Suínas</a></li>
+                                <li><a href="" dp-type="linguicas">Linguiças e Salsichas</a></li>
+                                <li><a href="" dp-type="especiais">Exóticas e Especiais</a></li>
+                                <li><a href="" class="see-all" dp-type="tudo">ver tudo</a></li>
+                              </ul>
+                            </div>
+
+                            <div class="content-menu--footer">
+                              <img src="assets/images/static/banner-menu.png" alt="">
+                            </div>
+                          </div>
+                        </li>
                         <li><a href="#" class="bebidas"><span class="sprites-bebi"></span>Bebidas</a></li>
                         <li><a href="#" class="frios"><span class="sprites-frio"></span>Frios</a></li>
                         <li><a href="#" class="laticinios"><span class="sprites-lati"></span>Laticinios</a></li>
@@ -67,29 +88,15 @@
                         <li><a href="#" class="hortfruti"><span class="sprites-horti"></span>Hortfruti</a></li>
                         <li><a href="#" class="all-departaments"><span class="sprites-all-dp"></span><strong>Todos departamentos</strong></a></li>
                       </ul>
-
-                      <div class="content-menu--mobile">
-                        <div class="content-menu--lista">
-                          <ul>
-                            <li><a href="" dp-type="aves">Aves</a></li>
-                            <li><a href="" dp-type="bovinas">Bovinas</a></li>
-                            <li><a href="" dp-type="peixes">Peixes e Crustáceos</a></li>
-                            <li><a href="" dp-type="suinas">Suínas</a></li>
-                            <li><a href="" dp-type="linguicas">Linguiças e Salsichas</a></li>
-                            <li><a href="" dp-type="especiais">Exóticas e Especiais</a></li>
-                            <li><a href="" class="see-all" dp-type="tudo">ver tudo</a></li>
-                          </ul>
-                        </div>
-
-                        <div class="content-menu--footer">
-                          <img src="assets/images/static/banner-menu.png" alt="">
-                        </div>
-                      </div>
                     </div>
                     <div class="pm_menu-footer">
                       <ul>
                         <li><a href=""><span class="sprites-user-white"></span>Minha conta</a></li>
-                        <li><a href=""><span class="sprites-white-list"></span>Minhas listas</a></li>
+                        <li>
+                          <a href="">
+                            <span class="sprites-white-list"></span>Minhas listas
+                          </a>
+                        </li>
                         <li><a href=""><span class="sprites-pedidos"></span>Meus pedidos</a></li>
                       </ul>
                     </div>
@@ -118,7 +125,9 @@
           <div class="col-md-1">
             <ul class="icons-header--fixe">
               <li><a href="#" class="sprites-user-icon-desktop" data-toggle="modal" data-target="#myModal" data-ref="alteraCadastro"></a></li>
-              <li><a href="" class="sprites-list" data-toggle="modal" data-target="#myModal" data-ref="editarLista"></a></li>
+              <li>
+                <a href="" class="sprites-list" data-toggle="modal" data-target="#myModal" data-ref="editarLista"></a>
+              </li>
               <li><a href="#" class="sprites-pedidos-desktop"></a></li>
             </ul>
           </div>
@@ -172,10 +181,13 @@
                   <span class="text">Minha conta</span>
                 </a>
               </li>
-              <li>
-                <a href="" class="list-options--item" data-toggle="modal" data-target="#myModal" data-ref="editarLista">
+              <li class="dropdown" id="menu-lista-drop">
+                <a href="" class="list-options--item dropdown-toggle" data-toggle="dropdown" data-toggle="modal" data-target="#myModal" data-ref="editarLista">
                   <span class="sprites-white-list"></span>
                   <span class="text list-ico">Minhas listas</span>
+                  <ul class="dropdown-menu">
+                       <li>Crie listas para facilitar suas compras</li>
+                   </ul>
                 </a>
               </li>
               <li>
@@ -271,8 +283,8 @@
             <div class="col-md-3">
               <!--menu sidebar-->
               <div class="menu-sidebar">
-                <ul>
-                  <li><a href="#" class="carnes"><span class="sprites-carnes"></span>Carnes</a></li>
+                <ul id="main-sidebar">
+                  <li><a href="#" class="carnes"><span class="sprites-carnes"></span>Carnes</a></li>                </li>
                   <li><a href="#" class="bebidas"><span class="sprites-bebi"></span>Bebidas</a></li>
                   <li><a href="#" class="frios"><span class="sprites-frio"></span>Frios</a></li>
                   <li><a href="#" class="laticinios"><span class="sprites-lati"></span>Laticinios</a></li>
@@ -285,6 +297,25 @@
                   <li><a href="#" class="hortfruti"><span class="sprites-horti"></span>Hortfruti</a></li>
                   <li><a href="#" class="all-departaments"><span class="sprites-all-dp"></span><strong>Todos departamentos</strong></a></li>
                 </ul>
+
+                <div class="content-menu--mobile desktop">
+                  <div class="content-menu--lista">
+                    <ul>
+                      <li><a href="" dp-type="aves">Aves</a></li>
+                      <li><a href="" dp-type="bovinas">Bovinas</a></li>
+                      <li><a href="" dp-type="peixes">Peixes e Crustáceos</a></li>
+                      <li><a href="" dp-type="suinas">Suínas</a></li>
+                      <li><a href="" dp-type="linguicas">Linguiças e Salsichas</a></li>
+                      <li><a href="" dp-type="especiais">Exóticas e Especiais</a></li>
+                      <li><a href="" class="see-all" dp-type="tudo">ver tudo</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="content-menu--footer">
+                    <img src="assets/images/static/banner-menu.png" alt="">
+                  </div>
+                </div>
+
               </div>
               <!--/menu sidebar-->
             </div>

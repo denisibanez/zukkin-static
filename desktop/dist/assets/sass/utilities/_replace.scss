@@ -193,7 +193,12 @@ input[type="checkbox"]:checked + span .fake-checkbox:after { display: block; }
     100% { transform: rotate(360deg); }
 }
 
-
+//bugs
+.pm_menu-body {
+  li {
+      margin-left: 0 !important;
+  }
+}
 //comparativo replace
 .comparativo {
   header {

@@ -70,7 +70,12 @@
 
       $('.pm_menu-body ul li a').click(function(e){
         e.preventDefault();
-        $('.content-menu--mobile').addClass('show-app');
+        $('.content-menu--mobile.mobal').toggleClass('show-app');
+      });
+
+      $('.menu-sidebar ul li a').click(function(e){
+        e.preventDefault();
+        $('.content-menu--mobile.desktop').toggleClass('show-app');
       });
     },
     getModal: function(){
@@ -95,11 +100,12 @@
           //removeClass('show-app');
         });
 
-        // $('#myModal').click(function(e){
-        //   e.preventDefault();
-        //   $(this).find("div#" + data).removeClass('show-app');
-        //   //removeClass('show-app');
-        // });
+         // $('#modal').click(function(e){
+         //   e.preventDefault();
+         //   $(this).find("div#" + data).removeClass('show-app');
+         //   $(".modal-backdrop").css('display', 'none');
+         //   //removeClass('show-app');
+         // });
       });
     },
     openDetail: function(){
@@ -177,9 +183,12 @@
         slider.oninput = function() {
           output.innerHTML = this.value;
         }
+
+        //Tooltip
+        $('[data-toggle="tooltip"]').tooltip({
+          container: 'body'
+        });
       }
-
-
 
       function myStopFunction() {
         clearInterval(myVar);

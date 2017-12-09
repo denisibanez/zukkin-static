@@ -9,21 +9,36 @@
     .menu-sidebar {
 
       ul {
-        li{
-          border-bottom: 1px solid $gray-light;
-          line-height: $space-md - 4px;
+        &#main-sidebar{
+          li{
+            border-bottom: 1px solid $gray-light;
+            line-height: $space-md - 4px;
 
-          &:last-child {
-            border-bottom: 0
-          }
+            &:last-child {
+              border-bottom: 0
+            }
 
-          a{
-            color:$blue-dark;
-            font-size: $space-sm - 1px;
-              span {
-                margin-right: $space-sm + $space-xs;
-                vertical-align: middle;
+            &:hover {
+              background: #ed2c2a;
+              width: 106%;
+              margin: 0 -15px;
+              padding: 0 15px;
+              border-left: $space-xs solid $red;
+
+              a {
+                color: $white;
+                font-weight: bold;
               }
+            }
+
+            a{
+              color:$blue-dark;
+              font-size: $space-sm - 1px;
+                span {
+                  margin-right: $space-sm + $space-xs;
+                  vertical-align: middle;
+                }
+            }
           }
         }
       }
@@ -34,6 +49,56 @@
         margin: $space-sm 0;
       }
     }
+
+    .content-menu--mobile {
+  		width: 100%;
+      position: absolute;
+      left: 270px;
+      top: -10px;
+      background-color: $gray;
+  		height: auto;
+  		max-height: 218px;
+  		display: none;
+      z-index: 999999999999999999;
+
+  		.content-menu--lista {
+  			padding: 23px 0;
+
+  			ul {
+  				li {
+            line-height: $space-sm + 10px;
+  					&:hover {
+  						background-color: $red-light;
+  						color: $white;
+  						font-weight: bold;
+              border-left: $space-xs solid $red;
+  					}
+  					a {
+  						padding: 0 40px;
+              color: $blue-dark;
+
+  						&:hover {
+  							color:$white;
+  						}
+
+  						&.see-all {
+  							color:$red-light;
+  							font-size: $space-sm - 2px;
+
+  							&:hover {
+  								color: $white;
+  								font-weight: bold;
+  							}
+  						}
+  					}
+  				}
+  			}
+  		}
+
+  		.content-menu--footer {
+        background-color: $white;
+  		}
+  	}
   }
 
   .content-icons-firstfold {

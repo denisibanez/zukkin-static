@@ -38,45 +38,46 @@
 .sprites-back,
 .sprites-all-dp-cart,
 .sprites-recharge,
-.sprites-pedidos-desktop,
+.sprites-next-blue,
 .sprites-boleto-logo,
 .sprites-boleto,
-.sprites-dinner-bandeira,
+.sprites-cart-desktop-xs,
 .sprites-master-bandeira,
+.sprites-dinner-bandeira,
 .sprites-logo-card,
-.sprites-check-in,
-.sprites-next-blue,
-.sprites-prev-blue,
-.sprites-arrow-product-left,
-.sprites-white-list,
+.sprites-pedidos-desktop,
 .sprites-lati,
+.sprites-prev-blue,
+.sprites-white-list,
 .sprites-list,
+.sprites-list-desktop,
+.sprites-check-in,
 .sprites-check,
 .sprites-card-payment,
 .sprites-cart-icon,
-.sprites-list-desktop,
 .sprites-list-blue,
+.sprites-arrow-product-left,
 .sprites-left-arrow-carrousel,
 .sprites-change-store,
 .sprites-change-storeRed,
 .sprites-change-storeRedLive,
+.sprites-arrow-product-right,
+.sprites-right-arrow-carrousel,
 .sprites-bebi,
 .sprites-x,
 .sprites-horti,
 .sprites-perfum,
-.sprites-right-arrow-carrousel,
-.sprites-arrow-product-right,
-.sprites-0-stars-extra-large,
 .sprites-search-mobile-icon,
-.sprites-search-icon-blue,
 .sprites-pedidos,
+.sprites-0-stars-extra-large,
 .sprites-user-payment,
 .sprites-user-icon,
 .sprites-user-icon-desktop,
-.sprites-matin,
 .sprites-user-white,
+.sprites-matin,
 .sprites-percent,
 .sprites-account-blue,
+.sprites-search-icon-blue,
 .sprites-carnes,
 .sprites-cere,
 .sprites-higi,
@@ -97,7 +98,7 @@
   display: inline-block;
   background-repeat: no-repeat;
   overflow: hidden;
-  background-size: 1357px 66px; }
+  background-size: 1378px 66px; }
 
 .sprites-compare {
   background-position: 0px 0px;
@@ -339,11 +340,11 @@
   height: 22px;
   text-indent: 19px; }
 
-.sprites-pedidos-desktop {
+.sprites-next-blue {
   background-position: -709px -45px;
-  width: 21px;
+  width: 18px;
   height: 21px;
-  text-indent: 21px; }
+  text-indent: 18px; }
 
 .sprites-boleto-logo {
   background-position: -732px 0px;
@@ -357,11 +358,11 @@
   height: 22px;
   text-indent: 32px; }
 
-.sprites-dinner-bandeira {
+.sprites-cart-desktop-xs {
   background-position: -732px -44px;
-  width: 28px;
+  width: 24px;
   height: 22px;
-  text-indent: 28px; }
+  text-indent: 24px; }
 
 .sprites-master-bandeira {
   background-position: -764px 0px;
@@ -369,302 +370,308 @@
   height: 22px;
   text-indent: 35px; }
 
-.sprites-logo-card {
+.sprites-dinner-bandeira {
   background-position: -764px -22px;
+  width: 28px;
+  height: 22px;
+  text-indent: 28px; }
+
+.sprites-logo-card {
+  background-position: -764px -44px;
   width: 35px;
   height: 22px;
   text-indent: 35px; }
 
-.sprites-check-in {
-  background-position: -764px -44px;
-  width: 31px;
-  height: 21px;
-  text-indent: 31px; }
-
-.sprites-next-blue {
+.sprites-pedidos-desktop {
   background-position: -799px 0px;
-  width: 18px;
-  height: 21px;
-  text-indent: 18px; }
-
-.sprites-prev-blue {
-  background-position: -799px -21px;
-  width: 18px;
-  height: 21px;
-  text-indent: 18px; }
-
-.sprites-arrow-product-left {
-  background-position: -799px -42px;
-  width: 17px;
-  height: 20px;
-  text-indent: 17px; }
-
-.sprites-white-list {
-  background-position: -817px 0px;
-  width: 22px;
-  height: 21px;
-  text-indent: 22px; }
-
-.sprites-lati {
-  background-position: -817px -21px;
   width: 21px;
   height: 21px;
   text-indent: 21px; }
 
-.sprites-list {
-  background-position: -817px -42px;
+.sprites-lati {
+  background-position: -799px -21px;
+  width: 21px;
+  height: 21px;
+  text-indent: 21px; }
+
+.sprites-prev-blue {
+  background-position: -799px -42px;
+  width: 18px;
+  height: 21px;
+  text-indent: 18px; }
+
+.sprites-white-list {
+  background-position: -820px 0px;
   width: 22px;
   height: 21px;
   text-indent: 22px; }
 
+.sprites-list {
+  background-position: -820px -21px;
+  width: 22px;
+  height: 21px;
+  text-indent: 22px; }
+
+.sprites-list-desktop {
+  background-position: -820px -42px;
+  width: 22px;
+  height: 21px;
+  text-indent: 22px; }
+
+.sprites-check-in {
+  background-position: -842px 0px;
+  width: 31px;
+  height: 21px;
+  text-indent: 31px; }
+
 .sprites-check {
-  background-position: -839px 0px;
+  background-position: -842px -21px;
   width: 31px;
   height: 21px;
   text-indent: 31px; }
 
 .sprites-card-payment {
-  background-position: -839px -21px;
+  background-position: -842px -42px;
   width: 31px;
   height: 21px;
   text-indent: 31px; }
 
 .sprites-cart-icon {
-  background-position: -839px -42px;
+  background-position: -873px 0px;
   width: 23px;
   height: 21px;
   text-indent: 23px; }
 
-.sprites-list-desktop {
-  background-position: -870px 0px;
+.sprites-list-blue {
+  background-position: -873px -21px;
   width: 22px;
   height: 21px;
   text-indent: 22px; }
 
-.sprites-list-blue {
-  background-position: -870px -21px;
-  width: 22px;
-  height: 21px;
-  text-indent: 22px; }
+.sprites-arrow-product-left {
+  background-position: -873px -42px;
+  width: 17px;
+  height: 20px;
+  text-indent: 17px; }
 
 .sprites-left-arrow-carrousel {
-  background-position: -870px -42px;
+  background-position: -896px 0px;
   width: 17px;
   height: 20px;
   text-indent: 17px; }
 
 .sprites-change-store {
-  background-position: -892px 0px;
+  background-position: -896px -20px;
   width: 16px;
   height: 20px;
   text-indent: 16px; }
 
 .sprites-change-storeRed {
-  background-position: -892px -20px;
+  background-position: -896px -40px;
   width: 16px;
   height: 20px;
   text-indent: 16px; }
 
 .sprites-change-storeRedLive {
-  background-position: -892px -40px;
+  background-position: -913px 0px;
   width: 16px;
   height: 20px;
   text-indent: 16px; }
 
+.sprites-arrow-product-right {
+  background-position: -913px -20px;
+  width: 16px;
+  height: 19px;
+  text-indent: 16px; }
+
+.sprites-right-arrow-carrousel {
+  background-position: -913px -39px;
+  width: 16px;
+  height: 19px;
+  text-indent: 16px; }
+
 .sprites-bebi {
-  background-position: -908px 0px;
+  background-position: -929px 0px;
   width: 22px;
   height: 20px;
   text-indent: 22px; }
 
 .sprites-x {
-  background-position: -908px -20px;
+  background-position: -929px -20px;
   width: 20px;
   height: 20px;
   text-indent: 20px; }
 
 .sprites-horti {
-  background-position: -908px -40px;
+  background-position: -929px -40px;
   width: 19px;
   height: 20px;
   text-indent: 19px; }
 
 .sprites-perfum {
-  background-position: -930px 0px;
+  background-position: -951px 0px;
   width: 18px;
   height: 19px;
   text-indent: 18px; }
 
-.sprites-right-arrow-carrousel {
-  background-position: -930px -19px;
-  width: 16px;
-  height: 19px;
-  text-indent: 16px; }
-
-.sprites-arrow-product-right {
-  background-position: -930px -38px;
-  width: 16px;
-  height: 19px;
-  text-indent: 16px; }
-
-.sprites-0-stars-extra-large {
-  background-position: -948px 0px;
-  width: 178px;
-  height: 19px;
-  text-indent: 178px; }
-
 .sprites-search-mobile-icon {
-  background-position: -948px -19px;
+  background-position: -951px -19px;
   width: 17px;
   height: 18px;
   text-indent: 17px; }
 
-.sprites-search-icon-blue {
-  background-position: -948px -37px;
-  width: 16px;
-  height: 17px;
-  text-indent: 16px; }
-
 .sprites-pedidos {
-  background-position: -965px -19px;
+  background-position: -951px -37px;
   width: 18px;
   height: 18px;
   text-indent: 18px; }
 
+.sprites-0-stars-extra-large {
+  background-position: -969px 0px;
+  width: 178px;
+  height: 19px;
+  text-indent: 178px; }
+
 .sprites-user-payment {
-  background-position: -965px -37px;
+  background-position: -969px -19px;
   width: 18px;
   height: 18px;
   text-indent: 18px; }
 
 .sprites-user-icon {
-  background-position: -983px -19px;
+  background-position: -969px -37px;
   width: 18px;
   height: 18px;
   text-indent: 18px; }
 
 .sprites-user-icon-desktop {
-  background-position: -983px -37px;
+  background-position: -987px -19px;
+  width: 18px;
+  height: 18px;
+  text-indent: 18px; }
+
+.sprites-user-white {
+  background-position: -987px -37px;
   width: 18px;
   height: 18px;
   text-indent: 18px; }
 
 .sprites-matin {
-  background-position: -1001px -19px;
+  background-position: -1005px -19px;
   width: 20px;
   height: 18px;
   text-indent: 20px; }
 
-.sprites-user-white {
-  background-position: -1001px -37px;
-  width: 18px;
-  height: 18px;
-  text-indent: 18px; }
-
 .sprites-percent {
-  background-position: -1021px -19px;
+  background-position: -1005px -37px;
   width: 18px;
   height: 18px;
   text-indent: 18px; }
 
 .sprites-account-blue {
-  background-position: -1021px -37px;
+  background-position: -1025px -19px;
   width: 18px;
   height: 18px;
   text-indent: 18px; }
 
+.sprites-search-icon-blue {
+  background-position: -1025px -37px;
+  width: 16px;
+  height: 17px;
+  text-indent: 16px; }
+
 .sprites-carnes {
-  background-position: -1039px -19px;
+  background-position: -1043px -19px;
   width: 22px;
   height: 17px;
   text-indent: 22px; }
 
 .sprites-cere {
-  background-position: -1039px -36px;
+  background-position: -1043px -36px;
   width: 17px;
   height: 17px;
   text-indent: 17px; }
 
 .sprites-higi {
-  background-position: -1061px -19px;
+  background-position: -1065px -19px;
   width: 17px;
   height: 17px;
   text-indent: 17px; }
 
 .sprites-sobre {
-  background-position: -1061px -36px;
+  background-position: -1065px -36px;
   width: 16px;
   height: 16px;
   text-indent: 16px; }
 
 .sprites-big-arrow-down {
-  background-position: -1078px -19px;
+  background-position: -1082px -19px;
   width: 17px;
   height: 15px;
   text-indent: 17px; }
 
 .sprites-big-arrow-up {
-  background-position: -1095px -19px;
+  background-position: -1082px -34px;
   width: 17px;
   height: 15px;
   text-indent: 17px; }
 
 .sprites-visa {
-  background-position: -1078px -34px;
+  background-position: -1099px -19px;
   width: 47px;
   height: 15px;
   text-indent: 47px; }
 
 .sprites-frio {
-  background-position: -1078px -49px;
+  background-position: -1099px -34px;
   width: 21px;
   height: 15px;
   text-indent: 21px; }
 
 .sprites-menu-hamburguer-desktop {
-  background-position: -1099px -49px;
+  background-position: -1120px -34px;
   width: 24px;
   height: 15px;
   text-indent: 24px; }
 
 .sprites-5-stars-large {
-  background-position: -1126px 0px;
+  background-position: -1147px 0px;
   width: 140px;
   height: 15px;
   text-indent: 140px; }
 
 .sprites-0-stars-mediun {
-  background-position: -1126px -15px;
+  background-position: -1147px -15px;
   width: 81px;
   height: 13px;
   text-indent: 81px; }
 
 .sprites-3-stars-small {
-  background-position: -1266px 0px;
+  background-position: -1287px 0px;
   width: 91px;
   height: 11px;
   text-indent: 91px; }
 
 .sprites-4-stars-small {
-  background-position: -1266px -11px;
+  background-position: -1287px -11px;
   width: 91px;
   height: 11px;
   text-indent: 91px; }
 
 .sprites-5-stars-small {
-  background-position: -1266px -22px;
+  background-position: -1287px -22px;
   width: 91px;
   height: 10px;
   text-indent: 91px; }
 
 .sprites-1-stars-small {
-  background-position: -1266px -32px;
+  background-position: -1287px -32px;
   width: 91px;
   height: 10px;
   text-indent: 91px; }
 
 .sprites-2-stars-small {
-  background-position: -1266px -42px;
+  background-position: -1287px -42px;
   width: 91px;
   height: 10px;
   text-indent: 91px; }

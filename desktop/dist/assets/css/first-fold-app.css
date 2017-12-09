@@ -310,6 +310,9 @@ input[type="checkbox"]:checked + span .fake-checkbox:after {
   100% {
     transform: rotate(360deg); } }
 
+.pm_menu-body li {
+  margin-left: 0 !important; }
+
 .comparativo header {
   background-color: #3d68af; }
   .comparativo header .item {
@@ -674,10 +677,10 @@ input[type="checkbox"]:checked + span .fake-checkbox:after {
     top: 62px;
     background-color: #ffffff;
     height: auto;
-    max-height: 282px;
+    max-height: 270px;
     display: none; }
     .pm_menu-body .content-menu--mobile .content-menu--lista {
-      padding: 33px 0; }
+      padding: 30px 0; }
       .pm_menu-body .content-menu--mobile .content-menu--lista ul li:hover {
         background-color: #ed2c2a;
         color: #ffffff;
@@ -1082,19 +1085,60 @@ header {
     background: #ffffff;
     border: 1px solid #cfd8dc;
     padding: 10px 0; }
-    .first-fold .content-firstfold .menu-sidebar ul li {
+    .first-fold .content-firstfold .menu-sidebar ul#main-sidebar li {
       border-bottom: 1px solid #cfd8dc;
       line-height: 26px; }
-      .first-fold .content-firstfold .menu-sidebar ul li:last-child {
+      .first-fold .content-firstfold .menu-sidebar ul#main-sidebar li:last-child {
         border-bottom: 0; }
-      .first-fold .content-firstfold .menu-sidebar ul li a {
+      .first-fold .content-firstfold .menu-sidebar ul#main-sidebar li:hover {
+        background: #ed2c2a;
+        width: 106%;
+        margin: 0 -15px;
+        padding: 0 15px;
+        border-left: 5px solid #b71c1c; }
+        .first-fold .content-firstfold .menu-sidebar ul#main-sidebar li:hover a {
+          color: #ffffff;
+          font-weight: bold; }
+      .first-fold .content-firstfold .menu-sidebar ul#main-sidebar li a {
         color: #455a64;
         font-size: 14px; }
-        .first-fold .content-firstfold .menu-sidebar ul li a span {
+        .first-fold .content-firstfold .menu-sidebar ul#main-sidebar li a span {
           margin-right: 20px;
           vertical-align: middle; }
     .first-fold .content-firstfold #carousel-example-captions.principal-slide {
       margin: 15px 0; }
+    .first-fold .content-firstfold .content-menu--mobile {
+      width: 100%;
+      position: absolute;
+      left: 270px;
+      top: -10px;
+      background-color: #eceff1;
+      height: auto;
+      max-height: 218px;
+      display: none;
+      z-index: 999999999999999999; }
+      .first-fold .content-firstfold .content-menu--mobile .content-menu--lista {
+        padding: 23px 0; }
+        .first-fold .content-firstfold .content-menu--mobile .content-menu--lista ul li {
+          line-height: 25px; }
+          .first-fold .content-firstfold .content-menu--mobile .content-menu--lista ul li:hover {
+            background-color: #ed2c2a;
+            color: #ffffff;
+            font-weight: bold;
+            border-left: 5px solid #b71c1c; }
+          .first-fold .content-firstfold .content-menu--mobile .content-menu--lista ul li a {
+            padding: 0 40px;
+            color: #455a64; }
+            .first-fold .content-firstfold .content-menu--mobile .content-menu--lista ul li a:hover {
+              color: #ffffff; }
+            .first-fold .content-firstfold .content-menu--mobile .content-menu--lista ul li a.see-all {
+              color: #ed2c2a;
+              font-size: 13px; }
+              .first-fold .content-firstfold .content-menu--mobile .content-menu--lista ul li a.see-all:hover {
+                color: #ffffff;
+                font-weight: bold; }
+      .first-fold .content-firstfold .content-menu--mobile .content-menu--footer {
+        background-color: #ffffff; }
   .first-fold .content-icons-firstfold {
     margin: 30px 0; }
     .first-fold .content-icons-firstfold ul {

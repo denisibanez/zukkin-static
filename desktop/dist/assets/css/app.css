@@ -1,8 +1,28 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,800i");
-.comparativo.comparacao-page .body .product-list-select, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select {
+body {
+  /* Tooltip */
+  /* Tooltip on top */
+  /* Tooltip on bottom */
+  /* Tooltip on left */
+  /* Tooltip on right */ }
+  body .tooltip > .tooltip-inner {
+    background-color: #a73838;
+    color: #FFFFFF;
+    padding: 10px 25px;
+    font-size: 10px; }
+  body .tooltip.top > .tooltip-arrow {
+    border-top: 5px solid #a73838; }
+  body .tooltip.bottom > .tooltip-arrow {
+    border-bottom: 5px solid #a73838; }
+  body .tooltip.left > .tooltip-arrow {
+    border-left: 5px solid #a73838; }
+  body .tooltip.right > .tooltip-arrow {
+    border-right: 5px solid #a73838; }
+
+.comparativo.comparacao-page .body .product-list-select, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select, #carrinho .modal-content .modal-body .product-list-select {
   width: 50%;
   display: flex; }
-  .comparativo.comparacao-page .body .product-list-select select, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select select {
+  .comparativo.comparacao-page .body .product-list-select select, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select select, #carrinho .modal-content .modal-body .product-list-select select {
     border: 1px solid #cfd8dc;
     padding: 5px;
     height: 50px;
@@ -15,9 +35,9 @@
     text-indent: 1px;
     text-overflow: '';
     border-radius: 5px; }
-  .comparativo.comparacao-page .body .product-list-select .controller, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller {
+  .comparativo.comparacao-page .body .product-list-select .controller, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller, #carrinho .modal-content .modal-body .product-list-select .controller {
     margin-left: 5px; }
-    .comparativo.comparacao-page .body .product-list-select .controller .more, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller .more {
+    .comparativo.comparacao-page .body .product-list-select .controller .more, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller .more, #carrinho .modal-content .modal-body .product-list-select .controller .more {
       background-color: #009c87;
       width: 35px;
       height: 25px;
@@ -27,7 +47,7 @@
       text-align: center;
       border-radius: 5px;
       margin-bottom: 1px; }
-    .comparativo.comparacao-page .body .product-list-select .controller .minus, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller .minus {
+    .comparativo.comparacao-page .body .product-list-select .controller .minus, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller .minus, #carrinho .modal-content .modal-body .product-list-select .controller .minus {
       background-color: #00bfa5;
       width: 35px;
       height: 25px;
@@ -37,11 +57,29 @@
       text-align: center;
       border-radius: 5px; }
 
+#carrinho .modal-content .modal-header .content-store--header {
+  background-color: #ffffff;
+  border: 1px solid #cfd8dc;
+  border-radius: 5px;
+  height: 40px;
+  padding: 7px 10px;
+  display: flex;
+  flex-wrap: nowrap; }
+  #carrinho .modal-content .modal-header .content-store--header .content-left {
+    text-align: left;
+    width: 80%;
+    text-align: center; }
+  #carrinho .modal-content .modal-header .content-store--header .content-right {
+    width: 20%;
+    float: right; }
+    #carrinho .modal-content .modal-header .content-store--header .content-right .sprites-arrow-select-fake {
+      right: 0; }
+
 @media (max-width: 991px) {
   .modal-dialog .modal-content .modal-footer .container-btn--confirm .btn-blue--confirm {
     width: 100%; } }
 
-.comparativo #accordioninfo .panel-heading h4:after, .collapse-btn:after, .btn-red--comparar:before, #carrinho .modal-content .modal-header .footer-fixe .you-are .you-are--store .content-right .change-store:after, .filter-catalogo .accordion-body .accordion-name:after {
+.comparativo #accordioninfo .panel-heading h4:after, .collapse-btn:after, .btn-red--comparar:before, .filter-catalogo .accordion-body .accordion-name:after {
   content: "";
   width: 30px;
   height: 30px;
@@ -101,14 +139,14 @@
   background-color: #eceff1;
   width: 6px; }
 
-#alteraCadastro .modal-content .modal-body .formulario, #cadastro .modal-content .modal-body .formulario, #cadastro-2 .modal-content .modal-body .formulario, #editar-enderecos .modal-content .modal-body .formulario, #filtrar-estabelecimentos .modal-content .modal-header .formulario, #login .modal-content .modal-body .formulario, #search .modal-content .modal-body .formulario, #select-cidades .modal-content .modal-body .formulario, #select-cidades .modal-content .modal-footer .formulario, #input-cep .modal-body .formulario, #bem-vindo .modal-body .formulario, .avaliationbox-content .formulario-avaliation .formulario, .accordion-payment .formulario {
+#alteraCadastro .modal-content .modal-body .formulario, #cadastro .modal-content .modal-body .formulario, #cadastro-2 .modal-content .modal-body .formulario, #editar-enderecos .modal-content .modal-body .formulario, #filtrar-estabelecimentos .modal-content .modal-header .formulario, #login .modal-content .modal-body .formulario, #search .modal-content .modal-body .formulario, #select-cidades .modal-content .modal-body .formulario, #select-cidades .modal-content .modal-footer .formulario, #input-cep .modal-footer .formulario, #bem-vindo .modal-body .formulario, .avaliationbox-content .formulario-avaliation .formulario, .accordion-payment .formulario {
   margin-top: 30px; }
-  #alteraCadastro .modal-content .modal-body .formulario label, #cadastro .modal-content .modal-body .formulario label, #cadastro-2 .modal-content .modal-body .formulario label, #editar-enderecos .modal-content .modal-body .formulario label, #filtrar-estabelecimentos .modal-content .modal-header .formulario label, #login .modal-content .modal-body .formulario label, #search .modal-content .modal-body .formulario label, #select-cidades .modal-content .modal-body .formulario label, #select-cidades .modal-content .modal-footer .formulario label, #input-cep .modal-body .formulario label, #bem-vindo .modal-body .formulario label, .avaliationbox-content .formulario-avaliation .formulario label, .accordion-payment .formulario label, #alteraCadastro .modal-content .modal-body .formulario span, #cadastro .modal-content .modal-body .formulario span, #cadastro-2 .modal-content .modal-body .formulario span, #editar-enderecos .modal-content .modal-body .formulario span, #filtrar-estabelecimentos .modal-content .modal-header .formulario span, #login .modal-content .modal-body .formulario span, #search .modal-content .modal-body .formulario span, #select-cidades .modal-content .modal-body .formulario span, #select-cidades .modal-content .modal-footer .formulario span, #input-cep .modal-body .formulario span, #bem-vindo .modal-body .formulario span, .avaliationbox-content .formulario-avaliation .formulario span, .accordion-payment .formulario span {
+  #alteraCadastro .modal-content .modal-body .formulario label, #cadastro .modal-content .modal-body .formulario label, #cadastro-2 .modal-content .modal-body .formulario label, #editar-enderecos .modal-content .modal-body .formulario label, #filtrar-estabelecimentos .modal-content .modal-header .formulario label, #login .modal-content .modal-body .formulario label, #search .modal-content .modal-body .formulario label, #select-cidades .modal-content .modal-body .formulario label, #select-cidades .modal-content .modal-footer .formulario label, #input-cep .modal-footer .formulario label, #bem-vindo .modal-body .formulario label, .avaliationbox-content .formulario-avaliation .formulario label, .accordion-payment .formulario label, #alteraCadastro .modal-content .modal-body .formulario span, #cadastro .modal-content .modal-body .formulario span, #cadastro-2 .modal-content .modal-body .formulario span, #editar-enderecos .modal-content .modal-body .formulario span, #filtrar-estabelecimentos .modal-content .modal-header .formulario span, #login .modal-content .modal-body .formulario span, #search .modal-content .modal-body .formulario span, #select-cidades .modal-content .modal-body .formulario span, #select-cidades .modal-content .modal-footer .formulario span, #input-cep .modal-footer .formulario span, #bem-vindo .modal-body .formulario span, .avaliationbox-content .formulario-avaliation .formulario span, .accordion-payment .formulario span {
     color: #455a64;
     font-size: 15px; }
-  #alteraCadastro .modal-content .modal-body .formulario .select-sex, #cadastro .modal-content .modal-body .formulario .select-sex, #cadastro-2 .modal-content .modal-body .formulario .select-sex, #editar-enderecos .modal-content .modal-body .formulario .select-sex, #filtrar-estabelecimentos .modal-content .modal-header .formulario .select-sex, #login .modal-content .modal-body .formulario .select-sex, #search .modal-content .modal-body .formulario .select-sex, #select-cidades .modal-content .modal-body .formulario .select-sex, #select-cidades .modal-content .modal-footer .formulario .select-sex, #input-cep .modal-body .formulario .select-sex, #bem-vindo .modal-body .formulario .select-sex, .avaliationbox-content .formulario-avaliation .formulario .select-sex, .accordion-payment .formulario .select-sex {
+  #alteraCadastro .modal-content .modal-body .formulario .select-sex, #cadastro .modal-content .modal-body .formulario .select-sex, #cadastro-2 .modal-content .modal-body .formulario .select-sex, #editar-enderecos .modal-content .modal-body .formulario .select-sex, #filtrar-estabelecimentos .modal-content .modal-header .formulario .select-sex, #login .modal-content .modal-body .formulario .select-sex, #search .modal-content .modal-body .formulario .select-sex, #select-cidades .modal-content .modal-body .formulario .select-sex, #select-cidades .modal-content .modal-footer .formulario .select-sex, #input-cep .modal-footer .formulario .select-sex, #bem-vindo .modal-body .formulario .select-sex, .avaliationbox-content .formulario-avaliation .formulario .select-sex, .accordion-payment .formulario .select-sex {
     margin-bottom: 15px; }
-  #alteraCadastro .modal-content .modal-body .formulario .nasc, #cadastro .modal-content .modal-body .formulario .nasc, #cadastro-2 .modal-content .modal-body .formulario .nasc, #editar-enderecos .modal-content .modal-body .formulario .nasc, #filtrar-estabelecimentos .modal-content .modal-header .formulario .nasc, #login .modal-content .modal-body .formulario .nasc, #search .modal-content .modal-body .formulario .nasc, #select-cidades .modal-content .modal-body .formulario .nasc, #select-cidades .modal-content .modal-footer .formulario .nasc, #input-cep .modal-body .formulario .nasc, #bem-vindo .modal-body .formulario .nasc, .avaliationbox-content .formulario-avaliation .formulario .nasc, .accordion-payment .formulario .nasc {
+  #alteraCadastro .modal-content .modal-body .formulario .nasc, #cadastro .modal-content .modal-body .formulario .nasc, #cadastro-2 .modal-content .modal-body .formulario .nasc, #editar-enderecos .modal-content .modal-body .formulario .nasc, #filtrar-estabelecimentos .modal-content .modal-header .formulario .nasc, #login .modal-content .modal-body .formulario .nasc, #search .modal-content .modal-body .formulario .nasc, #select-cidades .modal-content .modal-body .formulario .nasc, #select-cidades .modal-content .modal-footer .formulario .nasc, #input-cep .modal-footer .formulario .nasc, #bem-vindo .modal-body .formulario .nasc, .avaliationbox-content .formulario-avaliation .formulario .nasc, .accordion-payment .formulario .nasc {
     margin-bottom: 5px; }
 
 #filtrar-estabelecimentos .modal-content .modal-header #slidecontainer-range {
@@ -404,6 +442,9 @@ input[type="checkbox"]:checked + span .fake-checkbox:after {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+
+.pm_menu-body li {
+  margin-left: 0 !important; }
 
 .comparativo header {
   background-color: #3d68af; }
@@ -702,6 +743,27 @@ input[type="checkbox"]:checked + span .fake-checkbox:after {
 body {
   font-family: 'Open Sans', sans-serif; }
 
+#menu-lista-drop.dropdown .dropdown-menu {
+  display: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0; }
+  #menu-lista-drop.dropdown .dropdown-menu li {
+    background: #a63737;
+    border: 0;
+    color: #ffffff;
+    width: 170px;
+    height: 80px;
+    padding: 15px;
+    font-size: 12px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+
+#menu-lista-drop.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; }
+
 .bg-gray {
   background-color: #eceff1; }
 
@@ -910,58 +972,47 @@ input, select {
 
 #carrinho {
   display: none; }
-  #carrinho .modal-content .modal-header {
-    border-bottom: 0; }
-    #carrinho .modal-content .modal-header .close {
-      color: #000000;
-      margin-top: 8px; }
-    #carrinho .modal-content .modal-header .footer-fixe {
+  #carrinho .modal-content .modal-header .footer-fixe {
+    position: relative; }
+    #carrinho .modal-content .modal-header .footer-fixe .you-are .you-are--text p {
+      font-size: 18px;
+      color: #ed2e2c;
+      line-height: 18px; }
+  #carrinho .modal-content .modal-body .itens-compra--content .mCSB_container {
+    padding-top: 15px; }
+  #carrinho .modal-content .modal-body .itens-compra--content ul {
+    display: flex;
+    height: 70px; }
+    #carrinho .modal-content .modal-body .itens-compra--content ul li {
+      padding: 0 15px;
       position: relative; }
-      #carrinho .modal-content .modal-header .footer-fixe .you-are .you-are--text p {
-        font-size: 18px;
-        color: #37474f;
-        line-height: 18px; }
-      #carrinho .modal-content .modal-header .footer-fixe .you-are .you-are--store {
-        height: 43px;
-        padding: 9px 10px; }
-        #carrinho .modal-content .modal-header .footer-fixe .you-are .you-are--store .content-right .change-store:after {
-          top: 7px;
-          left: 15px; }
-    #carrinho .modal-content .modal-header .itens-compra--content .mCSB_container {
-      padding-top: 15px; }
-    #carrinho .modal-content .modal-header .itens-compra--content ul {
-      display: flex;
-      height: 70px; }
-      #carrinho .modal-content .modal-header .itens-compra--content ul li {
-        padding: 0 15px;
-        position: relative; }
-        #carrinho .modal-content .modal-header .itens-compra--content ul li:first-child {
-          padding: 0 15px 0 0; }
-        #carrinho .modal-content .modal-header .itens-compra--content ul li .carret-red {
-          background: #ed2c2a;
-          width: 22px;
-          height: 22px;
-          border-radius: 50%;
+      #carrinho .modal-content .modal-body .itens-compra--content ul li:first-child {
+        padding: 0 15px 0 0; }
+      #carrinho .modal-content .modal-body .itens-compra--content ul li .carret-red {
+        background: #ed2c2a;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        position: relative;
+        bottom: 40px;
+        left: 18px; }
+        #carrinho .modal-content .modal-body .itens-compra--content ul li .carret-red span {
+          color: #ffffff;
+          text-align: center;
           position: relative;
-          bottom: 40px;
-          left: 18px; }
-          #carrinho .modal-content .modal-header .itens-compra--content ul li .carret-red span {
-            color: #ffffff;
-            text-align: center;
-            position: relative;
-            left: 7px;
-            font-size: 13px; }
+          left: 7px;
+          font-size: 13px; }
   #carrinho .modal-content .modal-body .all-product {
     background-color: #eceff1;
-    color: #90a4ae;
-    margin: 0 -15px;
-    padding: 15px;
-    font-weight: bold; }
+    color: #455a64;
+    margin: 15px -45px;
+    padding: 15px 45px; }
     #carrinho .modal-content .modal-body .all-product h1 {
       font-size: 15px;
-      margin: 0; }
+      margin: 0;
+      font-weight: bold; }
   #carrinho .modal-content .modal-body .content-vertical {
-    max-height: 250px; }
+    max-height: 180px; }
   #carrinho .modal-content .modal-body .product-list-cart {
     padding: 15px 0; }
     #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap {
@@ -1067,6 +1118,12 @@ input, select {
 
 #filtrar-estabelecimentos {
   display: none; }
+  #filtrar-estabelecimentos.modal-dialog {
+    width: 100%; }
+    #filtrar-estabelecimentos.modal-dialog .modal-content {
+      margin: 0 auto; }
+      #filtrar-estabelecimentos.modal-dialog .modal-content.modal-lg {
+        width: 1024px; }
   #filtrar-estabelecimentos .modal-content .modal-header {
     border-bottom: 0; }
     #filtrar-estabelecimentos .modal-content .modal-header .select-range {
@@ -1076,7 +1133,12 @@ input, select {
       #filtrar-estabelecimentos .modal-content .modal-header .select-range .select-range--text {
         color: #37474f;
         font-size: 15px;
-        font-weight: bold; }
+        font-weight: bold;
+        position: relative;
+        top: 30px; }
+    #filtrar-estabelecimentos .modal-content .modal-header #slidecontainer-range {
+      position: relative;
+      top: 30px; }
     #filtrar-estabelecimentos .modal-content .modal-header .formulario .glyphicon-search {
       font-size: 18px; }
     #filtrar-estabelecimentos .modal-content .modal-header .formulario .form-control-feedback {
@@ -1087,7 +1149,7 @@ input, select {
     border-radius: 5px;
     padding-bottom: 15px; }
     #filtrar-estabelecimentos .modal-content .modal-body .stores-content .content-vertical {
-      max-height: 250px; }
+      max-height: 350px; }
       #filtrar-estabelecimentos .modal-content .modal-body .stores-content .content-vertical .mCSB_inside > .mCSB_container {
         margin-right: -50px;
         padding-top: 15px; }
@@ -1223,6 +1285,10 @@ input, select {
 
 #infelizmente {
   display: none; }
+  #infelizmente.modal-dialog {
+    width: 100%; }
+    #infelizmente.modal-dialog .modal-content {
+      margin: 0 auto; }
   #infelizmente .modal-content .modal-header {
     margin-bottom: 0;
     text-align: center; }
@@ -1260,34 +1326,50 @@ input, select {
 
 #input-cep {
   display: none; }
+  #input-cep.modal-dialog {
+    width: 100%; }
+    #input-cep.modal-dialog .modal-content {
+      margin: 0 auto; }
   #input-cep .modal-header {
     margin-bottom: 0;
-    text-align: center; }
+    text-align: center;
+    border-bottom: 0; }
     #input-cep .modal-header h4 {
       color: #37474f;
       font-weight: normal;
       line-height: 30px; }
       #input-cep .modal-header h4 strong {
         font-size: 25px; }
-  #input-cep .modal-body {
+  #input-cep .modal-body .text {
+    color: #455a64;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 15px; }
+  #input-cep .modal-footer {
     padding: 30px 0; }
-    #input-cep .modal-body h4 {
+    #input-cep .modal-footer h4 {
       color: #37474f;
       font-weight: bold;
       text-align: center;
       line-height: 25px; }
-    #input-cep .modal-body .formulario a {
+    #input-cep .modal-footer .formulario a {
       color: #37474f;
       text-decoration: underline; }
-    #input-cep .modal-body .btn-red--light {
+    #input-cep .modal-footer .btn-red--light {
       padding: 10px 35px;
-      margin: 15px 0; }
+      margin: 0; }
 
 #bem-vindo {
   display: none; }
+  #bem-vindo.modal-dialog {
+    width: 100%; }
+    #bem-vindo.modal-dialog .modal-content {
+      margin: 0 auto; }
   #bem-vindo .modal-header {
     margin-bottom: 0;
-    text-align: center; }
+    text-align: center;
+    border-bottom: 0; }
     #bem-vindo .modal-header h4 {
       color: #37474f;
       font-weight: normal;
@@ -1296,6 +1378,12 @@ input, select {
         font-size: 25px; }
   #bem-vindo .modal-body {
     padding: 30px 0; }
+    #bem-vindo .modal-body .text {
+      color: #455a64;
+      font-weight: bold;
+      font-size: 10px;
+      text-align: center;
+      margin-top: 15px; }
     #bem-vindo .modal-body h4 {
       color: #37474f;
       font-weight: bold;
@@ -1305,16 +1393,20 @@ input, select {
     #bem-vindo .modal-body .formulario a {
       color: #37474f;
       text-decoration: underline; }
-    #bem-vindo .modal-body .btn-red--light {
-      padding: 10px 35px;
-      margin: 15px 0;
-      min-width: 230px; }
+  #bem-vindo .modal-footer .btn-red--light {
+    padding: 10px 35px;
+    margin: 15px 0;
+    min-width: 230px; }
 
 #select-stores {
   display: none; }
+  #select-stores.modal-dialog {
+    width: 100%; }
+    #select-stores.modal-dialog .modal-content {
+      margin: 0 auto; }
   #select-stores .modal-header {
     border-bottom: 0;
-    margin: 30px;
+    margin: 30px 0;
     margin-bottom: 0; }
     #select-stores .modal-header h4 {
       color: #37474f;
@@ -1326,10 +1418,21 @@ input, select {
       border-radius: 5px;
       background: #ffffff;
       padding: 15px;
+      width: 200px;
       text-align: center;
-      margin: 0 15px; }
+      margin: 0 5px !important; }
+      #select-stores .modal-body .content-item .item.secound {
+        padding-top: 15px !important; }
       #select-stores .modal-body .content-item .item img {
         margin: 0 auto; }
+      #select-stores .modal-body .content-item .item .btn-content.btn-bordered {
+        border: 1px solid #66bb6a;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 10px; }
+        #select-stores .modal-body .content-item .item .btn-content.btn-bordered span {
+          font-weight: bold;
+          color: #66bb6a; }
       #select-stores .modal-body .content-item .item .title {
         margin: 15px 0;
         color: #37474f;
@@ -1357,33 +1460,52 @@ input, select {
       position: absolute;
       top: 50%;
       left: 45%; }
+  #select-stores .modal-footer {
+    border-top: 0; }
 
 #choice-stores {
   display: none; }
+  #choice-stores.modal-dialog {
+    width: 100%; }
+    #choice-stores.modal-dialog .modal-content {
+      margin: 0 auto; }
   #choice-stores .modal-header {
     margin-bottom: 0;
-    text-align: center; }
+    text-align: center;
+    border-bottom: 0; }
     #choice-stores .modal-header h4 {
       color: #37474f;
       font-weight: normal;
       line-height: 30px; }
       #choice-stores .modal-header h4 strong {
         font-size: 25px; }
-  #choice-stores .modal-body {
+  #choice-stores .modal-body .text {
+    color: #455a64;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 15px; }
+  #choice-stores .modal-footer {
     padding: 30px 0;
     text-align: center; }
-    #choice-stores .modal-body h4 {
+    #choice-stores .modal-footer img {
+      margin-top: 15px; }
+    #choice-stores .modal-footer h4 {
       color: #37474f;
-      text-align: center;
+      text-align: left;
       line-height: 25px;
-      padding: 0 15px; }
-    #choice-stores .modal-body .btn-red--light {
+      padding: 0 15px;
+      font-size: 14px; }
+    #choice-stores .modal-footer .btn-red--light {
       padding: 10px 35px;
-      margin: 15px 0;
-      min-width: 230px; }
+      margin: 15px 0; }
 
 #load-market {
   display: none; }
+  #load-market.modal-dialog {
+    width: 100%; }
+    #load-market.modal-dialog .modal-content {
+      margin: 0 auto; }
   #load-market .modal-header {
     margin-bottom: 0;
     text-align: center;
