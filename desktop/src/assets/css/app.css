@@ -19,10 +19,10 @@ body {
   body .tooltip.right > .tooltip-arrow {
     border-right: 5px solid #a73838; }
 
-.comparativo.comparacao-page .body .product-list-select, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select, #carrinho .modal-content .modal-body .product-list-select {
+.comparativo.comparacao-page .body .product-list-select, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select, #carrinho .modal-content .modal-body .product-list-select, .productContent .product-info--content .product-list-select {
   width: 50%;
   display: flex; }
-  .comparativo.comparacao-page .body .product-list-select select, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select select, #carrinho .modal-content .modal-body .product-list-select select {
+  .comparativo.comparacao-page .body .product-list-select select, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select select, #carrinho .modal-content .modal-body .product-list-select select, .productContent .product-info--content .product-list-select select {
     border: 1px solid #cfd8dc;
     padding: 5px;
     height: 50px;
@@ -35,9 +35,9 @@ body {
     text-indent: 1px;
     text-overflow: '';
     border-radius: 5px; }
-  .comparativo.comparacao-page .body .product-list-select .controller, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller, #carrinho .modal-content .modal-body .product-list-select .controller {
+  .comparativo.comparacao-page .body .product-list-select .controller, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller, #carrinho .modal-content .modal-body .product-list-select .controller, .productContent .product-info--content .product-list-select .controller {
     margin-left: 5px; }
-    .comparativo.comparacao-page .body .product-list-select .controller .more, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller .more, #carrinho .modal-content .modal-body .product-list-select .controller .more {
+    .comparativo.comparacao-page .body .product-list-select .controller .more, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller .more, #carrinho .modal-content .modal-body .product-list-select .controller .more, .productContent .product-info--content .product-list-select .controller .more {
       background-color: #009c87;
       width: 35px;
       height: 25px;
@@ -47,7 +47,7 @@ body {
       text-align: center;
       border-radius: 5px;
       margin-bottom: 1px; }
-    .comparativo.comparacao-page .body .product-list-select .controller .minus, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller .minus, #carrinho .modal-content .modal-body .product-list-select .controller .minus {
+    .comparativo.comparacao-page .body .product-list-select .controller .minus, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller .minus, #carrinho .modal-content .modal-body .product-list-select .controller .minus, .productContent .product-info--content .product-list-select .controller .minus {
       background-color: #00bfa5;
       width: 35px;
       height: 25px;
@@ -106,10 +106,10 @@ body {
   height: 80px;
   width: 80px; }
 
-.content-product--vitrine .product-list .products-group .products-group--item .products-group--select .selectdiv, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-select .selectdiv, .product-info--content .selectdiv {
+.content-product--vitrine .product-list .products-group .products-group--item .products-group--select .selectdiv, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-select .selectdiv {
   position: relative;
   text-align: center; }
-  .content-product--vitrine .product-list .products-group .products-group--item .products-group--select .selectdiv select, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-select .selectdiv select, .product-info--content .selectdiv select {
+  .content-product--vitrine .product-list .products-group .products-group--item .products-group--select .selectdiv select, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-select .selectdiv select {
     width: 60px;
     height: 55px;
     margin: 0 auto;
@@ -120,7 +120,7 @@ body {
     font-weight: bold;
     -webkit-appearance: none;
     -moz-appearance: none; }
-    .content-product--vitrine .product-list .products-group .products-group--item .products-group--select .selectdiv select::-ms-expand, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-select .selectdiv select::-ms-expand, .product-info--content .selectdiv select::-ms-expand {
+    .content-product--vitrine .product-list .products-group .products-group--item .products-group--select .selectdiv select::-ms-expand, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-select .selectdiv select::-ms-expand {
       display: none; }
 
 .modal-dialog .modal-content .content .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail, .pedidos .iten-detail--content .content .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail {
@@ -182,11 +182,11 @@ body {
   background: #4CAF50;
   cursor: pointer; }
 
-.comparacao-page .header .content-itens .product-list-prices, .comparacao-page .body .content-itens .product-list-prices, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-prices, .product-info--content .product-list-prices, .outros-supermercados--content .supermercados-item .row .product-list-prices, .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-prices {
+.comparacao-page .header .content-itens .product-list-prices, .comparacao-page .body .content-itens .product-list-prices, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-prices, .productContent .middleContent .product-list-prices, .outros-supermercados--content .supermercados-item .row .product-list-prices, .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-prices {
   width: 20%; }
-  .comparacao-page .header .content-itens .product-list-prices .prices .price-strike, .comparacao-page .body .content-itens .product-list-prices .prices .price-strike, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-prices .prices .price-strike, .product-info--content .product-list-prices .prices .price-strike, .outros-supermercados--content .supermercados-item .row .product-list-prices .prices .price-strike, .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-prices .prices .price-strike {
+  .comparacao-page .header .content-itens .product-list-prices .prices .price-strike, .comparacao-page .body .content-itens .product-list-prices .prices .price-strike, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-prices .prices .price-strike, .productContent .middleContent .product-list-prices .prices .price-strike, .outros-supermercados--content .supermercados-item .row .product-list-prices .prices .price-strike, .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-prices .prices .price-strike {
     text-decoration: line-through; }
-  .comparacao-page .header .content-itens .product-list-prices .prices .price, .comparacao-page .body .content-itens .product-list-prices .prices .price, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-prices .prices .price, .product-info--content .product-list-prices .prices .price, .outros-supermercados--content .supermercados-item .row .product-list-prices .prices .price, .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-prices .prices .price {
+  .comparacao-page .header .content-itens .product-list-prices .prices .price, .comparacao-page .body .content-itens .product-list-prices .prices .price, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-prices .prices .price, .productContent .middleContent .product-list-prices .prices .price, .outros-supermercados--content .supermercados-item .row .product-list-prices .prices .price, .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-prices .prices .price {
     color: #ed2c2a;
     font-size: 20px;
     font-weight: bold; }
@@ -1557,99 +1557,100 @@ input, select {
       font-weight: bold;
       font-size: 15px; }
 
-.product-image--content {
+.productContent {
   background-color: #ffffff;
-  padding: 15px 0; }
-  .product-image--content .owl-carousel .item img {
-    margin: 0 auto;
-    width: auto; }
-  .product-image--content .owl-carousel .owl-nav .owl-next {
-    background: url("../images/static/png-sprites/arrow-product-right.png") no-repeat;
-    text-indent: -9999px;
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    width: 17px;
-    width: 20px; }
-  .product-image--content .owl-carousel .owl-nav .owl-prev {
-    background: url("../images/static/png-sprites/arrow-product-left.png") no-repeat;
-    position: absolute;
-    text-indent: -9999px;
-    top: 50%;
-    left: 5%;
-    width: 17px;
-    width: 20px; }
-  .product-image--content .owl-carousel img {
-    margin: 0 auto;
-    width: auto; }
-
-.product-info--content {
-  margin-top: 15px; }
-  .product-info--content .brand {
-    color: #37474f;
-    font-size: 13px; }
-  .product-info--content .cod {
-    color: #37474f;
-    font-size: 12px; }
-  .product-info--content .product-title {
-    color: #0066c8;
-    font-weight: bold;
-    font-size: 19px; }
-  .product-info--content .avalie {
-    margin-left: 15px; }
-  .product-info--content .off-content {
-    background-color: #1a2e35;
-    padding: 5px;
-    text-align: center; }
-    .product-info--content .off-content span {
-      color: #ffffff;
-      font-weight: bold;
-      font-size: 15px;
-      vertical-align: middle; }
-    .product-info--content .off-content .sprites-percent {
-      float: left; }
-  .product-info--content .select-content {
-    margin: 15px 0; }
-  .product-info--content .sprites-arrow-select-fake {
-    right: -15px;
-    top: -42px; }
-  .product-info--content .green-button.add-inactive {
-    margin: 0;
-    width: 100%; }
-  .product-info--content .content-description {
-    border-bottom: 1px solid #cfd8dc;
-    padding-bottom: 15px; }
-    .product-info--content .content-description p {
+  padding: 15px 0;
+  margin: 50px 0; }
+  .productContent .middleContent {
+    margin-top: 30px; }
+    .productContent .middleContent .buyName {
+      font-size: 10px; }
+    .productContent .middleContent .off-content {
+      background-color: #1a2e35;
+      padding: 5px;
+      text-align: center;
+      max-width: 115px;
+      margin: 15px 0; }
+      .productContent .middleContent .off-content span {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 15px;
+        vertical-align: middle; }
+      .productContent .middleContent .off-content .sprites-percent {
+        float: left; }
+  .productContent .product-info--content {
+    margin-top: 15px; }
+    .productContent .product-info--content .brand {
+      color: #37474f;
+      font-size: 13px; }
+    .productContent .product-info--content .cod {
       color: #37474f;
       font-size: 12px; }
-
-.achei-caro--content {
-  margin: 30px 0 0 0;
-  border-bottom: 1px solid #cfd8dc; }
-  .achei-caro--content .achei-caro h1 {
-    color: #455a64;
-    font-size: 17px;
-    font-weight: bold;
-    margin: 0; }
-  .achei-caro--content .achei-caro p {
-    color: #455a64;
-    font-size: 12px;
-    font-weight: bold;
-    margin: 0 0 15px; }
-  .achei-caro--content .red-button.add-active {
-    margin: 0;
-    padding: 6px 35px; }
-  .achei-caro--content .form-inline {
-    margin-bottom: 65px; }
+    .productContent .product-info--content .product-title {
+      color: #0066c8;
+      font-weight: bold;
+      font-size: 19px; }
+    .productContent .product-info--content .product-list-select {
+      margin-top: 15px; }
+      .productContent .product-info--content .product-list-select .green-button.add-inactive {
+        margin: 0;
+        margin-left: 5px; }
+    .productContent .product-info--content .content-description {
+      border-bottom: 1px solid #cfd8dc;
+      padding-bottom: 15px; }
+      .productContent .product-info--content .content-description p {
+        color: #37474f;
+        font-size: 12px; }
+    .productContent .product-info--content .achei-caro--content {
+      margin: 15px 0 0 0; }
+      .productContent .product-info--content .achei-caro--content .achei-caro h1 {
+        color: #455a64;
+        font-size: 17px;
+        font-weight: bold;
+        margin: 0; }
+      .productContent .product-info--content .achei-caro--content .achei-caro p {
+        color: #455a64;
+        font-size: 12px;
+        font-weight: bold;
+        margin: 0 0 15px; }
+      .productContent .product-info--content .achei-caro--content .red-button.add-active {
+        margin: 0;
+        padding: 6px 35px; }
+      .productContent .product-info--content .achei-caro--content .form-inline {
+        margin-bottom: 65px; }
 
 .outros-supermercados--content {
-  border-bottom: 1px solid #cfd8dc; }
+  border-bottom: 1px solid #cfd8dc;
+  background-color: #ebeff2; }
   .outros-supermercados--content h1 {
     font-size: 20px;
     font-weight: bold;
     color: #455a64; }
   .outros-supermercados--content a {
     color: #455a64; }
+  .outros-supermercados--content .order {
+    margin-top: 25px; }
+  .outros-supermercados--content .select-order {
+    margin-top: 19px; }
+    .outros-supermercados--content .select-order .form-control {
+      border: 0;
+      background-color: #eceff1;
+      box-shadow: none; }
+      .outros-supermercados--content .select-order .form-control option {
+        border: 0; }
+  .outros-supermercados--content .off-content {
+    background-color: #1a2e35;
+    padding: 5px;
+    text-align: center;
+    max-width: 80px;
+    margin: 5px 0; }
+    .outros-supermercados--content .off-content span {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 15px;
+      vertical-align: middle; }
+    .outros-supermercados--content .off-content .sprites-percent {
+      float: left; }
   .outros-supermercados--content .supermercados-item {
     margin: 30px 0; }
     .outros-supermercados--content .supermercados-item .row {
@@ -1657,22 +1658,35 @@ input, select {
       margin-bottom: 25px; }
       .outros-supermercados--content .supermercados-item .row .price {
         font-size: 20px; }
+      .outros-supermercados--content .supermercados-item .row .product-list-prices {
+        margin-top: 25px; }
       .outros-supermercados--content .supermercados-item .row .change-store {
         background-color: #ff2a28;
-        height: 60px;
-        width: 60px;
+        height: 40px;
+        width: 170px;
         border-radius: 5px;
         text-align: center;
-        padding: 10px;
-        font-size: 12px; }
+        line-height: 45px;
+        font-size: 12px;
+        margin-top: 25px; }
         .outros-supermercados--content .supermercados-item .row .change-store a {
           color: #ffffff; }
+        .outros-supermercados--content .supermercados-item .row .change-store .sprites-change-storeWhite {
+          position: relative;
+          top: 5px; }
+        .outros-supermercados--content .supermercados-item .row .change-store .sprites-change-storeRed {
+          position: relative;
+          top: 5px; }
         .outros-supermercados--content .supermercados-item .row .change-store.transparent {
           background-color: transparent;
           border: 1px solid rgba(255, 42, 40, 0.5); }
           .outros-supermercados--content .supermercados-item .row .change-store.transparent a {
             color: #ff2a28;
             opacity: 0.3; }
+      .outros-supermercados--content .supermercados-item .row .text-center .btn.red-button.add-active {
+        height: 40px;
+        line-height: 40px;
+        padding: 0 35px; }
 
 .nutricional-description--content {
   border-bottom: 1px solid #cfd8dc;
@@ -1695,10 +1709,14 @@ input, select {
   font-weight: bold; }
 
 .avaliationbox-content .avaliationbox-stars {
-  margin: 15px 0; }
+  margin: 15px 0;
+  border-bottom: 1px solid #cfd8dc;
+  padding-bottom: 20px; }
   .avaliationbox-content .avaliationbox-stars .row .progress {
     border-radius: 0;
     margin-bottom: 0; }
+  .avaliationbox-content .avaliationbox-stars .aside {
+    margin-top: -65px; }
 
 .avaliationbox-content .product-avaliations-box {
   border: 1px solid #cfd8dc;
@@ -1707,15 +1725,17 @@ input, select {
 
 .avaliationbox-content .formulario-avaliation {
   margin: 15px 0;
-  border-bottom: 1px solid #cfd8dc;
   padding-bottom: 20px; }
   .avaliationbox-content .formulario-avaliation textarea {
     min-height: 125px; }
   .avaliationbox-content .formulario-avaliation input {
     height: 50px; }
-  .avaliationbox-content .formulario-avaliation .btn-red--comparar {
-    background-color: #ff2a28; }
-    .avaliationbox-content .formulario-avaliation .btn-red--comparar:before {
+  .avaliationbox-content .formulario-avaliation .btn.red-button.add-active {
+    height: 50px;
+    padding: 0 15px;
+    line-height: 50px;
+    margin-top: 0px; }
+    .avaliationbox-content .formulario-avaliation .btn.red-button.add-active:before {
       content: none; }
 
 .compre-tambem--content h1 {
@@ -1724,6 +1744,31 @@ input, select {
   font-weight: bold;
   margin: 0;
   margin: 15px 0 30px; }
+
+.compre-tambem--content .midware {
+  display: flex;
+  width: 95%;
+  padding: 0 25px; }
+
+.compre-tambem--content .midware h4,
+.compre-tambem--content .midware h1 {
+  font-size: 20px; }
+
+.compre-tambem--content .midware h1 {
+  width: 60%;
+  text-align: left; }
+
+.compre-tambem--content .midware span {
+  width: 40%;
+  height: 32px;
+  padding-top: 11px; }
+
+.compre-tambem--content .midware h4 {
+  width: 20%;
+  text-align: left;
+  margin: 0 !important;
+  margin-top: 11px !important;
+  font-size: 17px !important; }
 
 .breadcrumbie-content {
   background-color: #9e0d0d;

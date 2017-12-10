@@ -481,7 +481,7 @@
 
   <!--Cadastro-->
   <div class="modal-dialog" id="cadastro">
-    <div class="modal-content">
+    <div class="modal-content modal-lg">
       <div class="modal-header">
         <a href="#" class="close closeModal" data-dismiss="modal" aria-hidden="true">&times;</a>
         <h4 class="modal-title" id="">Cadastre-se no Zukkin</h4>
@@ -489,76 +489,149 @@
       <div class="modal-body">
         <form role="form" class="form-inline formulario">
           <div class="row">
-            <div class="form-group col-xs-12">
+            <div class="form-group col-md-3">
               <label for="">Nome*</label>
               <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
             </div>
-            <div class="form-group col-xs-12">
+            <div class="form-group col-md-3">
               <label for="">Sobrenome*</label>
               <input type="text" class="form-control" id="sobrenome" placeholder="Digite seu sobrenome">
             </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-12">
+            <div class="col-md-4">
               <div class="nasc">
                 <span>Data de nascimento</span>
               </div>
-            </div>
-          </div>
 
-          <div class="row form-group">
-            <div class="col-xs-4">
-              <select class="form-control">
-                <option>Dia</option>
-              </select>
-            </div>
+              <div class="row form-group">
+                <div class="col-md-4">
+                  <select class="form-control">
+                    <option>Dia</option>
+                  </select>
+                </div>
 
-            <div class="col-xs-4">
-              <select class="form-control">
-                <option>Mês</option>
-              </select>
-            </div>
+                <div class="col-md-4">
+                  <select class="form-control">
+                    <option>Mês</option>
+                  </select>
+                </div>
 
-            <div class="col-xs-4">
-              <select class="form-control">
-                <option>Ano</option>
-              </select>
+                <div class="col-md-4">
+                  <select class="form-control">
+                    <option>Ano</option>
+                  </select>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-6">
+            <div class="col-md-2">
               <label for="">Sexo</label>
               <select class="form-control select-sex">
                 <option>Masculino</option>
                 <option>Feminino</option>
               </select>
             </div>
+          </div>
 
-            <div class="form-group col-xs-6">
+          <div class="row">
+            <div class="form-group col-md-5">
               <label for="">E-mail*</label>
               <input type="email" class="form-control error-input" id="email" placeholder="Difite seu e-mail">
+            </div>
+
+            <div class="form-group col-md-2">
+              <label for="">Telefone*</label>
+              <input type="text" class="form-control" id="celularb" placeholder="( ) 90000-0000">
+            </div>
+
+            <div class="form-group col-md-2">
+              <label for="">Celular*</label>
+              <input type="text" class="form-control" id="celularc" placeholder="( ) 90000-0000">
+            </div>
+
+            <div class="form-group col-md-3">
+              <label for="">CEP*</label>
+              <input type="text" class="form-control" id="cep" placeholder="Digite seu cep">
             </div>
           </div>
 
           <div class="row">
-            <div class="form-group col-xs-6">
-              <label for="">Telefone*</label>
-              <input type="text" class="form-control" id="celularb" placeholder="( ) 90000-0000">
+            <div class="form-group col-md-4">
+              <label for="">Endereço*</label>
+              <input type="text" class="form-control" id="endereco" placeholder="Aguardando cep">
             </div>
-            <div class="form-group col-xs-6">
-              <label for="">Celular*</label>
-              <input type="text" class="form-control" id="celularc" placeholder="( ) 90000-0000">
+
+            <div class="form-group col-md-1">
+              <label for="">Numero*</label>
+              <input type="text" class="form-control" id="numero" placeholder="">
+            </div>
+
+            <div class="form-group col-md-3">
+              <label for="">Complemento</label>
+              <input type="text" class="form-control" id="complemento" placeholder="Ex:Casa">
+            </div>
+
+            <div class="form-group col-md-4">
+              <label for="">Bairro*</label>
+              <input type="text" class="form-control" id="bairro" placeholder="Aguardando cep">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-md-2">
+              <label for="">Cidade*</label>
+              <input type="text" class="form-control" id="cidade" placeholder="Aguardando cep">
+            </div>
+
+            <div class="col-md-2">
+              <label for="">Estado</label>
+              <select class="form-control select-sex">
+                <option>Selecione</option>
+              </select>
+            </div>
+
+            <div class="form-group col-md-4 has-feedback">
+              <label for="">Senha</label>
+              <input type="password" class="form-control error-input" id="senha" placeholder="Digite uma senha">
+              <span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
+            </div>
+
+            <div class="form-group col-md-4 has-feedback">
+              <label for="">Confirmar senha</label>
+              <input type="password" class="form-control error-input" id="csenha" placeholder="Confirme sua senha">
+              <span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
             </div>
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <div class="row">
-          <div class="col-xs-12">
-            <div class="container-btn--confirm">
-              <a class="btn btn-blue--confirm">Continuar</a>
+          <div class="col-md-4">
+            <label class="radio-button">
+              <input type="radio" name="radio">
+              <span class="label-visible active">
+                <span class="fake-radiobutton"></span>
+                <span class="text-span">Aceito receber ofertas e descontos por sms</span>
+              </span>
+            </label>
+          </div>
+          <div class="col-md-5">
+            <label class="radio-button">
+              <input type="radio" name="radio">
+              <span class="label-visible active">
+                <span class="fake-radiobutton"></span>
+                <span class="text-span">Aceito receber ofertas e descontos no meu e-mail</span>
+              </span>
+            </label>
+          </div>
+          <div class="col-md-3">
+            <div class="row">
+              <div class="col-md-5">
+                <span class="prenchimento">*Preenchimento obrigatório</span>
+              </div>
+              <div class="col-md-7">
+                <div class="container-btn--confirm">
+                  <a class="btn btn-blue--confirm">Salvar Cadastro</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -568,7 +641,7 @@
   <!--/Cadastro-->
 
   <!--Cadastro-2-->
-  <div class="modal-dialog" id="cadastro-2">
+  <!-- <div class="modal-dialog" id="cadastro-2">
     <div class="modal-content">
       <div class="modal-header">
         <div class="row">
@@ -654,8 +727,8 @@
           </div>
         </div>
       </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
+    </div>
+  </div>
   <!--/Cadastro-2-->
 
   <!--Editar Endereços-->
@@ -765,7 +838,7 @@
   </div><!-- /.modal-dialog -->
   <!--/Editar Endereços-->
 
-  <!--Editar Endereços-->
+  <!--Editar Estabelecimento-->
   <div class="modal-dialog" id="filtrar-estabelecimentos">
     <div class="modal-content modal-lg">
       <div class="modal-header">
@@ -813,6 +886,7 @@
           <div class="col-xs-6">
             <div class="stores-content mCustomScrollbar">
               <div class="content-vertical">
+                <h1>Estabelecimentos disponíveis (8)</h1>
                 <div class="stores-content--item">
                   <div class="stores-content--img">
                     <img src="assets/images/static/store-modal.png" alt="" class="img-responsive">
@@ -904,7 +978,8 @@
           <div class="col-xs-6">
             <div class="stores-content mCustomScrollbar">
               <div class="content-vertical">
-                <div class="stores-content--item">
+                <h1>Estabelecimentos selecionados (8)</h1>
+                <div class="stores-content--item active">
                   <div class="stores-content--img">
                     <img src="assets/images/static/store-modal.png" alt="" class="img-responsive">
                   </div>
@@ -938,7 +1013,7 @@
                   </div>
                 </div>
 
-                <div class="stores-content--item">
+                <div class="stores-content--item active">
                   <div class="stores-content--img">
                     <img src="assets/images/static/store-modal.png" alt="" class="img-responsive">
                   </div>
@@ -995,7 +1070,7 @@
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
-  <!--/Editar Endereços-->
+  <!--/Editar Estabelecimento-->
 
   <!--Obrigado-->
   <div class="modal-dialog" id="obrigado">
@@ -1016,9 +1091,14 @@
       </div>
       <div class="modal-footer">
         <div class="row">
-          <div class="col-xs-12">
+          <div class="col-xs-6">
             <p class="text-left">
               <button class="btn btn-red--light">Ir para meus pedidos</button>
+            </p>
+          </div>
+          <div class="col-xs-6">
+            <p class="text-left">
+              <button class="btn btn-red--light">Voltar para home</button>
             </p>
           </div>
         </div>
@@ -1047,7 +1127,7 @@
               </div>
 
               <div class="row">
-                <div class="form-group col-xs-12 has-success has-feedback">
+                <div class="form-group col-xs-12 has-feedback">
                   <label for="">Senha</label>
                   <input type="password" class="form-control error-input" id="senha" placeholder="********">
                   <span class="glyphicon  form-control-feedback" aria-hidden="true"></span>

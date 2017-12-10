@@ -300,14 +300,26 @@
   }
 }
 
-
 //cadastro
 #cadastro {
   display: none;
 
+  &.modal-dialog{
+    width: 100%;
+
+    .modal-content {
+      margin: 0 auto;
+
+      &.modal-lg {
+        width: 1024px;
+      }
+    }
+  }
+
   .modal-content {
     .modal-header {
-      border-bottom: 0;
+      border-bottom:1px solid $gray;
+      margin-bottom: $space-sm;
     }
 
     .modal-body {
@@ -315,39 +327,58 @@
       .formulario {
         margin-top: -15px;
       }
+
+      .form-control-feedback {
+        background: url('/assets/images/static/png-sprites/eye.png') no-repeat;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        margin-top:39px;
+      }
     }
 
     .modal-footer {
       border-top: 0;
+
+      .text-span{
+        font-size: 10px;
+        float: left;
+        margin-left: 35px;
+        margin-top: 3px;
+      }
+
+      .prenchimento {
+          font-size: 10px;
+      }
     }
   }
 }
 
 //cadastr-2
-#cadastro-2 {
-  display: none;
-
-  .modal-content {
-    .modal-header {
-      border-bottom: 0;
-
-      .sprites-back {
-        margin-top: $space-xs;
-      }
-    }
-
-    .modal-body {
-      @extend %formulario;
-      .formulario {
-        margin-top: -15px;
-      }
-    }
-
-    .modal-footer {
-      border-top: 0;
-    }
-  }
-}
+// #cadastro-2 {
+//   display: none;
+//
+//   .modal-content {
+//     .modal-header {
+//       border-bottom: 0;
+//
+//       .sprites-back {
+//         margin-top: $space-xs;
+//       }
+//     }
+//
+//     .modal-body {
+//       @extend %formulario;
+//       .formulario {
+//         margin-top: -15px;
+//       }
+//     }
+//
+//     .modal-footer {
+//       border-top: 0;
+//     }
+//   }
+// }
 
 //editar-enderecos
 #editar-enderecos {
@@ -437,7 +468,7 @@
 
   .modal-content {
     .modal-header {
-      border-bottom: 0;
+      border-bottom: 2px solid $gray;
       @extend %range-filter;
       @extend %formulario;
 
@@ -477,6 +508,14 @@
         border: 1px solid $lead-light;
         border-radius: $space-xs;
         padding-bottom: $space-sm;
+        background: $gray-ultra-light;
+
+        h1 {
+          color: $lead;
+          font-size: $space-sm + 3px;
+          margin: 0 $space-sm $space-sm;
+          font-weight: bold;
+        }
 
         .content-vertical {
           max-height: 350px;
@@ -494,6 +533,16 @@
         .stores-content--item {
           display: flex;
           padding: $space-sm;
+
+          &.active {
+            border: 1px solid $lead-light;
+            background: $white;
+            margin: 10px 95px 10px $space-sm;
+            border-top-right-radius: 90px;
+            border-bottom-right-radius: 90px;
+            border-top-left-radius: $space-sm;
+            border-bottom-left-radius: $space-sm;
+          }
 
           .stores-content--img {
             width: 20%;

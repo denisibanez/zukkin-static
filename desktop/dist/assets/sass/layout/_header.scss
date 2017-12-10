@@ -121,6 +121,11 @@ header{
   }
 
   .header-line {
+
+    &.white {
+      background-color: $white;
+    }
+
     height: $space-xl;
     width: 100%;
     background: $gray-ultra-light;
@@ -192,6 +197,110 @@ header{
       }
 
       @extend %itens-price;
+    }
+  }
+
+  .header-navbar{
+    background-color: $white;
+
+    .container {
+      border-bottom: 1px solid $gray;
+    }
+    
+    .menu-sidebar {
+      border: 1px solid $gray;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      ul {
+        &#main-sidebar{
+          padding: 15px 0;
+
+
+          li{
+            border-bottom: 1px solid $gray-light;
+            line-height: $space-sm + 5px;
+            margin: 0 15px;
+
+            &:last-child {
+              border-bottom: 0
+            }
+
+            &:hover {
+              background: #ed2c2a;
+
+
+              a {
+                color: $white;
+                font-weight: bold;
+              }
+            }
+
+            a{
+              span {
+                margin-right: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .navbar-nav>li>a {
+      padding-bottom: 3px;
+      padding-top: 3px;
+    }
+    .navbar-header {
+      float: none;
+      background-color: #880d0d;
+      border-radius: $space-xs;
+    }
+    .navbar-toggle {
+      display: block;
+      float: left;
+      margin-left: $space-sm;
+      border: 0;
+      &:hover, &:focus {
+        background-color: #880d0d;
+      }
+    }
+    .navbar-collapse.collapse {
+      display: none!important;
+    }
+    .navbar-nav {
+      float: none!important;
+      z-index: 9999999;
+    }
+    .navbar-nav>li {
+      float: none;
+    }
+    .navbar-collapse.collapse.in{
+      display:block !important;
+      padding: 0;
+    }
+    .navbar-brand {
+      color:$white;
+    }
+    .navbar-collapse {
+      background-color: $white;
+    }
+    .navbar-inverse{
+      background-color: transparent;
+      border: 0;
+    }
+
+    .bdcrumbie {
+      margin-left: 30px;
+      li {
+        display: inline-block;
+        line-height: $space-md;
+        padding: 10px 0;
+        a {
+          color: #1a2e35;
+          &.active {
+            font-weight: bold;
+          }
+        }
+      }
     }
   }
 }

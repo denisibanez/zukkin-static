@@ -19,10 +19,10 @@ body {
   body .tooltip.right > .tooltip-arrow {
     border-right: 5px solid #a73838; }
 
-.comparativo.comparacao-page .body .product-list-select, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select, #carrinho .modal-content .modal-body .product-list-select {
+.comparativo.comparacao-page .body .product-list-select, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select, #carrinho .modal-content .modal-body .product-list-select, .productContent .product-info--content .product-list-select {
   width: 50%;
   display: flex; }
-  .comparativo.comparacao-page .body .product-list-select select, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select select, #carrinho .modal-content .modal-body .product-list-select select {
+  .comparativo.comparacao-page .body .product-list-select select, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select select, #carrinho .modal-content .modal-body .product-list-select select, .productContent .product-info--content .product-list-select select {
     border: 1px solid #cfd8dc;
     padding: 5px;
     height: 50px;
@@ -35,9 +35,9 @@ body {
     text-indent: 1px;
     text-overflow: '';
     border-radius: 5px; }
-  .comparativo.comparacao-page .body .product-list-select .controller, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller, #carrinho .modal-content .modal-body .product-list-select .controller {
+  .comparativo.comparacao-page .body .product-list-select .controller, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller, #carrinho .modal-content .modal-body .product-list-select .controller, .productContent .product-info--content .product-list-select .controller {
     margin-left: 5px; }
-    .comparativo.comparacao-page .body .product-list-select .controller .more, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller .more, #carrinho .modal-content .modal-body .product-list-select .controller .more {
+    .comparativo.comparacao-page .body .product-list-select .controller .more, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller .more, #carrinho .modal-content .modal-body .product-list-select .controller .more, .productContent .product-info--content .product-list-select .controller .more {
       background-color: #009c87;
       width: 35px;
       height: 25px;
@@ -47,7 +47,7 @@ body {
       text-align: center;
       border-radius: 5px;
       margin-bottom: 1px; }
-    .comparativo.comparacao-page .body .product-list-select .controller .minus, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller .minus, #carrinho .modal-content .modal-body .product-list-select .controller .minus {
+    .comparativo.comparacao-page .body .product-list-select .controller .minus, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller .minus, #carrinho .modal-content .modal-body .product-list-select .controller .minus, .productContent .product-info--content .product-list-select .controller .minus {
       background-color: #00bfa5;
       width: 35px;
       height: 25px;
@@ -106,10 +106,10 @@ body {
   height: 80px;
   width: 80px; }
 
-.content-product--vitrine .product-list .products-group .products-group--item .products-group--select .selectdiv, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-select .selectdiv, .product-info--content .selectdiv {
+.content-product--vitrine .product-list .products-group .products-group--item .products-group--select .selectdiv, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-select .selectdiv {
   position: relative;
   text-align: center; }
-  .content-product--vitrine .product-list .products-group .products-group--item .products-group--select .selectdiv select, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-select .selectdiv select, .product-info--content .selectdiv select {
+  .content-product--vitrine .product-list .products-group .products-group--item .products-group--select .selectdiv select, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-select .selectdiv select {
     width: 60px;
     height: 55px;
     margin: 0 auto;
@@ -120,7 +120,7 @@ body {
     font-weight: bold;
     -webkit-appearance: none;
     -moz-appearance: none; }
-    .content-product--vitrine .product-list .products-group .products-group--item .products-group--select .selectdiv select::-ms-expand, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-select .selectdiv select::-ms-expand, .product-info--content .selectdiv select::-ms-expand {
+    .content-product--vitrine .product-list .products-group .products-group--item .products-group--select .selectdiv select::-ms-expand, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-select .selectdiv select::-ms-expand {
       display: none; }
 
 .modal-dialog .modal-content .content .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail, .pedidos .iten-detail--content .content .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail {
@@ -139,14 +139,14 @@ body {
   background-color: #eceff1;
   width: 6px; }
 
-#alteraCadastro .modal-content .modal-body .formulario, #cadastro .modal-content .modal-body .formulario, #cadastro-2 .modal-content .modal-body .formulario, #editar-enderecos .modal-content .modal-body .formulario, #filtrar-estabelecimentos .modal-content .modal-header .formulario, #login .modal-content .modal-body .formulario, #search .modal-content .modal-body .formulario, #select-cidades .modal-content .modal-body .formulario, #select-cidades .modal-content .modal-footer .formulario, #input-cep .modal-footer .formulario, #bem-vindo .modal-body .formulario, .avaliationbox-content .formulario-avaliation .formulario, .accordion-payment .formulario {
+#alteraCadastro .modal-content .modal-body .formulario, #cadastro .modal-content .modal-body .formulario, #editar-enderecos .modal-content .modal-body .formulario, #filtrar-estabelecimentos .modal-content .modal-header .formulario, #login .modal-content .modal-body .formulario, #search .modal-content .modal-body .formulario, #select-cidades .modal-content .modal-body .formulario, #select-cidades .modal-content .modal-footer .formulario, #input-cep .modal-footer .formulario, #bem-vindo .modal-body .formulario, .productContent .avaliationbox-content .formulario-avaliation .formulario, .accordion-payment .formulario {
   margin-top: 30px; }
-  #alteraCadastro .modal-content .modal-body .formulario label, #cadastro .modal-content .modal-body .formulario label, #cadastro-2 .modal-content .modal-body .formulario label, #editar-enderecos .modal-content .modal-body .formulario label, #filtrar-estabelecimentos .modal-content .modal-header .formulario label, #login .modal-content .modal-body .formulario label, #search .modal-content .modal-body .formulario label, #select-cidades .modal-content .modal-body .formulario label, #select-cidades .modal-content .modal-footer .formulario label, #input-cep .modal-footer .formulario label, #bem-vindo .modal-body .formulario label, .avaliationbox-content .formulario-avaliation .formulario label, .accordion-payment .formulario label, #alteraCadastro .modal-content .modal-body .formulario span, #cadastro .modal-content .modal-body .formulario span, #cadastro-2 .modal-content .modal-body .formulario span, #editar-enderecos .modal-content .modal-body .formulario span, #filtrar-estabelecimentos .modal-content .modal-header .formulario span, #login .modal-content .modal-body .formulario span, #search .modal-content .modal-body .formulario span, #select-cidades .modal-content .modal-body .formulario span, #select-cidades .modal-content .modal-footer .formulario span, #input-cep .modal-footer .formulario span, #bem-vindo .modal-body .formulario span, .avaliationbox-content .formulario-avaliation .formulario span, .accordion-payment .formulario span {
+  #alteraCadastro .modal-content .modal-body .formulario label, #cadastro .modal-content .modal-body .formulario label, #editar-enderecos .modal-content .modal-body .formulario label, #filtrar-estabelecimentos .modal-content .modal-header .formulario label, #login .modal-content .modal-body .formulario label, #search .modal-content .modal-body .formulario label, #select-cidades .modal-content .modal-body .formulario label, #select-cidades .modal-content .modal-footer .formulario label, #input-cep .modal-footer .formulario label, #bem-vindo .modal-body .formulario label, .productContent .avaliationbox-content .formulario-avaliation .formulario label, .accordion-payment .formulario label, #alteraCadastro .modal-content .modal-body .formulario span, #cadastro .modal-content .modal-body .formulario span, #editar-enderecos .modal-content .modal-body .formulario span, #filtrar-estabelecimentos .modal-content .modal-header .formulario span, #login .modal-content .modal-body .formulario span, #search .modal-content .modal-body .formulario span, #select-cidades .modal-content .modal-body .formulario span, #select-cidades .modal-content .modal-footer .formulario span, #input-cep .modal-footer .formulario span, #bem-vindo .modal-body .formulario span, .productContent .avaliationbox-content .formulario-avaliation .formulario span, .accordion-payment .formulario span {
     color: #455a64;
     font-size: 15px; }
-  #alteraCadastro .modal-content .modal-body .formulario .select-sex, #cadastro .modal-content .modal-body .formulario .select-sex, #cadastro-2 .modal-content .modal-body .formulario .select-sex, #editar-enderecos .modal-content .modal-body .formulario .select-sex, #filtrar-estabelecimentos .modal-content .modal-header .formulario .select-sex, #login .modal-content .modal-body .formulario .select-sex, #search .modal-content .modal-body .formulario .select-sex, #select-cidades .modal-content .modal-body .formulario .select-sex, #select-cidades .modal-content .modal-footer .formulario .select-sex, #input-cep .modal-footer .formulario .select-sex, #bem-vindo .modal-body .formulario .select-sex, .avaliationbox-content .formulario-avaliation .formulario .select-sex, .accordion-payment .formulario .select-sex {
+  #alteraCadastro .modal-content .modal-body .formulario .select-sex, #cadastro .modal-content .modal-body .formulario .select-sex, #editar-enderecos .modal-content .modal-body .formulario .select-sex, #filtrar-estabelecimentos .modal-content .modal-header .formulario .select-sex, #login .modal-content .modal-body .formulario .select-sex, #search .modal-content .modal-body .formulario .select-sex, #select-cidades .modal-content .modal-body .formulario .select-sex, #select-cidades .modal-content .modal-footer .formulario .select-sex, #input-cep .modal-footer .formulario .select-sex, #bem-vindo .modal-body .formulario .select-sex, .productContent .avaliationbox-content .formulario-avaliation .formulario .select-sex, .accordion-payment .formulario .select-sex {
     margin-bottom: 15px; }
-  #alteraCadastro .modal-content .modal-body .formulario .nasc, #cadastro .modal-content .modal-body .formulario .nasc, #cadastro-2 .modal-content .modal-body .formulario .nasc, #editar-enderecos .modal-content .modal-body .formulario .nasc, #filtrar-estabelecimentos .modal-content .modal-header .formulario .nasc, #login .modal-content .modal-body .formulario .nasc, #search .modal-content .modal-body .formulario .nasc, #select-cidades .modal-content .modal-body .formulario .nasc, #select-cidades .modal-content .modal-footer .formulario .nasc, #input-cep .modal-footer .formulario .nasc, #bem-vindo .modal-body .formulario .nasc, .avaliationbox-content .formulario-avaliation .formulario .nasc, .accordion-payment .formulario .nasc {
+  #alteraCadastro .modal-content .modal-body .formulario .nasc, #cadastro .modal-content .modal-body .formulario .nasc, #editar-enderecos .modal-content .modal-body .formulario .nasc, #filtrar-estabelecimentos .modal-content .modal-header .formulario .nasc, #login .modal-content .modal-body .formulario .nasc, #search .modal-content .modal-body .formulario .nasc, #select-cidades .modal-content .modal-body .formulario .nasc, #select-cidades .modal-content .modal-footer .formulario .nasc, #input-cep .modal-footer .formulario .nasc, #bem-vindo .modal-body .formulario .nasc, .productContent .avaliationbox-content .formulario-avaliation .formulario .nasc, .accordion-payment .formulario .nasc {
     margin-bottom: 5px; }
 
 #filtrar-estabelecimentos .modal-content .modal-header #slidecontainer-range {
@@ -182,11 +182,11 @@ body {
   background: #4CAF50;
   cursor: pointer; }
 
-.comparacao-page .header .content-itens .product-list-prices, .comparacao-page .body .content-itens .product-list-prices, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-prices, .product-info--content .product-list-prices, .outros-supermercados--content .supermercados-item .row .product-list-prices, .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-prices {
+.comparacao-page .header .content-itens .product-list-prices, .comparacao-page .body .content-itens .product-list-prices, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-prices, .productContent .middleContent .product-list-prices, .productContent .outros-supermercados--content .supermercados-item .row .product-list-prices, .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-prices {
   width: 20%; }
-  .comparacao-page .header .content-itens .product-list-prices .prices .price-strike, .comparacao-page .body .content-itens .product-list-prices .prices .price-strike, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-prices .prices .price-strike, .product-info--content .product-list-prices .prices .price-strike, .outros-supermercados--content .supermercados-item .row .product-list-prices .prices .price-strike, .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-prices .prices .price-strike {
+  .comparacao-page .header .content-itens .product-list-prices .prices .price-strike, .comparacao-page .body .content-itens .product-list-prices .prices .price-strike, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-prices .prices .price-strike, .productContent .middleContent .product-list-prices .prices .price-strike, .productContent .outros-supermercados--content .supermercados-item .row .product-list-prices .prices .price-strike, .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-prices .prices .price-strike {
     text-decoration: line-through; }
-  .comparacao-page .header .content-itens .product-list-prices .prices .price, .comparacao-page .body .content-itens .product-list-prices .prices .price, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-prices .prices .price, .product-info--content .product-list-prices .prices .price, .outros-supermercados--content .supermercados-item .row .product-list-prices .prices .price, .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-prices .prices .price {
+  .comparacao-page .header .content-itens .product-list-prices .prices .price, .comparacao-page .body .content-itens .product-list-prices .prices .price, #carrinho .modal-content .modal-body .product-list-cart .content-vertical--wrap .product-list-prices .prices .price, .productContent .middleContent .product-list-prices .prices .price, .productContent .outros-supermercados--content .supermercados-item .row .product-list-prices .prices .price, .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-prices .prices .price {
     color: #ed2c2a;
     font-size: 20px;
     font-weight: bold; }
@@ -1057,23 +1057,32 @@ input, select {
 
 #cadastro {
   display: none; }
+  #cadastro.modal-dialog {
+    width: 100%; }
+    #cadastro.modal-dialog .modal-content {
+      margin: 0 auto; }
+      #cadastro.modal-dialog .modal-content.modal-lg {
+        width: 1024px; }
   #cadastro .modal-content .modal-header {
-    border-bottom: 0; }
+    border-bottom: 1px solid #eceff1;
+    margin-bottom: 15px; }
   #cadastro .modal-content .modal-body .formulario {
     margin-top: -15px; }
+  #cadastro .modal-content .modal-body .form-control-feedback {
+    background: url("/assets/images/static/png-sprites/eye.png") no-repeat;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 39px; }
   #cadastro .modal-content .modal-footer {
     border-top: 0; }
-
-#cadastro-2 {
-  display: none; }
-  #cadastro-2 .modal-content .modal-header {
-    border-bottom: 0; }
-    #cadastro-2 .modal-content .modal-header .sprites-back {
-      margin-top: 5px; }
-  #cadastro-2 .modal-content .modal-body .formulario {
-    margin-top: -15px; }
-  #cadastro-2 .modal-content .modal-footer {
-    border-top: 0; }
+    #cadastro .modal-content .modal-footer .text-span {
+      font-size: 10px;
+      float: left;
+      margin-left: 35px;
+      margin-top: 3px; }
+    #cadastro .modal-content .modal-footer .prenchimento {
+      font-size: 10px; }
 
 #editar-enderecos {
   display: none; }
@@ -1125,7 +1134,7 @@ input, select {
       #filtrar-estabelecimentos.modal-dialog .modal-content.modal-lg {
         width: 1024px; }
   #filtrar-estabelecimentos .modal-content .modal-header {
-    border-bottom: 0; }
+    border-bottom: 2px solid #eceff1; }
     #filtrar-estabelecimentos .modal-content .modal-header .select-range {
       margin-top: 15px;
       margin-bottom: 15px;
@@ -1147,7 +1156,13 @@ input, select {
   #filtrar-estabelecimentos .modal-content .modal-body .stores-content {
     border: 1px solid #cfd8dc;
     border-radius: 5px;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    background: #fafafa; }
+    #filtrar-estabelecimentos .modal-content .modal-body .stores-content h1 {
+      color: #37474f;
+      font-size: 18px;
+      margin: 0 15px 15px;
+      font-weight: bold; }
     #filtrar-estabelecimentos .modal-content .modal-body .stores-content .content-vertical {
       max-height: 350px; }
       #filtrar-estabelecimentos .modal-content .modal-body .stores-content .content-vertical .mCSB_inside > .mCSB_container {
@@ -1158,6 +1173,14 @@ input, select {
     #filtrar-estabelecimentos .modal-content .modal-body .stores-content .stores-content--item {
       display: flex;
       padding: 15px; }
+      #filtrar-estabelecimentos .modal-content .modal-body .stores-content .stores-content--item.active {
+        border: 1px solid #cfd8dc;
+        background: #ffffff;
+        margin: 10px 95px 10px 15px;
+        border-top-right-radius: 90px;
+        border-bottom-right-radius: 90px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px; }
       #filtrar-estabelecimentos .modal-content .modal-body .stores-content .stores-content--item .stores-content--img {
         width: 20%; }
       #filtrar-estabelecimentos .modal-content .modal-body .stores-content .stores-content--item .stores-content--text {
@@ -1534,173 +1557,157 @@ input, select {
       font-weight: bold;
       font-size: 15px; }
 
-.product-image--content {
+.productContent {
   background-color: #ffffff;
-  padding: 15px 0; }
-  .product-image--content .owl-carousel .item img {
-    margin: 0 auto;
-    width: auto; }
-  .product-image--content .owl-carousel .owl-nav .owl-next {
-    background: url("../images/static/png-sprites/arrow-product-right.png") no-repeat;
-    text-indent: -9999px;
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    width: 17px;
-    width: 20px; }
-  .product-image--content .owl-carousel .owl-nav .owl-prev {
-    background: url("../images/static/png-sprites/arrow-product-left.png") no-repeat;
-    position: absolute;
-    text-indent: -9999px;
-    top: 50%;
-    left: 5%;
-    width: 17px;
-    width: 20px; }
-  .product-image--content .owl-carousel img {
-    margin: 0 auto;
-    width: auto; }
-
-.product-info--content {
-  margin-top: 15px; }
-  .product-info--content .brand {
-    color: #37474f;
-    font-size: 13px; }
-  .product-info--content .cod {
-    color: #37474f;
-    font-size: 12px; }
-  .product-info--content .product-title {
-    color: #0066c8;
-    font-weight: bold;
-    font-size: 19px; }
-  .product-info--content .avalie {
-    margin-left: 15px; }
-  .product-info--content .off-content {
-    background-color: #1a2e35;
-    padding: 5px;
-    text-align: center; }
-    .product-info--content .off-content span {
-      color: #ffffff;
-      font-weight: bold;
-      font-size: 15px;
-      vertical-align: middle; }
-    .product-info--content .off-content .sprites-percent {
-      float: left; }
-  .product-info--content .select-content {
-    margin: 15px 0; }
-  .product-info--content .sprites-arrow-select-fake {
-    right: -15px;
-    top: -42px; }
-  .product-info--content .green-button.add-inactive {
-    margin: 0;
-    width: 100%; }
-  .product-info--content .content-description {
-    border-bottom: 1px solid #cfd8dc;
-    padding-bottom: 15px; }
-    .product-info--content .content-description p {
+  padding: 15px 0;
+  margin: 50px 0; }
+  .productContent .middleContent {
+    margin-top: 30px; }
+    .productContent .middleContent .buyName {
+      font-size: 10px; }
+    .productContent .middleContent .off-content {
+      background-color: #1a2e35;
+      padding: 5px;
+      text-align: center;
+      max-width: 115px;
+      margin: 15px 0; }
+      .productContent .middleContent .off-content span {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 15px;
+        vertical-align: middle; }
+      .productContent .middleContent .off-content .sprites-percent {
+        float: left; }
+  .productContent .product-info--content {
+    margin-top: 15px; }
+    .productContent .product-info--content .brand {
+      color: #37474f;
+      font-size: 13px; }
+    .productContent .product-info--content .cod {
       color: #37474f;
       font-size: 12px; }
-
-.achei-caro--content {
-  margin: 30px 0 0 0;
-  border-bottom: 1px solid #cfd8dc; }
-  .achei-caro--content .achei-caro h1 {
-    color: #455a64;
-    font-size: 17px;
-    font-weight: bold;
-    margin: 0; }
-  .achei-caro--content .achei-caro p {
-    color: #455a64;
-    font-size: 12px;
-    font-weight: bold;
-    margin: 0 0 15px; }
-  .achei-caro--content .red-button.add-active {
-    margin: 0;
-    padding: 6px 35px; }
-  .achei-caro--content .form-inline {
-    margin-bottom: 65px; }
-
-.outros-supermercados--content {
-  border-bottom: 1px solid #cfd8dc; }
-  .outros-supermercados--content h1 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #455a64; }
-  .outros-supermercados--content a {
-    color: #455a64; }
-  .outros-supermercados--content .supermercados-item {
-    margin: 30px 0; }
-    .outros-supermercados--content .supermercados-item .row {
-      margin-top: 25px;
-      margin-bottom: 25px; }
-      .outros-supermercados--content .supermercados-item .row .price {
-        font-size: 20px; }
-      .outros-supermercados--content .supermercados-item .row .change-store {
-        background-color: #ff2a28;
-        height: 60px;
-        width: 60px;
-        border-radius: 5px;
-        text-align: center;
-        padding: 10px;
+    .productContent .product-info--content .product-title {
+      color: #0066c8;
+      font-weight: bold;
+      font-size: 19px; }
+    .productContent .product-info--content .product-list-select {
+      margin-top: 15px; }
+      .productContent .product-info--content .product-list-select .green-button.add-inactive {
+        margin: 0;
+        margin-left: 5px; }
+    .productContent .product-info--content .content-description {
+      border-bottom: 1px solid #cfd8dc;
+      padding-bottom: 15px; }
+      .productContent .product-info--content .content-description p {
+        color: #37474f;
         font-size: 12px; }
-        .outros-supermercados--content .supermercados-item .row .change-store a {
-          color: #ffffff; }
-        .outros-supermercados--content .supermercados-item .row .change-store.transparent {
-          background-color: transparent;
-          border: 1px solid rgba(255, 42, 40, 0.5); }
-          .outros-supermercados--content .supermercados-item .row .change-store.transparent a {
-            color: #ff2a28;
-            opacity: 0.3; }
-
-.nutricional-description--content {
-  border-bottom: 1px solid #cfd8dc;
-  padding-bottom: 15px; }
-  .nutricional-description--content h1 {
+    .productContent .product-info--content .achei-caro--content {
+      margin: 15px 0 0 0; }
+      .productContent .product-info--content .achei-caro--content .achei-caro h1 {
+        color: #455a64;
+        font-size: 17px;
+        font-weight: bold;
+        margin: 0; }
+      .productContent .product-info--content .achei-caro--content .achei-caro p {
+        color: #455a64;
+        font-size: 12px;
+        font-weight: bold;
+        margin: 0 0 15px; }
+      .productContent .product-info--content .achei-caro--content .red-button.add-active {
+        margin: 0;
+        padding: 6px 35px; }
+      .productContent .product-info--content .achei-caro--content .form-inline {
+        margin-bottom: 65px; }
+  .productContent .outros-supermercados--content {
+    border-bottom: 1px solid #cfd8dc;
+    background-color: #ebeff2; }
+    .productContent .outros-supermercados--content h1 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #455a64; }
+    .productContent .outros-supermercados--content a {
+      color: #455a64; }
+    .productContent .outros-supermercados--content .supermercados-item {
+      margin: 30px 0; }
+      .productContent .outros-supermercados--content .supermercados-item .row {
+        margin-top: 25px;
+        margin-bottom: 25px; }
+        .productContent .outros-supermercados--content .supermercados-item .row .price {
+          font-size: 20px; }
+        .productContent .outros-supermercados--content .supermercados-item .row .change-store {
+          background-color: #ff2a28;
+          height: 60px;
+          width: 60px;
+          border-radius: 5px;
+          text-align: center;
+          padding: 10px;
+          font-size: 12px; }
+          .productContent .outros-supermercados--content .supermercados-item .row .change-store a {
+            color: #ffffff; }
+          .productContent .outros-supermercados--content .supermercados-item .row .change-store.transparent {
+            background-color: transparent;
+            border: 1px solid rgba(255, 42, 40, 0.5); }
+            .productContent .outros-supermercados--content .supermercados-item .row .change-store.transparent a {
+              color: #ff2a28;
+              opacity: 0.3; }
+  .productContent .nutricional-description--content {
+    border-bottom: 1px solid #cfd8dc;
+    padding-bottom: 15px; }
+    .productContent .nutricional-description--content h1 {
+      color: #455a64;
+      font-size: 20px;
+      font-weight: bold; }
+  .productContent .table-information p {
+    padding: 5px;
+    color: #455a64; }
+    .productContent .table-information p.line-white {
+      background-color: #ffffff;
+      padding: 10px; }
+  .productContent .avaliationbox-content h1 {
     color: #455a64;
     font-size: 20px;
     font-weight: bold; }
-
-.table-information p {
-  padding: 5px;
-  color: #455a64; }
-  .table-information p.line-white {
-    background-color: #ffffff;
-    padding: 10px; }
-
-.avaliationbox-content h1 {
-  color: #455a64;
-  font-size: 20px;
-  font-weight: bold; }
-
-.avaliationbox-content .avaliationbox-stars {
-  margin: 15px 0; }
-  .avaliationbox-content .avaliationbox-stars .row .progress {
-    border-radius: 0;
-    margin-bottom: 0; }
-
-.avaliationbox-content .product-avaliations-box {
-  border: 1px solid #cfd8dc;
-  border-radius: 5px;
-  padding: 15px; }
-
-.avaliationbox-content .formulario-avaliation {
-  margin: 15px 0;
-  border-bottom: 1px solid #cfd8dc;
-  padding-bottom: 20px; }
-  .avaliationbox-content .formulario-avaliation textarea {
-    min-height: 125px; }
-  .avaliationbox-content .formulario-avaliation input {
-    height: 50px; }
-  .avaliationbox-content .formulario-avaliation .btn-red--comparar {
-    background-color: #ff2a28; }
-    .avaliationbox-content .formulario-avaliation .btn-red--comparar:before {
-      content: none; }
-
-.compre-tambem--content h1 {
-  color: #455a64;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0;
-  margin: 15px 0 30px; }
+  .productContent .avaliationbox-content .avaliationbox-stars {
+    margin: 15px 0; }
+    .productContent .avaliationbox-content .avaliationbox-stars .row .progress {
+      border-radius: 0;
+      margin-bottom: 0; }
+  .productContent .avaliationbox-content .product-avaliations-box {
+    border: 1px solid #cfd8dc;
+    border-radius: 5px;
+    padding: 15px; }
+  .productContent .avaliationbox-content .formulario-avaliation {
+    margin: 15px 0;
+    border-bottom: 1px solid #cfd8dc;
+    padding-bottom: 20px; }
+    .productContent .avaliationbox-content .formulario-avaliation textarea {
+      min-height: 125px; }
+    .productContent .avaliationbox-content .formulario-avaliation input {
+      height: 50px; }
+    .productContent .avaliationbox-content .formulario-avaliation .btn-red--comparar {
+      background-color: #ff2a28; }
+      .productContent .avaliationbox-content .formulario-avaliation .btn-red--comparar:before {
+        content: none; }
+  .productContent .compre-tambem--content h1 {
+    color: #455a64;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    margin: 15px 0 30px; }
+  .productContent .compre-tambem--content .content-product--vitrine .product-list .products-group .products-group--item .products-group--text .midware {
+    background-color: red; }
+    .productContent .compre-tambem--content .content-product--vitrine .product-list .products-group .products-group--item .products-group--text .midware h4 {
+      font-size: 20px;
+      width: 40% !important;
+      float: left;
+      text-align: right;
+      height: 32px;
+      padding-top: 7px; }
+    .productContent .compre-tambem--content .content-product--vitrine .product-list .products-group .products-group--item .products-group--text .midware h1 {
+      font-size: 20px;
+      width: 60%;
+      float: right;
+      text-align: left; }
 
 .breadcrumbie-content {
   background-color: #9e0d0d;

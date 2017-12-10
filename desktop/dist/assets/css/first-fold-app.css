@@ -1045,6 +1045,8 @@ header {
     width: 100%;
     background: #fafafa;
     padding: 30px 0; }
+    header .header-line.white {
+      background-color: #ffffff; }
     header .header-line .fake-select-content p {
       font-size: 12px;
       padding: 0;
@@ -1078,6 +1080,70 @@ header {
       display: flex; }
       header .header-line ul li:last-child {
         margin-left: 15px; }
+  header .header-navbar {
+    background-color: #ffffff; }
+    header .header-navbar .container {
+      border-bottom: 1px solid #eceff1; }
+    header .header-navbar .menu-sidebar {
+      border: 1px solid #eceff1;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px; }
+      header .header-navbar .menu-sidebar ul#main-sidebar {
+        padding: 15px 0; }
+        header .header-navbar .menu-sidebar ul#main-sidebar li {
+          border-bottom: 1px solid #cfd8dc;
+          line-height: 20px;
+          margin: 0 15px; }
+          header .header-navbar .menu-sidebar ul#main-sidebar li:last-child {
+            border-bottom: 0; }
+          header .header-navbar .menu-sidebar ul#main-sidebar li:hover {
+            background: #ed2c2a; }
+            header .header-navbar .menu-sidebar ul#main-sidebar li:hover a {
+              color: #ffffff;
+              font-weight: bold; }
+          header .header-navbar .menu-sidebar ul#main-sidebar li a span {
+            margin-right: 15px; }
+    header .header-navbar .navbar-nav > li > a {
+      padding-bottom: 3px;
+      padding-top: 3px; }
+    header .header-navbar .navbar-header {
+      float: none;
+      background-color: #880d0d;
+      border-radius: 5px; }
+    header .header-navbar .navbar-toggle {
+      display: block;
+      float: left;
+      margin-left: 15px;
+      border: 0; }
+      header .header-navbar .navbar-toggle:hover, header .header-navbar .navbar-toggle:focus {
+        background-color: #880d0d; }
+    header .header-navbar .navbar-collapse.collapse {
+      display: none !important; }
+    header .header-navbar .navbar-nav {
+      float: none !important;
+      z-index: 9999999; }
+    header .header-navbar .navbar-nav > li {
+      float: none; }
+    header .header-navbar .navbar-collapse.collapse.in {
+      display: block !important;
+      padding: 0; }
+    header .header-navbar .navbar-brand {
+      color: #ffffff; }
+    header .header-navbar .navbar-collapse {
+      background-color: #ffffff; }
+    header .header-navbar .navbar-inverse {
+      background-color: transparent;
+      border: 0; }
+    header .header-navbar .bdcrumbie {
+      margin-left: 30px; }
+      header .header-navbar .bdcrumbie li {
+        display: inline-block;
+        line-height: 30px;
+        padding: 10px 0; }
+        header .header-navbar .bdcrumbie li a {
+          color: #1a2e35; }
+          header .header-navbar .bdcrumbie li a.active {
+            font-weight: bold; }
 
 .first-fold {
   background: #fafafa; }
