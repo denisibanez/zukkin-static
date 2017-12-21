@@ -79,7 +79,7 @@ body {
   .modal-dialog .modal-content .modal-footer .container-btn--confirm .btn-blue--confirm {
     width: 100%; } }
 
-.comparativo #accordioninfo .panel-heading h4:after, .collapse-btn:after, .btn-red--comparar:before, .filter-catalogo .accordion-body .accordion-name:after {
+.comparativo #accordioninfo .panel-heading h4:after, .collapse-btn:after, .btn-red--comparar:before {
   content: "";
   width: 30px;
   height: 30px;
@@ -89,7 +89,7 @@ body {
   position: relative;
   top: 8px; }
 
-.comparativo #accordioninfo .panel-heading h4.arrow-up:after, .collapse-btn.arrow-up:after, .filter-catalogo .accordion-body .accordion-name.arrow-up:after {
+.comparativo #accordioninfo .panel-heading h4.arrow-up:after, .collapse-btn.arrow-up:after {
   background: url("../../images/static/png-sprites/arrow-select-fake-up.png") no-repeat; }
 
 .content-product--vitrine h2 a {
@@ -742,6 +742,9 @@ input[type="checkbox"]:checked + span .fake-checkbox:after {
 
 body {
   font-family: 'Open Sans', sans-serif; }
+
+.navbar.navbar-inverse {
+  z-index: 999999; }
 
 #menu-lista-drop.dropdown .dropdown-menu {
   display: none;
@@ -1787,48 +1790,41 @@ input, select {
         .breadcrumbie-content ul li a.active {
           color: white; }
 
-.filter-catalogo .filter-catalogo--title h1 {
-  border-bottom: 1px solid #cfd8dc;
-  color: #37474f;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0;
-  margin: 15px 0;
-  padding: 15px 0; }
-  .filter-catalogo .filter-catalogo--title h1 span {
-    color: #ff2a28;
-    font-weight: normal; }
-
-.filter-catalogo .filter-catalogo--title h2 {
-  color: #6e6e6e;
-  font-size: 20px; }
-
-.filter-catalogo .accordion-body {
-  background: white;
-  padding: 15px;
-  margin: 5px 0; }
-  .filter-catalogo .accordion-body .accordion-name {
-    color: #1a2e35;
-    font-weight: bold; }
-    .filter-catalogo .accordion-body .accordion-name:after {
-      background: url("../images/static/png-sprites/big-arrow-down.png") no-repeat !important; }
-    .filter-catalogo .accordion-body .accordion-name.arrow-up:after {
-      background: url("../images/static/png-sprites/big-arrow-up.png") no-repeat !important; }
-  .filter-catalogo .accordion-body .panel-body {
-    padding: 0;
-    padding-left: 15px; }
-    .filter-catalogo .accordion-body .panel-body .link {
-      color: #90a4ae; }
-    .filter-catalogo .accordion-body .panel-body .link-all {
-      color: #ff2a28; }
-
-.content-product--vitrine {
-  margin: 15px 0; }
-  .content-product--vitrine .products-group {
+.filter-catalogo {
+  margin-top: 25px; }
+  .filter-catalogo .filter-catalogo--title h1 {
+    color: #37474f;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 23px 0 15px 0; }
+    .filter-catalogo .filter-catalogo--title h1 span {
+      color: #ff2a28;
+      font-weight: normal; }
+  .filter-catalogo .filter-catalogo--title h2 {
+    color: #6e6e6e;
+    font-size: 20px; }
+  .filter-catalogo .filter-catalogo--title .link {
+    color: #90a4ae; }
+  .filter-catalogo .filter-catalogo--title .link-all {
+    color: #ff2a28; }
+  .filter-catalogo .orderby {
+    margin-top: 25px; }
+    .filter-catalogo .orderby select {
+      border: 0; }
+  .filter-catalogo .block-filter input {
+    margin-bottom: 15px;
+    border-radius: 0;
+    height: 40px; }
+  .filter-catalogo .content-product--vitrine {
     margin: 15px 0; }
 
+body.checkout {
+  background-color: #fafafa; }
+
 .accordion-payment {
-  margin: 15px 0; }
+  background-color: #ffffff;
+  border: 1px solid #cfd8dc; }
   .accordion-payment input {
     height: 40px; }
   .accordion-payment h4 a {
@@ -1837,8 +1833,6 @@ input, select {
     font-size: 15px; }
   .accordion-payment .sprites-card-payment, .accordion-payment .sprites-user-payment, .accordion-payment .sprites-gps-payment {
     margin-right: 15px; }
-  .accordion-payment .green-button.add-inactive {
-    max-width: 190px; }
   .accordion-payment .btn-blue--new, .accordion-payment .green-button.green-button {
     width: 100%;
     margin: 0;
@@ -1886,8 +1880,7 @@ input, select {
     margin-top: 15px; }
     .accordion-payment .accordion-payment--content.payment h1 {
       font-size: 13px;
-      text-align: center;
-      padding: 0 115px;
+      text-align: left;
       line-height: 20px;
       color: #37474f;
       font-weight: bold; }
@@ -1927,10 +1920,13 @@ input, select {
           width: 100%;
           color: #37474f;
           font-weight: bold;
-          height: 40px;
+          height: 17px;
           padding: 0; }
+          .accordion-payment .accordion-payment--content.payment .nav.nav-tabs li a:focus, .accordion-payment .accordion-payment--content.payment .nav.nav-tabs li a:hover {
+            background: white;
+            border: 0; }
     .accordion-payment .accordion-payment--content.payment .tab-content {
-      padding: 0; }
+      padding: 0 15px 0 0; }
       .accordion-payment .accordion-payment--content.payment .tab-content select {
         height: 40px; }
       .accordion-payment .accordion-payment--content.payment .tab-content .content-input {

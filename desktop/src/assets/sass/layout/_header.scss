@@ -2,6 +2,21 @@ header{
   background-color: $red;
   height: 210px;
 
+  &.reset-header{
+    background-color: #fafafa;
+    height: 90px;
+
+    .seguro {
+      color:#00897b;
+      font-weight: bold;
+    }
+
+    .finalizar {
+      font-weight: bold;
+      margin-top: 22px;
+    }
+  }
+
   .header-fixe {
     height: $space-lg + $space-sm;
     padding:10px 0;
@@ -206,7 +221,7 @@ header{
     .container {
       border-bottom: 1px solid $gray;
     }
-    
+
     .menu-sidebar {
       border: 1px solid $gray;
       border-bottom-right-radius: 5px;
@@ -302,5 +317,10 @@ header{
         }
       }
     }
+  }
+
+  .header-checkout {
+    background-color: #fafafa;
+    padding: 25px 0;
   }
 }

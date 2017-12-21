@@ -93,165 +93,244 @@
         padding: 6px 35px;
       }
 
-      .form-inline {
-        margin-bottom: $space-lg + $space-sm;
-      }
+       .form-inline {
+         margin-bottom: $space-lg + $space-sm;
+       }
     }
   }
+}
 
-  .outros-supermercados--content{
+.outros-supermercados--content{
     border-bottom: 1px solid $gray-light;
     background-color: #ebeff2;
 
-    h1 {
-      font-size: $space-sm + $space-xs;
+  h1 {
+    font-size: $space-sm + $space-xs;
+    font-weight: bold;
+    color: $blue-dark;
+  }
+
+  a {
+    color: $blue-dark;
+  }
+
+  .order {
+    margin-top: 25px;
+  }
+
+  .select-order {
+    margin-top: 19px;
+
+    .form-control {
+      border: 0;
+      background-color: $gray;
+      box-shadow: none;
+
+      option {
+        border: 0;
+      }
+    }
+  }
+
+  .off-content {
+    background-color: $green-dark;
+    padding: $space-xs;
+    text-align: center;
+    max-width: 80px;
+    margin: 5px 0;
+
+    span {
+      color: $white;
       font-weight: bold;
-      color: $blue-dark;
+      font-size: $space-sm;
+      vertical-align: middle;
     }
 
-    a {
-      color: $blue-dark;
+    .sprites-percent {
+      float: left;
     }
+  }
 
-    .supermercados-item {
-      margin: $space-md 0;
-      .row  {
-        margin-top: $space-sm + 10px;
-        margin-bottom: $space-sm + 10px;
+  .supermercados-item {
+    margin: $space-md 0;
+    .row  {
+      margin-top: $space-sm + 10px;
+      margin-bottom: $space-sm + 10px;
 
-        @extend %prices;
+      @extend %prices;
 
-        .price {
-          font-size: $space-sm + $space-xs;
+      .price {
+        font-size: $space-sm + $space-xs;
+      }
+
+      .product-list-prices {
+        margin-top: 25px;
+      }
+
+      .change-store {
+        background-color: $red-live;
+        height: $space-lg - 10px;
+        width: 170px;
+        border-radius: $space-xs;
+        text-align: center;
+        line-height: 45px;
+        font-size: $space-xs + 7px;
+        margin-top: 25px;
+
+        a {
+          color: $white;
         }
 
-        .change-store {
-          background-color: $red-live;
-          height: $space-lg + 10px;
-          width: $space-lg + 10px;
-          border-radius: $space-xs;
-          text-align: center;
-          padding: $space-xs +  $space-xs;
-          font-size: $space-xs + 7px;
+        .sprites-change-storeWhite {
+          position: relative;
+          top: 5px;
+        }
+
+        .sprites-change-storeRed {
+          position: relative;
+          top: 5px;
+        }
+
+        &.transparent {
+          background-color: transparent;
+           border: 1px solid rgba(255, 42, 40, .5);
 
           a {
-            color: $white;
+            color: $red-live;
+            opacity: 0.3;
           }
+        }
+      }
 
-          &.transparent {
-            background-color: transparent;
-            border: 1px solid rgba(255, 42, 40, .5);
 
-            a {
-              color: $red-live;
-              opacity: 0.3;
-            }
-          }
+      .text-center {
+        .btn.red-button.add-active {
+          height: 40px;
+          line-height: 40px;
+          padding: 0 35px;
         }
       }
     }
   }
+}
 
-  .nutricional-description--content {
+.nutricional-description--content {
+  border-bottom: 1px solid $gray-light;
+  padding-bottom: $space-sm;
+
+  h1 {
+    color: $blue-dark;
+    font-size: $space-md - 10px;
+    font-weight: bold;
+  }
+}
+
+.table-information {
+  p {
+    padding: $space-xs;
+    color: $blue-dark;
+
+    &.line-white {
+      background-color: $white;
+      padding: $space-sm - $space-xs;
+    }
+  }
+}
+
+.avaliationbox-content {
+  h1 {
+    color: $blue-dark;
+    font-size: $space-md - 10px;
+    font-weight: bold;
+  }
+
+  .avaliationbox-stars {
+    margin: $space-sm 0;
     border-bottom: 1px solid $gray-light;
-    padding-bottom: $space-sm;
+    padding-bottom: $space-sm + $space-xs;
 
-    h1 {
-      color: $blue-dark;
-      font-size: $space-md - 10px;
-      font-weight: bold;
+    .row {
+      .progress {
+        border-radius: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    .aside {
+      margin-top: -65px;
     }
   }
 
-  .table-information {
-    p {
-      padding: $space-xs;
-      color: $blue-dark;
+  .product-avaliations-box {
+    border: 1px solid $gray-light;
+    border-radius: $space-xs;
+    padding: $space-sm;
+  }
 
-      &.line-white {
-        background-color: $white;
-        padding: $space-sm - $space-xs;
+  .formulario-avaliation {
+    margin: $space-sm 0;
+
+    padding-bottom: $space-sm + $space-xs;
+
+    @extend %formulario;
+
+    textarea{
+      min-height: 125px;
+    }
+
+    input {
+      height: $space-lg;
+    }
+
+    .btn.red-button.add-active {
+      height: 50px;
+      padding: 0 15px;
+      line-height: 50px;
+      margin-top: 0px;
+
+      &:before{
+        content: none;
       }
     }
   }
+}
 
-  .avaliationbox-content {
-    h1 {
-      color: $blue-dark;
-      font-size: $space-md - 10px;
-      font-weight: bold;
-    }
-
-    .avaliationbox-stars {
-      margin: $space-sm 0;
-
-      .row {
-        .progress {
-          border-radius: 0;
-          margin-bottom: 0;
-        }
-      }
-    }
-
-    .product-avaliations-box {
-      border: 1px solid $gray-light;
-      border-radius: $space-xs;
-      padding: $space-sm;
-    }
-
-    .formulario-avaliation {
-      margin: $space-sm 0;
-      border-bottom: 1px solid $gray-light;
-      padding-bottom: $space-sm + $space-xs;
-
-      @extend %formulario;
-
-      textarea{
-        min-height: 125px;
-      }
-
-      input {
-        height: $space-lg;
-      }
-
-      .btn-red--comparar {
-        background-color: $red-live;
-
-        &:before{
-          content: none;
-        }
-      }
-    }
+.compre-tambem--content {
+  h1 {
+    color: $blue-dark;
+    font-size: $space-md - 10px;
+    font-weight: bold;
+    margin: 0;
+    margin: $space-sm 0 $space-md;
   }
 
-  .compre-tambem--content {
-    h1 {
-      color: $blue-dark;
-      font-size: $space-md - 10px;
-      font-weight: bold;
-      margin: 0;
-      margin: $space-sm 0 $space-md;
-    }
+  .midware {
+    display: flex;
+    width: 95%;
+    padding:0 25px;
+  }
 
+  .midware h4,
+  .midware h1 {
+    font-size: $space-sm + $space-xs;
+  }
 
+  .midware h1 {
+    width: 60%;
+    text-align: left;
+  }
 
-    .midware {
-      background-color: red;
-      h4 {
-        font-size: $space-sm + $space-xs;
-        width: 40% !important;
-        float: left;
-        text-align: right;
-        height: 32px;
-        padding-top: 7px;
-      }
+  .midware span {
+    width: 40%;
+    height: 32px;
+    padding-top: 11px;
+  }
 
-      h1 {
-        font-size: $space-sm + $space-xs;
-        width: 60%;
-        float: right;
-        text-align: left;
-      }
-    }
+  .midware h4 {
+    width: 20%;
+    text-align: left;
+    margin: 0 !important;
+    margin-top: 11px !important;
+    font-size: 17px !important;
   }
 }

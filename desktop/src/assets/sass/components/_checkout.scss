@@ -1,6 +1,12 @@
+body {
+  &.checkout {
+    background-color: #fafafa;
+  }
+}
 .accordion-payment {
-  margin: $space-sm 0;
+  background-color: $white;
   @extend %formulario;
+  border:1px solid $gray-light;
 
   input {
     height: $space-md + 10px;
@@ -18,9 +24,6 @@
     margin-right: $space-sm;
   }
 
-  .green-button.add-inactive {
-    max-width: 190px;
-  }
 
   .btn-blue--new, .green-button.green-button {
     width: 100%;
@@ -98,8 +101,7 @@
     &.payment {
       h1 {
         font-size: $space-sm - 2px;
-        text-align: center;
-        padding:0 115px;
+        text-align: left;
         line-height: 20px;
         color:$lead;
         font-weight: bold;
@@ -167,14 +169,18 @@
             width: 100%;
             color: $lead;
             font-weight: bold;
-            height: $space-md + 10px;
+            height: 17px;
             padding: 0;
+            &:focus, &:hover {
+              background: white;
+              border: 0;
+            }
           }
         }
       }
 
       .tab-content {
-        padding: 0;
+        padding: 0 15px 0 0;
 
         select {
           height: 40px;

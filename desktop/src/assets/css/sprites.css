@@ -3,8 +3,8 @@
 .sprites-file,
 .sprites-money-ico,
 .sprites-arrow-white-down,
-.sprites-arrow-right-fake,
 .sprites-arrow-left-fake,
+.sprites-arrow-right-fake,
 .sprites-arrow-select-fake,
 .sprites-arrow-select-fake-up,
 .sprites-smartstore-ico,
@@ -77,13 +77,14 @@
 .sprites-matin,
 .sprites-percent,
 .sprites-account-blue,
-.sprites-search-icon-blue,
-.sprites-carnes,
 .sprites-cere,
+.sprites-carnes,
+.sprites-search-icon-blue,
 .sprites-higi,
+.sprites-security,
 .sprites-sobre,
-.sprites-big-arrow-down,
 .sprites-big-arrow-up,
+.sprites-big-arrow-down,
 .sprites-visa,
 .sprites-frio,
 .sprites-menu-hamburguer-desktop,
@@ -91,9 +92,9 @@
 .sprites-0-stars-mediun,
 .sprites-3-stars-small,
 .sprites-4-stars-small,
+.sprites-2-stars-small,
 .sprites-5-stars-small,
-.sprites-1-stars-small,
-.sprites-2-stars-small {
+.sprites-1-stars-small {
   background-image: url("sprites.png");
   display: inline-block;
   background-repeat: no-repeat;
@@ -130,13 +131,13 @@
   height: 12px;
   text-indent: 14px; }
 
-.sprites-arrow-right-fake {
+.sprites-arrow-left-fake {
   background-position: -213px -54px;
   width: 10px;
   height: 11px;
   text-indent: 10px; }
 
-.sprites-arrow-left-fake {
+.sprites-arrow-right-fake {
   background-position: -223px -54px;
   width: 10px;
   height: 11px;
@@ -574,11 +575,11 @@
   height: 18px;
   text-indent: 18px; }
 
-.sprites-search-icon-blue {
+.sprites-cere {
   background-position: -1025px -37px;
-  width: 16px;
+  width: 17px;
   height: 17px;
-  text-indent: 16px; }
+  text-indent: 17px; }
 
 .sprites-carnes {
   background-position: -1043px -19px;
@@ -586,11 +587,11 @@
   height: 17px;
   text-indent: 22px; }
 
-.sprites-cere {
+.sprites-search-icon-blue {
   background-position: -1043px -36px;
-  width: 17px;
+  width: 16px;
   height: 17px;
-  text-indent: 17px; }
+  text-indent: 16px; }
 
 .sprites-higi {
   background-position: -1065px -19px;
@@ -598,38 +599,44 @@
   height: 17px;
   text-indent: 17px; }
 
-.sprites-sobre {
+.sprites-security {
   background-position: -1065px -36px;
+  width: 14px;
+  height: 16px;
+  text-indent: 14px; }
+
+.sprites-sobre {
+  background-position: -1082px -19px;
   width: 16px;
   height: 16px;
   text-indent: 16px; }
 
-.sprites-big-arrow-down {
-  background-position: -1082px -19px;
+.sprites-big-arrow-up {
+  background-position: -1098px -19px;
   width: 17px;
   height: 15px;
   text-indent: 17px; }
 
-.sprites-big-arrow-up {
-  background-position: -1082px -34px;
+.sprites-big-arrow-down {
+  background-position: -1115px -19px;
   width: 17px;
   height: 15px;
   text-indent: 17px; }
 
 .sprites-visa {
-  background-position: -1099px -19px;
+  background-position: -1098px -34px;
   width: 47px;
   height: 15px;
   text-indent: 47px; }
 
 .sprites-frio {
-  background-position: -1099px -34px;
+  background-position: -1098px -49px;
   width: 21px;
   height: 15px;
   text-indent: 21px; }
 
 .sprites-menu-hamburguer-desktop {
-  background-position: -1120px -34px;
+  background-position: -1119px -49px;
   width: 24px;
   height: 15px;
   text-indent: 24px; }
@@ -658,19 +665,19 @@
   height: 11px;
   text-indent: 91px; }
 
-.sprites-5-stars-small {
+.sprites-2-stars-small {
   background-position: -1287px -22px;
   width: 91px;
   height: 10px;
   text-indent: 91px; }
 
-.sprites-1-stars-small {
+.sprites-5-stars-small {
   background-position: -1287px -32px;
   width: 91px;
   height: 10px;
   text-indent: 91px; }
 
-.sprites-2-stars-small {
+.sprites-1-stars-small {
   background-position: -1287px -42px;
   width: 91px;
   height: 10px;

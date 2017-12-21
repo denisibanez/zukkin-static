@@ -1,6 +1,32 @@
 footer {
   background-color: $gray;
 
+  &.reset-footer{
+    background-color: #eceff1;
+    .footer-third-container {
+        .payment-icons {
+          background-color: #ffffff !important;
+          margin: 0 !important;
+          border-bottom: 0 !important;
+        }
+    }
+
+    .footer-content {
+      margin-bottom: 0 !important;
+    }
+
+    .footer-container {
+      background-color: #ffffff !important;
+      margin-top: 15px;
+      height: 115px;
+      padding: 30px !important;
+    }
+
+    .copyright-content {
+      padding: 15px ;
+    }
+  }
+
   .footer-line {
     .container {
       .container-footer-line {
@@ -229,5 +255,5 @@ footer {
 }
 
 .btn-footer-hide.show{
-  display: block; 
+  display: block;
 }

@@ -4,6 +4,10 @@ body {
   @extend %customTooltip;
 }
 
+.navbar.navbar-inverse {
+  z-index: 999999; 
+}
+
 #menu-lista-drop {
   &.dropdown {
     .dropdown-menu {

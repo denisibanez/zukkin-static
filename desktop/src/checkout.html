@@ -29,85 +29,25 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body class="home" id="target">
+<body class="checkout" id="target">
   <!--Header-->
-  <header>
-    <div class="container-fluid">
+  <header class="reset-header">
+    <div class="container">
       <div class="row">
-        <div class="col-xs-2">
-          <nav id="navside">
-            <a id="open" class="sprites-menu-hamburguer">Open</a>
-
-            <div id="pm_menu" class="pm_close">
-              <div class="pm_menu-header">
-                <div class="col-xs-4">
-                  <span>O que deseja fazer?</span>
-                </div>
-                <div class="col-xs-6">
-                  <a href="#" class="btn btn-red--comparar">Quero comparar</a>
-                </div>
-                <div class="col-xs-2 pull-right">
-                  <a class="pm_overlay pm_hide sprites-close">Fechar</a>
-                </div>
-              </div>
-              <div class="pm_menu-body">
-                <ul>
-                  <li><a href="#" class="carnes"><span class="sprites-carnes"></span>Carnes</a></li>
-                  <li><a href="#" class="bebidas"><span class="sprites-bebi"></span>Bebidas</a></li>
-                  <li><a href="#" class="frios"><span class="sprites-frio"></span>Frios</a></li>
-                  <li><a href="#" class="laticinios"><span class="sprites-lati"></span>Laticinios</a></li>
-                  <li><a href="#" class="matinais"><span class="sprites-matin"></span>Matinais</a></li>
-                  <li><a href="#" class="sobremesas"><span class="sprites-sobre"></span>Sobremesas</a></li>
-                  <li><a href="#" class="perfumaria"><span class="sprites-perfum"></span>Perfumaria</a></li>
-                  <li><a href="#" class="higiene"><span class="sprites-higi"></span>Higiene</a></li>
-                  <li><a href="#" class="cereais"><span class="sprites-cere"></span>Cereais</a></li>
-                  <li><a href="#" class="mercearia"><span class="sprites-merce"></span>Mercearia</a></li>
-                  <li><a href="#" class="hortfruti"><span class="sprites-horti"></span>Hortfruti</a></li>
-                  <li><a href="#" class="all-departaments"><span class="sprites-all-dp"></span><strong>Todos departamentos</strong></a></li>
-                </ul>
-
-                <div class="content-menu--mobile">
-                  <div class="content-menu--lista">
-                    <ul>
-                      <li><a href="" dp-type="aves">Aves</a></li>
-                      <li><a href="" dp-type="bovinas">Bovinas</a></li>
-                      <li><a href="" dp-type="peixes">Peixes e Crustáceos</a></li>
-                      <li><a href="" dp-type="suinas">Suínas</a></li>
-                      <li><a href="" dp-type="linguicas">Linguiças e Salsichas</a></li>
-                      <li><a href="" dp-type="especiais">Exóticas e Especiais</a></li>
-                      <li><a href="" class="see-all" dp-type="tudo">ver tudo</a></li>
-                    </ul>
-                  </div>
-
-                  <div class="content-menu--footer">
-                    <img src="assets/images/static/banner-menu.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="pm_menu-footer">
-                <ul>
-                  <li><a href=""><span class="sprites-user-white"></span>Minha conta</a></li>
-                  <li><a href=""><span class="sprites-white-list"></span>Minhas listas</a></li>
-                  <li><a href=""><span class="sprites-pedidos"></span>Meus pedidos</a></li>
-                </ul>
-              </div>
+        <div class="header-checkout">
+          <div class="col-md-2">
+            <img src="assets/images/static/zukkin-logo-mobile-body.png" alt="">
+          </div>
+          <div class="col-md-3">
+            <p class="finalizar">Finalizar compra</p>
+          </div>
+          <div class="col-md-7">
+            <div class="pull-right">
+              <p class="seguro">
+                <span class="sprites-security"></span>
+                Ambiente seguro
+              </p>
             </div>
-          </nav>
-        </div>
-        <div class="col-xs-4">
-          <a href="/" class="sprites-zukkin-logo-mobile"></a>
-        </div>
-
-        <div class="col-xs-2">
-          <a href="#" class="sprites-user-icon" data-toggle="modal" data-target="#myModal" data-ref="alteraCadastro"></a>
-        </div>
-        <div class="col-xs-2">
-          <a href="" class="sprites-list" data-toggle="modal" data-target="#myModal" data-ref="editarLista"></a>
-        </div>
-        <div class="col-xs-2">
-          <a href="#" class="sprites-cart-icon" data-toggle="modal" data-target="#myModal" data-ref="carrinho"></a>
-          <div class="carret-cart">
-            <span>12</span>
           </div>
         </div>
       </div>
@@ -117,601 +57,420 @@
 
   <!--main-->
   <main class="">
-    <!--breadcrumbie-->
-    <section class="breadcrumbie-content">
-      <div class="">
-        <ul>
-          <li><a href="">Zukkin</a> |</li>
-          <li><a href="" class="active">Checkout</a> </li>
-        </ul>
-      </div>
-    </section>
-    <!--/breadcrumbie-->
-
     <!-- Accordion pagamento-->
     <section class="container accordion-payment">
       <div class="row">
-        <div class="col-xs-12">
-          <div class="" id="accordion-payment" role="tablist" aria-multiselectable="true">
-            <div class="accordion-payment--content">
-              <div class="" role="tab" id="pay-01">
-                <h4 class="">
-                  <a role="button" data-toggle="collapse"
-                  data-parent="#accordion-payment" href="#collapse-01"
-                  aria-expanded="true" aria-controls="collapseOne"
-                  class="">
-                    <span class="sprites-user-payment"></span>1. Dados pessoais
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse-01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
-                  <form role="form" class="form-inline formulario">
-                    <div class="row">
-                      <div class="form-group col-xs-12">
-                        <label for="">E-mail</label>
-                        <input type="email" class="form-control error-input" id="email" placeholder="Difite seu e-mail">
-                      </div>
-                    </div>
+        <div class="col-md-4">
+          <div class="accordion-payment--content">
+            <h4>
+              <span class="sprites-user-payment"></span>1. Dados pessoais
+            </h4>
+            <div class="panel-body">
+              <form role="form" class="form-inline formulario">
+                <div class="row">
+                  <div class="form-group col-xs-12">
+                    <label for="">E-mail</label>
+                    <input type="email" class="form-control error-input" id="email" placeholder="Difite seu e-mail">
+                  </div>
+                </div>
 
-                    <div class="row">
-                      <div class="form-group col-xs-6">
-                        <label for="">Nome</label>
-                        <input type="text" class="form-control" id="nome" placeholder="Digite aqui">
-                      </div>
-                      <div class="form-group col-xs-6">
-                        <label for="">Sobrenome</label>
-                        <input type="text" class="form-control" id="sobrenome" placeholder="Digite aqui">
-                      </div>
-                    </div>
+                <div class="row">
+                  <div class="form-group col-xs-6">
+                    <label for="">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite aqui">
+                  </div>
+                  <div class="form-group col-xs-6">
+                    <label for="">Sobrenome</label>
+                    <input type="text" class="form-control" id="sobrenome" placeholder="Digite aqui">
+                  </div>
+                </div>
 
-                    <div class="row">
-                      <div class="form-group col-xs-6">
-                        <label for="">CPF</label>
-                        <input type="text" class="form-control" id="cpf" placeholder="Difite aqui">
-                      </div>
-                    </div>
+                <div class="row">
+                  <div class="form-group col-xs-6">
+                    <label for="">CPF</label>
+                    <input type="text" class="form-control" id="cpf" placeholder="Difite aqui">
+                  </div>
+                </div>
 
-                    <div class="row">
-                      <div class="form-group col-xs-6">
-                        <label for="">Celular</label>
-                        <input type="text" class="form-control" id="celular" placeholder="( ) 90000-0000">
-                      </div>
-                      <div class="form-group col-xs-6">
-                        <label for="">Telefone</label>
-                        <input type="text" class="form-control" id="telefone" placeholder="( ) 9000-0000">
-                      </div>
-                    </div>
+                <div class="row">
+                  <div class="form-group col-xs-6">
+                    <label for="">Celular</label>
+                    <input type="text" class="form-control" id="celular" placeholder="( ) 90000-0000">
+                  </div>
+                  <div class="form-group col-xs-6">
+                    <label for="">Telefone</label>
+                    <input type="text" class="form-control" id="telefone" placeholder="( ) 9000-0000">
+                  </div>
+                </div>
 
-                    <div class="row">
-                      <div class="col-xs-6">
-                        <button class="btn btn-blue--new">Editar dados</button>
-                      </div>
-                      <div class="col-xs-6">
-                        <button class="btn green-button add-inactive">Ir para entrega</button>
-                      </div>
-                    </div>
-                  </form>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <button class="btn btn-blue--new">Editar dados</button>
+                  </div>
+                  <div class="col-xs-6">
+                    <button class="btn green-button add-inactive">Ir para entrega</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="accordion-payment--content">
+            <h4>
+              <span class="sprites-gps-payment"></span>2. Entrega
+            </h4>
+            <div class="panel-body">
+              <span>Entregar em:</span>
+              <div class="row">
+                <div class="col-xs-4">
+                  <span class="delivery">Minha casa</span>
+                </div>
+                <div class="col-xs-4">
+                  <span class="delivery">Minha casa</span>
+                </div>
+                <div class="col-xs-4">
+                  <span class="delivery">Meu trabalho</span>
                 </div>
               </div>
-            </div>
-            <div class="accordion-payment--content">
-              <div class="" role="tab" id="pay-02">
-                <h4 class="">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion-payment"
-                   href="#collapse-02" aria-expanded="true" aria-controls="collapseOne" class="accordion-name">
-                    <span class="sprites-gps-payment"></span>2. Entrega
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse-02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
-                  <span>Entregar em:</span>
-                  <div class="row">
-                    <div class="col-xs-4">
-                      <span class="delivery">Minha casa</span>
-                    </div>
-                    <div class="col-xs-4">
-                      <span class="delivery">Minha casa</span>
-                    </div>
-                    <div class="col-xs-4">
-                      <span class="delivery">Meu trabalho</span>
+
+              <form role="form" class="form-inline formulario">
+                <div class="row">
+                  <div class="form-group col-xs-6">
+                    <label for="">Cep</label>
+                    <input type="text" class="form-control" id="cep" placeholder="Digite seu cep">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-xs-12">
+                    <label for="">Endereço</label>
+                    <input type="text" class="form-control" id="endereco" placeholder="Digite aqui">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-6">
+                    <div class="form-group">
+                      <label for="">Numero</label>
+                      <input type="text" class="form-control" id="numero" placeholder="">
                     </div>
                   </div>
 
-                  <form role="form" class="form-inline formulario">
-                    <div class="row">
-                      <div class="form-group col-xs-6">
-                        <label for="">Cep</label>
-                        <input type="text" class="form-control" id="cep" placeholder="Digite seu cep">
-                      </div>
+                  <div class="col-xs-6">
+                    <div class="form-group">
+                      <label for="">Complemento</label>
+                      <input type="text" class="form-control" id="complemento" placeholder="Ex:Casa">
                     </div>
-
-                    <div class="row">
-                      <div class="form-group col-xs-12">
-                        <label for="">Endereço</label>
-                        <input type="text" class="form-control" id="endereco" placeholder="Digite aqui">
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-xs-6">
-                        <div class="form-group">
-                          <label for="">Numero</label>
-                          <input type="text" class="form-control" id="numero" placeholder="">
-                        </div>
-                      </div>
-
-                      <div class="col-xs-6">
-                        <div class="form-group">
-                          <label for="">Complemento</label>
-                          <input type="text" class="form-control" id="complemento" placeholder="Ex:Casa">
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="form-group col-xs-6">
-                        <label for="">Bairro*</label>
-                        <input type="text" class="form-control" id="bairro" placeholder="Aguardando cep">
-                      </div>
-
-                      <div class="form-group col-xs-6">
-                        <label for="">Cidade*</label>
-                        <input type="text" class="form-control" id="cidade" placeholder="Aguardando cep">
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="form-group col-xs-6">
-                        <label for="">Estado*</label>
-                        <input type="text" class="form-control" id="estado" placeholder="Aguardando cep">
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="form-group col-xs-12">
-                        <label for="">Referência</label>
-                        <input type="text" class="form-control" id="ref" placeholder="Digite aqui">
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="form-group col-xs-12">
-                        <label for="">Destinatário</label>
-                        <input type="text" class="form-control" id="dest" placeholder="Digite aqui">
-                      </div>
-                    </div>
-
-                    <div class="content-delivery">
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <span class="title">Tipo de entrega:</span>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="col-xs-12">
-                          <label class="radio-button">
-                            <input type="radio" name="radio" checked="checked">
-                            <span class="label-visible active">
-                              <span class="fake-radiobutton"></span>
-                                E total
-                              <br/>
-                              <span class="price">R$9,04 - Até 2 dias úteis</span>
-                            </span>
-                          </label>
-
-                          <label class="radio-button">
-                            <input type="radio" name="radio">
-                            <span class="label-visible">
-                              <span class="fake-radiobutton"></span>
-                              <span class="type">E total</span>
-                              <br/>
-                              <span class="price">R$9,04 - Até 2 dias úteis</span>
-                            </span>
-                          </label>
-
-                          <label class="radio-button">
-                            <input type="radio" name="radio">
-                            <span class="label-visible">
-                              <span class="fake-radiobutton"></span>
-                              <span class="type">E total</span>
-                              <br/>
-                              <span class="price">R$9,04 - Até 2 dias úteis</span>
-                            </span>
-                          </label>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="col-xs-12 text-center">
-                          <button class="btn green-button add-inactive">Ir para pagamento</button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="accordion-payment--content payment">
-              <div class="" role="tab" id="pay-03">
-                <h4 class="">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion-payment"
-                   href="#collapse-03" aria-expanded="true" aria-controls="collapseOne" class="accordion-name">
-                    <span class="sprites-card-payment"></span>3. Pagamento
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse-03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
+
+                <div class="row">
+                  <div class="form-group col-xs-6">
+                    <label for="">Bairro*</label>
+                    <input type="text" class="form-control" id="bairro" placeholder="Aguardando cep">
+                  </div>
+
+                  <div class="form-group col-xs-6">
+                    <label for="">Cidade*</label>
+                    <input type="text" class="form-control" id="cidade" placeholder="Aguardando cep">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-xs-6">
+                    <label for="">Estado*</label>
+                    <input type="text" class="form-control" id="estado" placeholder="Aguardando cep">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-xs-12">
+                    <label for="">Referência</label>
+                    <input type="text" class="form-control" id="ref" placeholder="Digite aqui">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-xs-12">
+                    <label for="">Destinatário</label>
+                    <input type="text" class="form-control" id="dest" placeholder="Digite aqui">
+                  </div>
+                </div>
+
+                <div class="content-delivery">
                   <div class="row">
                     <div class="col-xs-12">
-                      <h1>Vendido e entregue por:</h1>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-12 text-center store-logo">
-                      <img src="assets/images/static/store.png" alt="" class="store">
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xs-12 text-center">
-                      <p class="itens">
-                        <strong>12</strong><span><strong>/15</strong> itens</span>
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="row itens-valor">
-                    <div class="col-xs-7">
-                      <span class="text">Valor do seu pedido:</span>
-                    </div>
-
-                    <div class="col-xs-5">
-                      <span class="valor">R$13,21</span>
-                    </div>
-                  </div>
-
-                  <div class="row itens-valor">
-                    <div class="col-xs-7">
-                      <span class="text">Frete:</span>
-                    </div>
-
-                    <div class="col-xs-5">
-                      <span class="valor">R$13,21</span>
-                    </div>
-                  </div>
-
-                  <div class="row itens-valor">
-                    <div class="col-xs-7">
-                      <span class="text">Taxa de conveniência:</span>
-                    </div>
-
-                    <div class="col-xs-5">
-                      <span class="valor">R$13,21</span>
-                    </div>
-                  </div>
-
-                  <div class="row itens-total">
-                    <div class="col-xs-5">
-                      <span class="text">Total:</span>
-                    </div>
-
-                    <div class="col-xs-7">
-                      <span class="valor">R$85,90</span>
-                    </div>
-                  </div>
-
-                  <div class="row btn-final">
-                    <div class="col-xs-12 text-center">
-                      <button class="btn btn-blue--new">Ver pedido</button>
+                      <span class="title">Tipo de entrega:</span>
                     </div>
                   </div>
 
                   <div class="row">
                     <div class="col-xs-12">
-                      <!-- Nav tabs -->
-                      <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#debito" aria-controls="debito" role="tab" data-toggle="tab">Cartão de debito</a></li>
-                        <li role="presentation"><a href="#credito" aria-controls="credito" role="tab" data-toggle="tab">Cartão de crédito</a></li>
-                        <li role="presentation"><a href="#boleto" aria-controls="boleto" role="tab" data-toggle="tab">Boleto</a></li>
-                      </ul>
+                      <label class="radio-button">
+                        <input type="radio" name="radio" checked="checked">
+                        <span class="label-visible active">
+                          <span class="fake-radiobutton"></span>
+                          E total
+                          <br/>
+                          <span class="price">R$9,04 - Até 2 dias úteis</span>
+                        </span>
+                      </label>
 
-                      <!-- Tab panes -->
-                      <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="debito">
-                          <form role="form" class="form-inline formulario">
-                            <div class="row">
-                              <div class="form-group col-xs-12">
-                                <label for="">Número do cartão:</label>
-                                <input type="text" class="form-control" id="num-cart" placeholder="Digite o número do cartão">
-                              </div>
-                            </div>
+                      <label class="radio-button">
+                        <input type="radio" name="radio">
+                        <span class="label-visible">
+                          <span class="fake-radiobutton"></span>
+                          <span class="type">E total</span>
+                          <br/>
+                          <span class="price">R$9,04 - Até 2 dias úteis</span>
+                        </span>
+                      </label>
 
-                            <div class="row">
-                              <div class="form-group col-xs-12">
-                                <label for="">Nome no cartão:</label>
-                                <input type="text" class="form-control" id="nome" placeholder="Aguardando cartão">
-                              </div>
-                            </div>
+                      <label class="radio-button">
+                        <input type="radio" name="radio">
+                        <span class="label-visible">
+                          <span class="fake-radiobutton"></span>
+                          <span class="type">E total</span>
+                          <br/>
+                          <span class="price">R$9,04 - Até 2 dias úteis</span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
 
-                            <div class="row">
-                              <div class="col-xs-4">
-                                  <label for="">Validade:</label>
-                              </div>
-                              <div class="col-xs-8">
-                                  <label for="">Código de segurança:</label>
-                              </div>
-                            </div>
-
-                            <div class="row form-group">
-                              <div class="col-xs-4">
-                                <select class="form-control">
-                                  <option>Mês</option>
-                                </select>
-                              </div>
-
-                              <div class="col-xs-4">
-                                <select class="form-control">
-                                  <option>Ano</option>
-                                </select>
-                              </div>
-
-                              <div class="col-xs-4">
-                                <div class="content-input">
-                                  <label for=""></label>
-                                  <input type="text" class="form-control" id="sobrenome" placeholder="Digite aqui">
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="form-group col-xs-7">
-                                <label for="">Pagar em quantas vezes?</label>
-                                <select class="form-control">
-                                  <option>Aguardando cartão</option>
-                                </select>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="col-xs-12 text-center">
-                                <button class="btn green-button add-inactive">Finalizar Compra</button>
-                              </div>
-                            </div>
-                          </form>
-                        </div>
-                        <div role="tabpanel" class="tab-pane" id="credito">...</div>
-                        <div role="tabpanel" class="tab-pane" id="boleto">...</div>
-                      </div>
+                  <div class="row">
+                    <div class="col-xs-12 text-center">
+                      <button class="btn green-button add-inactive">Ir para pagamento</button>
                     </div>
                   </div>
                 </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="accordion-payment--content payment">
+            <h4 >
+              <span class="sprites-card-payment"></span>3. Pagamento
+            </h4>
+
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-4">
+                  <h1>Vendido e entregue por:</h1>
+                  <div class="text-center store-logo">
+                    <img src="assets/images/static/store.png" alt="" class="store">
+                  </div>
+                </div>
+
+                <div class="col-md-8">
+                  <p class="itens text-right">
+                    <strong>12</strong><span><strong>/15</strong> itens</span>
+                  </p>
+
+                  <div class="itens-valor">
+                    <span class="text">Valor do seu pedido:</span>  <span class="valor pull-right">R$13,21</span>
+                  </div>
+
+
+                  <div class="itens-valor">
+                    <div class="">
+                      <span class="text">Frete:</span>  <span class="valor pull-right">R$13,21</span>
+                    </div>
+                  </div>
+
+                  <div class="itens-valor">
+                  <div>
+                    <span class="text">Taxa de conveniência:</span><span class="valor pull-right">R$13,21</span>
+                  </div>
+                </div>
+
+                  <div class="itens-total">
+                    <div class="">
+                      <span class="text" style="position:relative;top:15px;">Total:</span><span class="valor pull-right">R$85,90</span>
+                    </div>
+                  </div>
+
+                  <div class=" btn-final">
+                    <div class="text-center ">
+                      <button class="btn btn-blue--new pull-right">Ver pedido</button>
+                    </div>
+                  </div>
+                </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#debito" aria-controls="debito" role="tab" data-toggle="tab">Cartão de debito</a></li>
+                    <li role="presentation"><a href="#credito" aria-controls="credito" role="tab" data-toggle="tab">Cartão de crédito</a></li>
+                    <li role="presentation"><a href="#boleto" aria-controls="boleto" role="tab" data-toggle="tab">Boleto</a></li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="debito">
+                      <form role="form" class="form-inline formulario">
+                        <div class="row">
+                          <div class="form-group col-xs-12">
+                            <label for="">Número do cartão:</label>
+                            <input type="text" class="form-control" id="num-cart" placeholder="Digite o número do cartão">
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="form-group col-xs-12">
+                            <label for="">Nome no cartão:</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Aguardando cartão">
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-xs-6">
+                            <label for="">Validade:</label>
+                          </div>
+                          <div class="col-xs-6">
+                            <label for="">Código de segurança:</label>
+                          </div>
+                        </div>
+
+                        <div class="row form-group">
+                          <div class="col-xs-4">
+                            <select class="form-control">
+                              <option>Mês</option>
+                            </select>
+                          </div>
+
+                          <div class="col-xs-4">
+                            <select class="form-control">
+                              <option>Ano</option>
+                            </select>
+                          </div>
+
+                          <div class="col-xs-4">
+                            <div class="content-input">
+                              <label for=""></label>
+                              <input type="text" class="form-control" id="sobrenome" placeholder="Digite aqui">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="form-group col-xs-12">
+                            <label for="">Pagar em quantas vezes?</label>
+                            <select class="form-control">
+                              <option>Aguardando cartão</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-xs-12 text-center">
+                            <button class="btn green-button add-inactive">Finalizar Compra</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="credito">...</div>
+                    <div role="tabpanel" class="tab-pane" id="boleto">...</div>
+                  </div>
+                </div>
               </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ acordion payment-->
+</main>
+<!--/main-->
+
+<!--Footer-->
+<footer class="reset-footer">
+  <div class="footer-content">
+    <div class="container">
+      <div class="row">
+        <div class="footer-container">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="assets/images/static/zukkin-logo-mobile-body.png" alt="">
+            </div>
+            <div class="col-md-9">
+              <div class="pull-right">
+                <div class="footer-third-container reset-container">
+                  <div class="payment-icons text-center">
+                    <ul>
+                      <li>Pague com:</li>
+                      <li><span class="sprites-visa"></span></li>
+                      <li><span class="sprites-master-bandeira"></span></li>
+                      <li><span class="sprites-american-express-bandeira"></span></li>
+                      <li><span class="sprites-elo-bandeira"></span></li>
+                      <li><span class="sprites-dinner-bandeira"></span></li>
+                      <li><span class="sprites-boleto"></span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-second-container line-warning">
+          <div class="row">
+            <div class="content-warnig">
+              <div class="col-md-9">
+                Proibida a venda de bebidas alcoólicas para menores de idade, conforme Lei n.° 8069/90, art. 81, inciso II (Estatuto da Criança e do Adolescente).
+              </div>
+
+              <div class="col-md-3">
+                * A maioria dos preços são atualizados diariamente.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-third-container">
+          <div class="row">
+            <div class="copyright-content">
+              <p class="text-center">
+                <strong>  © 2017 ZUKKIN - TODOS OS DIREITOS RESERVADOS</strong> </br>
+                Zukkin. - CNPJ: 71.676.316/0001-46 - Inscrição Estadual: 116.827.781.117 - Endereço: Av. Fagundes Filho, 300 Cj 22 - Vl Monte Alegre - São Paulo/SP
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-    </section>
-    <!--/ acordion payment-->
 
-
-    <div class="container-fluid">
-      <section class="row">
-        <div class="col-xs-12">
-          <div class="wrapper">
-
-            <!--logo body-->
-            <div class="content-logo--body">
-              <img src="assets/images/static/zukkin-logo-mobile-body.png" alt="" >
-            </div>
-            <!--/logo-body-->
-
-          </div>
-        </div>
-      </section>
     </div>
-  </main>
-  <!--/main-->
+  </div>
+</footer>
+<!--/Footer-->
 
-  <!--Footer-->
-  <footer class="bg-gray">
-    <div class="container-fluid">
-      <section class="row">
-        <div class="col-xs-12  bg-white">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="assets/vendor/jquery1.11.1.min.js"></script>
 
-          <!--list-links-->
-          <ul class="list-links">
-            <li><a href="#">Cadastro</a></li>
-            <li><a href="">Login</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Zukkin B2B</a></li>
-            <li><a href="">Seja um franqueado</a></li>
-          </ul>
-          <!--/list-links-->
+<!-- build:js assets/js/vendor.min.js -->
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/vendor/customscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/vendor/slidemenu/pushmenu.js"></script>
+<script src="assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+<!-- endbuild -->
 
-        </div>
-      </section>
-    </div>
+<!-- build:js assets/js/app.min.js -->
+<script src="assets/js/app.js"></script>
+<!-- endbuild -->
 
-    <div class="container-fluid">
-      <section class="row">
-        <div>
-
-          <!--collapse footer-->
-          <div class="collapse-footer">
-            <button type="button"  class="collapse-btn" data-toggle="collapse" data-target="#collapse-footer-1">
-              Institucional
-            </button>
-
-            <div id="collapse-footer-1" class="collapse">
-              <ul class="list-collapse--footer">
-                <li><a href="">Sobre o Zukkin</a></li>
-                <li><a href="">Sobre o Zukkin</a></li>
-                <li><a href="">Sobre o Zukkin</a></li>
-              </ul>
-            </div>
-
-            <button type="button"   class="collapse-btn" data-toggle="collapse" data-target="#collapse-footer-2">
-              Produtos
-            </button>
-
-            <div id="collapse-footer-2" class="collapse">
-              <ul class="list-collapse--footer">
-                <li><a href="">Sobre o Zukkin</a></li>
-                <li><a href="">Sobre o Zukkin</a></li>
-                <li><a href="">Sobre o Zukkin</a></li>
-              </ul>
-            </div>
-
-            <button type="button"  class="collapse-btn" data-toggle="collapse" data-target="#collapse-footer-3">
-              Ajuda e suporte
-            </button>
-
-            <div id="collapse-footer-3" class="collapse">
-              <ul class="list-collapse--footer">
-                <li><a href="">Sobre o Zukkin</a></li>
-                <li><a href="">Sobre o Zukkin</a></li>
-                <li><a href="">Sobre o Zukkin</a></li>
-              </ul>
-            </div>
-
-            <button type="button"   class="collapse-btn" data-toggle="collapse" data-target="#collapse-footer-4">
-              Sobre o serviço
-            </button>
-
-            <div id="collapse-footer-4" class="collapse">
-              <ul class="list-collapse--footer">
-                <li><a href="">Sobre o Zukkin</a></li>
-                <li><a href="">Sobre o Zukkin</a></li>
-                <li><a href="">Sobre o Zukkin</a></li>
-              </ul>
-            </div>
-          </div>
-          <!--/collapse footer-->
-
-        </div>
-      </section>
-
-      <section class="row">
-        <div class="col-xs-12 bg-red-light">
-
-          <!--alert-info-home-->
-          <div class="alert-info--home">
-            <p>
-              Proibida a venda de bebidas alcoólicas para
-              menores de idade, conforme Lei n.° 8069/90, art. 81,
-              inciso II (Estatuto da Criança e do Adolescente).
-            </p>
-          </div>
-          <!--/alert-info-home-->
-
-        </div>
-      </section>
-
-      <section class="row">
-        <div class="col-xs-12">
-
-          <!--Payfor-->
-          <div class="payfor">
-            <h1>Pague com</h1>
-
-            <ul>
-              <li><span class="sprites-visa"></span></li>
-              <li><span class="sprites-master-bandeira"></span></li>
-              <li><span class="sprites-american-express-bandeira"></span></li>
-              <li><span class="sprites-elo-bandeira"></span></li>
-              <li><span class="sprites-dinner-bandeira"></span></li>
-              <li><span class="sprites-boleto"></span></li>
-            </ul>
-
-            <div class="copyright">
-              <div class="text-center">
-                <strong>© 2017 ZUKKIN - TODOS OS DIREITOS RESERVADOS </strong>
-                <p>
-                  Zukkin. - CNPJ: 71.676.316/0001-46 - Inscrição Estadual:
-                  116.827.781.117 Endereço: Av. Fagundes Filho, 300 Cj 22
-                  Vl Monte Alegre - São Paulo/SP
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--/Payfor-->
-
-        </div>
-      </section>
-
-      <section class="row">
-
-        <!--footer fixe-->
-        <div class="footer-fixe">
-          <span class="icon 01"></span>
-          <div class="col-xs-12">
-            <div class="search-footer">
-              <button class="btn search-footer-button pull-right">
-                <span class="sprites-search-mobile-icon"></span>
-              </button>
-            </div>
-          </div>
-
-          <div class="col-xs-12 bg-red-light bgRed-size2 text-left">
-            <div class="line-address--footer">
-              <span>Seu endereço:</span>
-              <strong>Alameda Rio Negro, 650</strong>
-              <a href="" class="line-address--edit pull-right">Editar</a>
-            </div>
-          </div>
-
-          <div class="col-xs-12 you-are bg-white">
-            <div class="row">
-              <div class="col-xs-6 you-are--text">
-                <p>Você está comprando em:</p>
-              </div>
-              <div class="col-xs-6 you-are--store">
-                <div class="content-left">
-                  <img src="assets/images/static/store.png" alt="" class="store">
-                </div>
-
-                <div class="content-right">
-                  <a href="" class="change-store sprites-change-store"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <!--/footer fixe-->
-
-      </section>
-    </div>
-  </footer>
-  <!--/Footer-->
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="assets/vendor/jquery1.11.1.min.js"></script>
-
-  <!-- build:js assets/js/vendor.min.js -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/vendor/customscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-  <script src="assets/vendor/slidemenu/pushmenu.js"></script>
-  <script src="assets/vendor/owl-carousel/owl.carousel.min.js"></script>
-  <!-- endbuild -->
-
-  <!-- build:js assets/js/app.min.js -->
-  <script src="assets/js/app.js"></script>
-  <!-- endbuild -->
-
-  <!-- build:inlinejs -->
-  <script src="assets/js/async.js"></script>
-  <!-- endbuild -->
+<!-- build:inlinejs -->
+<script src="assets/js/async.js"></script>
+<!-- endbuild -->
 
 
-  <!--modais-->
-  <div id="modal"></div>
-  <!--/modais-->
+<!--modais-->
+<div id="modal"></div>
+<!--/modais-->
 </body>
 </html>
