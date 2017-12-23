@@ -29,338 +29,725 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body class="comparativo" id="target">
+<body class="catalogo comparativo" id="target">
   <!--Header-->
-  <header>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-2">
-          <nav id="navside">
-            <a id="open" class="sprites-menu-hamburguer">Open</a>
+  <header class="">
+    <div class="header-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="text-content">
+              <span class="header-bar--text">O que deseja fazer?</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="btn-content">
+              <button class="btn btn-red--comparar ">Quero comprar</button>
+            </div>
+          </div>
 
-            <div id="pm_menu" class="pm_close">
-              <div class="pm_menu-header">
-                <div class="col-xs-4">
-                  <span>O que deseja fazer?</span>
-                </div>
-                <div class="col-xs-6">
-                  <a href="#" class="btn btn-red--comparar">Quero comparar</a>
-                </div>
-                <div class="col-xs-2 pull-right">
-                  <a class="pm_overlay pm_hide sprites-close">Fechar</a>
-                </div>
-              </div>
-              <div class="pm_menu-body">
-                <ul>
-                  <li><a href="#" class="carnes"><span class="sprites-carnes"></span>Carnes</a></li>
-                  <li><a href="#" class="bebidas"><span class="sprites-bebi"></span>Bebidas</a></li>
-                  <li><a href="#" class="frios"><span class="sprites-frio"></span>Frios</a></li>
-                  <li><a href="#" class="laticinios"><span class="sprites-lati"></span>Laticinios</a></li>
-                  <li><a href="#" class="matinais"><span class="sprites-matin"></span>Matinais</a></li>
-                  <li><a href="#" class="sobremesas"><span class="sprites-sobre"></span>Sobremesas</a></li>
-                  <li><a href="#" class="perfumaria"><span class="sprites-perfum"></span>Perfumaria</a></li>
-                  <li><a href="#" class="higiene"><span class="sprites-higi"></span>Higiene</a></li>
-                  <li><a href="#" class="cereais"><span class="sprites-cere"></span>Cereais</a></li>
-                  <li><a href="#" class="mercearia"><span class="sprites-merce"></span>Mercearia</a></li>
-                  <li><a href="#" class="hortfruti"><span class="sprites-horti"></span>Hortfruti</a></li>
-                  <li><a href="#" class="all-departaments"><span class="sprites-all-dp"></span><strong>Todos departamentos</strong></a></li>
-                </ul>
+          <div class="col-md-6">
+            <ul class="list-options">
+              <li>
+                <a data-toggle="modal" data-target="#myModal" data-ref="login" class="list-options--item">
+                  <span class="sprites-user-white"></span>
+                  <span class="text">Minha conta</span>
+                </a>
+              </li>
+              <li class="dropdown" id="menu-lista-drop">
+                <a href="" class="list-options--item dropdown-toggle" data-toggle="dropdown" data-toggle="modal" data-target="#myModal" data-ref="editarLista">
+                  <span class="sprites-white-list"></span>
+                  <span class="text list-ico">Minhas listas</span>
+                  <ul class="dropdown-menu">
+                    <li>Crie listas para facilitar suas compras</li>
+                  </ul>
+                </a>
+              </li>
+              <li>
+                <a href="" class="list-options--item">
+                  <span class="sprites-pedidos"></span>
+                  <span class="text">Meus pedidos</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                <div class="content-menu--mobile">
-                  <div class="content-menu--lista">
-                    <ul>
-                      <li><a href="" dp-type="aves">Aves</a></li>
-                      <li><a href="" dp-type="bovinas">Bovinas</a></li>
-                      <li><a href="" dp-type="peixes">Peixes e Crustáceos</a></li>
-                      <li><a href="" dp-type="suinas">Suínas</a></li>
-                      <li><a href="" dp-type="linguicas">Linguiças e Salsichas</a></li>
-                      <li><a href="" dp-type="especiais">Exóticas e Especiais</a></li>
-                      <li><a href="" class="see-all" dp-type="tudo">ver tudo</a></li>
-                    </ul>
-                  </div>
+    <div class="header-line white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="logo-content">
+              <img src="../assets/images/static/zukkin-logo-mobile-body.png" alt="">
+            </div>
+          </div>
 
-                  <div class="content-menu--footer">
-                    <img src="../assets/images/static/banner-menu.png" alt="">
-                  </div>
+          <div class="col-md-4">
+            <div class="form-group has-feedback">
+              <input type="text" class="form-control" id="search-input" placeholder="Buscar por algo? Separe por virgula cada item que procura.">
+              <button class="btn search-footer-button pull-right form-control-feedback">
+                <span class="sprites-search-mobile-icon"></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <div class="fake-select-content">
+              <p>Salvando itens na lista:</p>
+
+              <div class="dropdown">
+                <button class="dropbtn">Churrasco fds</button>
+                <div class="dropdown-content">
+                  <a href="#" class="active">opção 1</a>
+                  <a href="#">opção 2</a>
+                  <a href="#">opção 3</a>
                 </div>
-              </div>
-              <div class="pm_menu-footer">
-                <ul>
-                  <li><a href=""><span class="sprites-user-white"></span>Minha conta</a></li>
-                  <li><a href=""><span class="sprites-white-list"></span>Minhas listas</a></li>
-                  <li><a href=""><span class="sprites-pedidos"></span>Meus pedidos</a></li>
-                </ul>
               </div>
             </div>
-          </nav>
-        </div>
-        <div class="col-xs-3">
-          <a href="/" class="sprites-zukkin-logo-mobile"></a>
-        </div>
+          </div>
 
-        <div class="col-xs-2">
-          <a href="#" class="sprites-account-blue" data-toggle="modal" data-target="#myModal" data-ref="alteraCadastro"></a>
+          <div class="col-md-2">
+            <a href="" data-toggle="modal" data-target="#myModal" data-ref="carrinho">
+              <ul class="itens">
+                <li>
+                  <span class="sprites-cart-icon-desktop"></span>
+                </li>
+                <li>
+                  <p class="total-itens"><strong><span class="valor-maior">12</span>/15</strong> itens</p>
+                  <p class="total">R$85,00</p>
+                </li>
+              </ul>
+            </a>
+          </div>
+
+          <div class="col-md-2">
+            <button class="btn btn-red--comparar change">Comparar itens da lista</button>
+          </div>
         </div>
-        <div class="col-xs-2">
-          <a href="" class="sprites-list-blue" data-toggle="modal" data-target="#myModal" data-ref="editarLista"></a>
-        </div>
-        <div class="pull-right item">
-          <div class="compare-item">
-              Comparar
+      </div>
+    </div>
+
+    <div class="header-navbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <nav class="navbar navbar-inverse">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Abrir categorias</a>
+              </div>
+              <div class="navbar-collapse collapse">
+                <!--menu sidebar-->
+                <div class="menu-sidebar">
+                  <ul id="main-sidebar" class="nav navbar-nav">
+                    <li><a href="#" class="carnes"><span class="sprites-carnes"></span>Carnes</a></li>                </li>
+                    <li><a href="#" class="bebidas"><span class="sprites-bebi"></span>Bebidas</a></li>
+                    <li><a href="#" class="frios"><span class="sprites-frio"></span>Frios</a></li>
+                    <li><a href="#" class="laticinios"><span class="sprites-lati"></span>Laticinios</a></li>
+                    <li><a href="#" class="matinais"><span class="sprites-matin"></span>Matinais</a></li>
+                    <li><a href="#" class="sobremesas"><span class="sprites-sobre"></span>Sobremesas</a></li>
+                    <li><a href="#" class="perfumaria"><span class="sprites-perfum"></span>Perfumaria</a></li>
+                    <li><a href="#" class="higiene"><span class="sprites-higi"></span>Higiene</a></li>
+                    <li><a href="#" class="cereais"><span class="sprites-cere"></span>Cereais</a></li>
+                    <li><a href="#" class="mercearia"><span class="sprites-merce"></span>Mercearia</a></li>
+                    <li><a href="#" class="hortfruti"><span class="sprites-horti"></span>Hortfruti</a></li>
+                    <li><a href="#" class="all-departaments"><span class="sprites-all-dp"></span><strong>Todos departamentos</strong></a></li>
+                  </ul>
+                </div>
+                <!--/menu sidebar-->
+              </div>
+            </nav>
+          </div>
+
+          <div class="col-md-9">
+            <ul class="bdcrumbie">
+              <li><a href="">Zukkin</a> |</li>
+              <li><a href="">Bebidas</a> |</li>
+              <li><a href="" class="active">Delvalle Nectar de ...</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </header>
   <!--/Header-->
-
   <!--main-->
-  <main class="bg-gray">
-    <!--breadcrumbie-->
-    <section class="breadcrumbie-content">
-      <div class="">
-        <ul>
-          <li><a href="">Zukkin</a> |</li>
-          <li><a href="">Bebidas</a> |</li>
-          <li><a href="" class="active">Delvalle Nectar de ...</a></li>
-        </ul>
-      </div>
-    </section>
-    <!--/breadcrumbie-->
-
+  <main class="">
     <!-- Filter Categorias-->
     <section class="container filter-catalogo">
       <div class="row">
-        <div class="col-xs-12">
+        <div class="col-md-2">
           <div class="filter-catalogo--title">
-            <h1>Hortfruti em <span>Walmart</span></h1>
             <h2>Filtrar por:</h2>
+            <div class="block-filter">
+              <h3>Verduras</h3>
+              <ul>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link-all">Ver mais</a></li>
+              </ul>
+            </div>
+
+            <div class="block-filter">
+              <h3>Verduras</h3>
+              <ul>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link-all">Ver mais</a></li>
+              </ul>
+            </div>
+
+            <div class="block-filter">
+              <h3>Marcas</h3>
+              <input type="text" class="form-control" placeholder="Digite a marca"/>
+              <ul>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link">Alface</a></li>
+                <li><a href="" class="link-all">Ver mais</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="" id="accordion-filter" role="tablist" aria-multiselectable="true">
-            <div class="accordion-body">
-              <div class="" role="tab" id="filter-01">
-                <h4 class="">
-                  <a role="button" data-toggle="collapse"
-                  data-parent="#accordion-filter" href="#collapse-01"
-                  aria-expanded="true" aria-controls="collapseOne"
-                  class="accordion-name">
-                    Verduras
-                  </a>
-                </h4>
+
+
+        <div class="col-md-10">
+            <div class="row content-orderBy">
+              <div class="col-md-9 filter-catalogo--title ">
+                <h1>Hortfruti</h1>
               </div>
-              <div id="collapse-01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
-                    <ul>
-                      <li><a href="" class="link">Alface</a></li>
-                      <li><a href="" class="link">Alface</a></li>
-                      <li><a href="" class="link">Alface</a></li>
-                      <li><a href="" class="link">Alface</a></li>
-                      <li><a href="" class="link">Alface</a></li>
-                      <li><a href="" class="link">Alface</a></li>
-                      <li><a href="" class="link">Alface</a></li>
-                      <li><a href="" class="link-all">Ver mais</a></li>
-                    </ul>
+              <div class="col-md-3">
+                <div>
+                  <div class="orderby">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="a">Ordenar por:</label>
+                      </div>
+                      <div class="col-md-6">
+                        <select name="" class="">
+                          <option value="">Selecione</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
-            <div class="accordion-body">
-              <div class="" role="tab" id="filter-02">
-                <h4 class="">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion-filter"
-                   href="#collapse-02" aria-expanded="true" aria-controls="collapseOne" class="accordion-name">
-                    Verduras
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse-02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
-                  <ul>
-                    <li><a href="" class="link">Alface</a></li>
-                    <li><a href="" class="link">Alface</a></li>
-                    <li><a href="" class="link">Alface</a></li>
-                    <li><a href="" class="link">Alface</a></li>
-                    <li><a href="" class="link">Alface</a></li>
-                    <li><a href="" class="link">Alface</a></li>
-                    <li><a href="" class="link">Alface</a></li>
-                    <li><a href="" class="link-all">Ver mais</a></li>
-                  </ul>
+
+            <div class="content-product--vitrine">
+              <div class="product-list">
+
+                <div class="products-group">
+
+                  <div class="products-group--item pd">
+                    <div class="products-group--img">
+                      <img src="../assets/images/static/product.jpg" alt="">
+                    </div>
+
+                    <div class="products-group--text">
+                      <h3>Produtor</h3>
+                      <h2>Banana Prata Kilo</h2>
+                      <div class="midware">
+                        <h1>R$13,90</h1>
+                      </div>
+                    </div>
+
+                    <div class="product-list-select">
+                      <div class="select-item-vitrine">
+                        <select class="" name="">
+                          <option value="">01</option>
+                        </select>
+                      </div>
+                      <div class="controller red-btn">
+                        <a href="" class="more">+</a>
+                        <a href="" class="minus">-</a>
+                      </div>
+                      <button class="btn red-button add-active">
+                        Adicionado
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="products-group--item pd">
+                    <div class="products-group--img">
+                      <img src="../assets/images/static/product.jpg" alt="">
+                    </div>
+
+                    <div class="products-group--text">
+                      <h3>Produtor</h3>
+                      <h2>Banana Prata Kilo</h2>
+                      <div class="midware">
+                        <h1>R$13,90</h1>
+
+                      </div>
+                    </div>
+
+                    <div class="product-list-select">
+                      <div class="select-item-vitrine">
+                        <select class="" name="">
+                          <option value="">01</option>
+                        </select>
+                      </div>
+                      <div class="controller red-btn">
+                        <a href="" class="more">+</a>
+                        <a href="" class="minus">-</a>
+                      </div>
+                      <button class="btn red-button add-active">
+                        Adicionado
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="products-group--item pd">
+                    <div class="products-group--img">
+                      <img src="../assets/images/static/product.jpg" alt="">
+                    </div>
+
+                    <div class="products-group--text">
+                      <h3>Produtor</h3>
+                      <h2>Banana Prata Kilo</h2>
+                      <div class="midware">
+                        <h1>R$13,90</h1>
+
+                      </div>
+                    </div>
+
+                    <div class="product-list-select">
+                      <div class="select-item-vitrine">
+                        <select class="" name="">
+                          <option value="">01</option>
+                        </select>
+                      </div>
+                      <div class="controller red-btn">
+                        <a href="" class="more">+</a>
+                        <a href="" class="minus">-</a>
+                      </div>
+                      <button class="btn red-button add-active">
+                        Adicionado
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="products-group--item pd">
+                    <div class="products-group--img">
+                      <img src="../assets/images/static/product.jpg" alt="">
+                    </div>
+
+                    <div class="products-group--text">
+                      <h3>Produtor</h3>
+                      <h2>Banana Prata Kilo</h2>
+                      <div class="midware">
+                        <h1>R$13,90</h1>
+                      </div>
+                    </div>
+
+                    <div class="product-list-select">
+                      <div class="select-item-vitrine">
+                        <select class="" name="">
+                          <option value="">01</option>
+                        </select>
+                      </div>
+                      <div class="controller red-btn">
+                        <a href="" class="more">+</a>
+                        <a href="" class="minus">-</a>
+                      </div>
+                      <button class="btn red-button add-active">
+                        Adicionado
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="products-group">
+
+                  <div class="products-group--item pd">
+                    <div class="products-group--img">
+                      <img src="../assets/images/static/product.jpg" alt="">
+                    </div>
+
+                    <div class="products-group--text">
+                      <h3>Produtor</h3>
+                      <h2>Banana Prata Kilo</h2>
+                      <div class="midware">
+                        <h1>R$13,90</h1>
+                      </div>
+                    </div>
+
+                    <div class="product-list-select">
+                      <div class="select-item-vitrine">
+                        <select class="" name="">
+                          <option value="">01</option>
+                        </select>
+                      </div>
+                      <div class="controller red-btn">
+                        <a href="" class="more">+</a>
+                        <a href="" class="minus">-</a>
+                      </div>
+                      <button class="btn red-button add-active">
+                        Adicionado
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="products-group--item pd">
+                    <div class="products-group--img">
+                      <img src="../assets/images/static/product.jpg" alt="">
+                    </div>
+
+                    <div class="products-group--text">
+                      <h3>Produtor</h3>
+                      <h2>Banana Prata Kilo</h2>
+                      <div class="midware">
+                        <h1>R$13,90</h1>
+
+                      </div>
+                    </div>
+
+                    <div class="product-list-select">
+                      <div class="select-item-vitrine">
+                        <select class="" name="">
+                          <option value="">01</option>
+                        </select>
+                      </div>
+                      <div class="controller red-btn">
+                        <a href="" class="more">+</a>
+                        <a href="" class="minus">-</a>
+                      </div>
+                      <button class="btn red-button add-active">
+                        Adicionado
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="products-group--item pd">
+                    <div class="products-group--img">
+                      <img src="../assets/images/static/product.jpg" alt="">
+                    </div>
+
+                    <div class="products-group--text">
+                      <h3>Produtor</h3>
+                      <h2>Banana Prata Kilo</h2>
+                      <div class="midware">
+                        <h1>R$13,90</h1>
+
+                      </div>
+                    </div>
+
+                    <div class="product-list-select">
+                      <div class="select-item-vitrine">
+                        <select class="" name="">
+                          <option value="">01</option>
+                        </select>
+                      </div>
+                      <div class="controller red-btn">
+                        <a href="" class="more">+</a>
+                        <a href="" class="minus">-</a>
+                      </div>
+                      <button class="btn red-button add-active">
+                        Adicionado
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="products-group--item pd">
+                    <div class="products-group--img">
+                      <img src="../assets/images/static/product.jpg" alt="">
+                    </div>
+
+                    <div class="products-group--text">
+                      <h3>Produtor</h3>
+                      <h2>Banana Prata Kilo</h2>
+                      <div class="midware">
+                        <h1>R$13,90</h1>
+                      </div>
+                    </div>
+
+                    <div class="product-list-select">
+                      <div class="select-item-vitrine">
+                        <select class="" name="">
+                          <option value="">01</option>
+                        </select>
+                      </div>
+                      <div class="controller red-btn">
+                        <a href="" class="more">+</a>
+                        <a href="" class="minus">-</a>
+                      </div>
+                      <button class="btn red-button add-active">
+                        Adicionado
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="products-group">
+
+                  <div class="products-group--item pd">
+                    <div class="products-group--img">
+                      <img src="../assets/images/static/product.jpg" alt="">
+                    </div>
+
+                    <div class="products-group--text">
+                      <h3>Produtor</h3>
+                      <h2>Banana Prata Kilo</h2>
+                      <div class="midware">
+                        <h1>R$13,90</h1>
+                      </div>
+                    </div>
+
+                    <div class="product-list-select">
+                      <div class="select-item-vitrine">
+                        <select class="" name="">
+                          <option value="">01</option>
+                        </select>
+                      </div>
+                      <div class="controller red-btn">
+                        <a href="" class="more">+</a>
+                        <a href="" class="minus">-</a>
+                      </div>
+                      <button class="btn red-button add-active">
+                        Adicionado
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="products-group--item pd">
+                    <div class="products-group--img">
+                      <img src="../assets/images/static/product.jpg" alt="">
+                    </div>
+
+                    <div class="products-group--text">
+                      <h3>Produtor</h3>
+                      <h2>Banana Prata Kilo</h2>
+                      <div class="midware">
+                        <h1>R$13,90</h1>
+
+                      </div>
+                    </div>
+
+                    <div class="product-list-select">
+                      <div class="select-item-vitrine">
+                        <select class="" name="">
+                          <option value="">01</option>
+                        </select>
+                      </div>
+                      <div class="controller red-btn">
+                        <a href="" class="more">+</a>
+                        <a href="" class="minus">-</a>
+                      </div>
+                      <button class="btn red-button add-active">
+                        Adicionado
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="products-group--item pd">
+                    <div class="products-group--img">
+                      <img src="../assets/images/static/product.jpg" alt="">
+                    </div>
+
+                    <div class="products-group--text">
+                      <h3>Produtor</h3>
+                      <h2>Banana Prata Kilo</h2>
+                      <div class="midware">
+                        <h1>R$13,90</h1>
+
+                      </div>
+                    </div>
+
+                    <div class="product-list-select">
+                      <div class="select-item-vitrine">
+                        <select class="" name="">
+                          <option value="">01</option>
+                        </select>
+                      </div>
+                      <div class="controller red-btn">
+                        <a href="" class="more">+</a>
+                        <a href="" class="minus">-</a>
+                      </div>
+                      <button class="btn red-button add-active">
+                        Adicionado
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="products-group--item pd">
+                    <div class="products-group--img">
+                      <img src="../assets/images/static/product.jpg" alt="">
+                    </div>
+
+                    <div class="products-group--text">
+                      <h3>Produtor</h3>
+                      <h2>Banana Prata Kilo</h2>
+                      <div class="midware">
+                        <h1>R$13,90</h1>
+                      </div>
+                    </div>
+
+                    <div class="product-list-select">
+                      <div class="select-item-vitrine">
+                        <select class="" name="">
+                          <option value="">01</option>
+                        </select>
+                      </div>
+                      <div class="controller red-btn">
+                        <a href="" class="more">+</a>
+                        <a href="" class="minus">-</a>
+                      </div>
+                      <button class="btn red-button add-active">
+                        Adicionado
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="products-group">
+
+                  <div class="products-group--item pd">
+                    <div class="products-group--img">
+                      <img src="../assets/images/static/product.jpg" alt="">
+                    </div>
+
+                    <div class="products-group--text">
+                      <h3>Produtor</h3>
+                      <h2>Banana Prata Kilo</h2>
+                      <div class="midware">
+                        <h1>R$13,90</h1>
+                      </div>
+                    </div>
+
+                    <div class="product-list-select">
+                      <div class="select-item-vitrine">
+                        <select class="" name="">
+                          <option value="">01</option>
+                        </select>
+                      </div>
+                      <div class="controller red-btn">
+                        <a href="" class="more">+</a>
+                        <a href="" class="minus">-</a>
+                      </div>
+                      <button class="btn red-button add-active">
+                        Adicionado
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="products-group--item pd">
+                    <div class="products-group--img">
+                      <img src="../assets/images/static/product.jpg" alt="">
+                    </div>
+
+                    <div class="products-group--text">
+                      <h3>Produtor</h3>
+                      <h2>Banana Prata Kilo</h2>
+                      <div class="midware">
+                        <h1>R$13,90</h1>
+
+                      </div>
+                    </div>
+
+                    <div class="product-list-select">
+                      <div class="select-item-vitrine">
+                        <select class="" name="">
+                          <option value="">01</option>
+                        </select>
+                      </div>
+                      <div class="controller red-btn">
+                        <a href="" class="more">+</a>
+                        <a href="" class="minus">-</a>
+                      </div>
+                      <button class="btn red-button add-active">
+                        Adicionado
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="products-group--item pd">
+                    <div class="products-group--img">
+                      <img src="../assets/images/static/product.jpg" alt="">
+                    </div>
+
+                    <div class="products-group--text">
+                      <h3>Produtor</h3>
+                      <h2>Banana Prata Kilo</h2>
+                      <div class="midware">
+                        <h1>R$13,90</h1>
+
+                      </div>
+                    </div>
+
+                    <div class="product-list-select">
+                      <div class="select-item-vitrine">
+                        <select class="" name="">
+                          <option value="">01</option>
+                        </select>
+                      </div>
+                      <div class="controller red-btn">
+                        <a href="" class="more">+</a>
+                        <a href="" class="minus">-</a>
+                      </div>
+                      <button class="btn red-button add-active">
+                        Adicionado
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="products-group--item pd">
+                    <div class="products-group--img">
+                      <img src="../assets/images/static/product.jpg" alt="">
+                    </div>
+
+                    <div class="products-group--text">
+                      <h3>Produtor</h3>
+                      <h2>Banana Prata Kilo</h2>
+                      <div class="midware">
+                        <h1>R$13,90</h1>
+                      </div>
+                    </div>
+
+                    <div class="product-list-select">
+                      <div class="select-item-vitrine">
+                        <select class="" name="">
+                          <option value="">01</option>
+                        </select>
+                      </div>
+                      <div class="controller red-btn">
+                        <a href="" class="more">+</a>
+                        <a href="" class="minus">-</a>
+                      </div>
+                      <button class="btn red-button add-active">
+                        Adicionado
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
 
     </section>
     <!--/ Filter Categorias-->
-
-    <!-- Produtos -->
-    <div class="container">
-      <div class="row">
-        <div class=" col-xs-12 ">
-          <div class="content-product--vitrine">
-            <div class="product-list">
-              <div class="products-group">
-                <div class="products-group--item">
-                  <div class="products-group--img">
-                    <img src="../assets/images/static/product.jpg" alt="">
-                  </div>
-
-                  <div class="products-group--text">
-                    <h3>Produtor</h3>
-                    <h2>Banana Prata Kilo</h2>
-                    <h4>R$3,90</h4>
-                    <span>até</span><h1>R$13,90</h1>
-                  </div>
-
-                  <div class="products-group--select">
-                    <div class="dropdown">
-                      <form action="">
-                        <div class="selectdiv">
-                          <label>
-                            <select class="fake-select form-control">
-                              <option>01</option>
-                              <option>02</option>
-                              <option>03</option>
-                              <option>04</option>
-                              <option>05</option>
-                            </select>
-                          </label>
-
-                          <div class="sprites-arrow-select-fake"></div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-
-                  <button class="btn red-button add-active">
-                    Adicionado
-                  </button>
-                </div>
-
-                <div class="products-group--item">
-                  <div class="products-group--img">
-                    <img src="../assets/images/static/product.jpg" alt="">
-                  </div>
-
-                  <div class="products-group--text">
-                    <h3>Produtor</h3>
-                    <h2>Banana Prata Kilo</h2>
-                    <h4>R$3,90</h4>
-                    <span>até</span><h1>R$13,90</h1>
-                  </div>
-
-                  <div class="products-group--select">
-                    <div class="dropdown">
-                      <form action="">
-                        <div class="selectdiv">
-                          <label>
-                            <select class="fake-select form-control">
-                              <option>01</option>
-                              <option>02</option>
-                              <option>03</option>
-                              <option>04</option>
-                              <option>05</option>
-                            </select>
-                          </label>
-
-                          <div class="sprites-arrow-select-fake"></div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-
-                  <button class="btn red-button add-active">
-                    Adicionado
-                  </button>
-                </div>
-              </div>
-
-              <div class="products-group">
-                <div class="products-group--item">
-                  <div class="products-group--img">
-                    <img src="../assets/images/static/product.jpg" alt="">
-                  </div>
-
-                  <div class="products-group--text">
-                    <h3>Produtor</h3>
-                    <h2>Banana Prata Kilo</h2>
-                    <h4>R$3,90</h4>
-                    <span>até</span><h1>R$13,90</h1>
-                  </div>
-
-                  <div class="products-group--select">
-                    <div class="dropdown">
-                      <form action="">
-                        <div class="selectdiv">
-                          <label>
-                            <select class="fake-select form-control">
-                              <option>01</option>
-                              <option>02</option>
-                              <option>03</option>
-                              <option>04</option>
-                              <option>05</option>
-                            </select>
-                          </label>
-
-                          <div class="sprites-arrow-select-fake"></div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-
-                  <button class="btn red-button add-active">
-                    Adicionado
-                  </button>
-                </div>
-
-                <div class="products-group--item">
-                  <div class="products-group--img">
-                    <img src="../assets/images/static/product.jpg" alt="">
-                  </div>
-
-                  <div class="products-group--text">
-                    <h3>Produtor</h3>
-                    <h2>Banana Prata Kilo</h2>
-                    <h4>R$3,90</h4>
-                    <span>até</span><h1>R$13,90</h1>
-                  </div>
-
-                  <div class="products-group--select">
-                    <div class="dropdown">
-                      <form action="">
-                        <div class="selectdiv">
-                          <label>
-                            <select class="fake-select form-control">
-                              <option>01</option>
-                              <option>02</option>
-                              <option>03</option>
-                              <option>04</option>
-                              <option>05</option>
-                            </select>
-                          </label>
-
-                          <div class="sprites-arrow-select-fake"></div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-
-                  <button class="btn red-button add-active">
-                    Adicionado
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/produto-->
 
     <!--pagination-->
     <div class="container">
@@ -389,198 +776,210 @@
       </div>
     </div>
     <!--/pagination-->
-
-    <div class="container-fluid">
-      <section class="row">
-        <div class="col-xs-12">
-          <div class="wrapper">
-
-            <!--logo body-->
-            <div class="content-logo--body">
-              <img src="../assets/images/static/zukkin-logo-mobile-body.png" alt="" >
-            </div>
-            <!--/logo-body-->
-
-          </div>
-        </div>
-      </section>
-    </div>
   </main>
   <!--/main-->
 
   <!--Footer-->
-  <footer class="bg-gray">
-    <div class="container-fluid">
-      <section class="row">
-        <div class="col-xs-12  bg-white">
+  <footer class="bg-white">
+    <div class="footer-line">
+      <div class="container">
+        <div class="container-footer-line">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="content-logo text-left">
+                <img src="../assets/images/static/zukkin-logo-mobile-body.png" alt="">
+              </div>
+            </div>
 
-          <!--list-links-->
-          <ul class="list-links">
-            <li><a href="#">Cadastro</a></li>
-            <li><a href="">Login</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Zukkin B2B</a></li>
-            <li><a href="">Seja um franqueado</a></li>
-          </ul>
-          <!--/list-links-->
-
+            <div class="col-md-6">
+              <ul class="menu-footer--line pull-right">
+                <li><a href="">Cadastro</a></li>
+                <li><a href="">Login</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Zukkin B2B</a></li>
+                <li><a href="">Seja um franqueado</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
     </div>
 
-    <div class="container-fluid">
-      <section class="row">
-        <div>
-
-          <!--collapse footer-->
-          <div class="collapse-footer">
-            <button type="button"  class="collapse-btn" data-toggle="collapse" data-target="#collapse-footer-1">
-              Institucional
-            </button>
-
-            <div id="collapse-footer-1" class="collapse">
-              <ul class="list-collapse--footer">
+    <div class="footer-content">
+      <div class="container">
+        <div class="footer-container">
+          <div class="row">
+            <div class="col-md-2">
+              <h1>Institucional</h1>
+              <ul>
                 <li><a href="">Sobre o Zukkin</a></li>
-                <li><a href="">Sobre o Zukkin</a></li>
-                <li><a href="">Sobre o Zukkin</a></li>
+                <li><a href="">Blog do Zukkin</a></li>
+                <li><a href="">Termo de uso</a></li>
               </ul>
             </div>
-
-            <button type="button"   class="collapse-btn" data-toggle="collapse" data-target="#collapse-footer-2">
-              Produtos
-            </button>
-
-            <div id="collapse-footer-2" class="collapse">
-              <ul class="list-collapse--footer">
-                <li><a href="">Sobre o Zukkin</a></li>
-                <li><a href="">Sobre o Zukkin</a></li>
-                <li><a href="">Sobre o Zukkin</a></li>
-              </ul>
-            </div>
-
-            <button type="button"  class="collapse-btn" data-toggle="collapse" data-target="#collapse-footer-3">
-              Ajuda e suporte
-            </button>
-
-            <div id="collapse-footer-3" class="collapse">
-              <ul class="list-collapse--footer">
-                <li><a href="">Sobre o Zukkin</a></li>
-                <li><a href="">Sobre o Zukkin</a></li>
-                <li><a href="">Sobre o Zukkin</a></li>
-              </ul>
-            </div>
-
-            <button type="button"   class="collapse-btn" data-toggle="collapse" data-target="#collapse-footer-4">
-              Sobre o serviço
-            </button>
-
-            <div id="collapse-footer-4" class="collapse">
-              <ul class="list-collapse--footer">
-                <li><a href="">Sobre o Zukkin</a></li>
-                <li><a href="">Sobre o Zukkin</a></li>
-                <li><a href="">Sobre o Zukkin</a></li>
-              </ul>
-            </div>
-          </div>
-          <!--/collapse footer-->
-
-        </div>
-      </section>
-
-      <section class="row">
-        <div class="col-xs-12 bg-red-light">
-
-          <!--alert-info-home-->
-          <div class="alert-info--home">
-            <p>
-              Proibida a venda de bebidas alcoólicas para
-              menores de idade, conforme Lei n.° 8069/90, art. 81,
-              inciso II (Estatuto da Criança e do Adolescente).
-            </p>
-          </div>
-          <!--/alert-info-home-->
-
-        </div>
-      </section>
-
-      <section class="row">
-        <div class="col-xs-12">
-
-          <!--Payfor-->
-          <div class="payfor">
-            <h1>Pague com</h1>
-
-            <ul>
-              <li><span class="sprites-visa"></span></li>
-              <li><span class="sprites-master-bandeira"></span></li>
-              <li><span class="sprites-american-express-bandeira"></span></li>
-              <li><span class="sprites-elo-bandeira"></span></li>
-              <li><span class="sprites-dinner-bandeira"></span></li>
-              <li><span class="sprites-boleto"></span></li>
-            </ul>
-
-            <div class="copyright">
-              <div class="text-center">
-                <strong>© 2017 ZUKKIN - TODOS OS DIREITOS RESERVADOS </strong>
-                <p>
-                  Zukkin. - CNPJ: 71.676.316/0001-46 - Inscrição Estadual:
-                  116.827.781.117 Endereço: Av. Fagundes Filho, 300 Cj 22
-                  Vl Monte Alegre - São Paulo/SP
-                </p>
-              </div>
-            </div>
-          </div>
-          <!--/Payfor-->
-
-        </div>
-      </section>
-
-      <section class="row">
-
-        <!--footer fixe-->
-        <div class="footer-fixe">
-          <span class="icon 01"></span>
-          <div class="col-xs-12">
-            <div class="search-footer">
-              <button class="btn search-footer-button pull-right">
-                <span class="sprites-search-mobile-icon"></span>
-              </button>
-            </div>
-          </div>
-
-          <div class="col-xs-12 bg-red-light bgRed-size2 text-left">
-            <div class="line-address--footer">
-              <span>Seu endereço:</span>
-              <strong>Alameda Rio Negro, 650</strong>
-              <a href="" class="line-address--edit pull-right">Editar</a>
-            </div>
-          </div>
-
-          <div class="col-xs-12 you-are bg-white">
-            <div class="row">
-              <div class="col-xs-8 you-are--text">
-                <a href="" class="sprites-arrow-product-left">prev</a>
-                  <div class="item-store">
-                    <img src="../assets/images/static/store.png" alt="" class="store">
-                    <div class="itens">05 de 05 itens <span>R$42,25</span></div>
-                  </div>
-                <a href="" class="sprites-arrow-product-right">next</a>
-              </div>
-              <div class="col-xs-4">
+            <div class="col-md-4">
+              <h1>Produtos</h1>
+              <div class="content-flex">
                 <div class="content-left">
-                    <button class="btn btn-transparent">Ver todos</button>
+                  <ul>
+                    <li><a href="">Carnes</a></li>
+                    <li><a href="">Bebidas</a></li>
+                    <li><a href="">Frios</a></li>
+                    <li><a href="">Laticínios</a></li>
+                    <li><a href="">Matinais</a></li>
+                    <li><a href="">Sobremesas</a></li>
+                  </ul>
+                </div>
+
+                <div class="content-right">
+                  <ul>
+                    <li><a href="">Perfumaria</a></li>
+                    <li><a href="">Higiene</a></li>
+                    <li><a href="">Cereais</a></li>
+                    <li><a href="">Mercearia</a></li>
+                    <li><a href="">Hortfruti</a></li>
+                    <li><a href=""><strong>Todos departamentos</strong></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h1>Ajuda e suporte</h1>
+              <ul>
+                <li><a href="">Sac: <strong>(11) 5555.5555</strong></a></li>
+                <li><a href="">Whatsapp: <strong>(11) 9.5555.5555</strong></a></li>
+                <li><a href="mailto:contato@zukkin.com.br">Email: <strong>Contato@zukkin.com.br  </strong></a></li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <h1>Sobre o serviço</h1>
+              <ul>
+                <li><a href="">Política de troca</a></li>
+                <li><a href="">Formas de pagamento</a></li>
+                <li><a href="">Sobre a entrega</a></li>
+                <li><a href="">Política de privacidade</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-second-container line-warning">
+          <div class="row">
+            <div class="content-warnig">
+              <div class="col-md-9">
+                Proibida a venda de bebidas alcoólicas para menores de idade, conforme Lei n.° 8069/90, art. 81, inciso II (Estatuto da Criança e do Adolescente).
+              </div>
+
+              <div class="col-md-3">
+                * A maioria dos preços são atualizados diariamente.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-third-container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="payment-icons text-center">
+                <ul>
+                  <li>Pague com:</li>
+                  <li><span class="sprites-visa"></span></li>
+                  <li><span class="sprites-master-bandeira"></span></li>
+                  <li><span class="sprites-american-express-bandeira"></span></li>
+                  <li><span class="sprites-elo-bandeira"></span></li>
+                  <li><span class="sprites-dinner-bandeira"></span></li>
+                  <li><span class="sprites-boleto"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="copyright-content">
+              <p class="text-center">
+                <strong>  © 2017 ZUKKIN - TODOS OS DIREITOS RESERVADOS</strong> </br>
+                Zukkin. - CNPJ: 71.676.316/0001-46 - Inscrição Estadual: 116.827.781.117 - Endereço: Av. Fagundes Filho, 300 Cj 22 - Vl Monte Alegre - São Paulo/SP
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-fixe">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="arrow-info">
+              <div class="row">
+                <div class="col-md-offset-2 col-md-7">
+                  <span class="title">Seu endereço</span>
+                  <div class="text">Alameda Rio negro, 650 </div>
+                </div>
+
+                <div class="col-md-3">
+                  <a href="" class="pull-left">editar</a>
                 </div>
               </div>
             </div>
           </div>
+          <div class="col-md-2">
+            <div class="store-buy-content">
+              <div class="text">
+                <span>Produtos mais baratos em:</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <a href="">
+              <div class="store-block">
+                <div class="text-content">
+                  <div class="">
+                    <img src="../assets/images/static/store.png" alt="" class="store">
+                  </div>
 
+                  <div>
+                    <span>05 de 05 itens <strong>R$50,00</strong></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-2">
+            <a href="">
+              <div class="store-block">
+                <div class="text-content">
+                  <div class="">
+                    <img src="../assets/images/static/store.png" alt="" class="store">
+                  </div>
+
+                  <div>
+                    <span>05 de 05 itens <strong>R$50,00</strong></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-2">
+            <div class="btn btn-red--comparar ">Ver todos</div>
+          </div>
+          <div class="col-md-1">
+            <div class="a-content">
+              <a href="#" class="ocultar">Ocultar
+                <span class="sprites-big-arrow-down pull-right"></span>
+              </a>
+            </div>
+          </div>
         </div>
-        <!--/footer fixe-->
-
-      </section>
+      </div>
     </div>
+
+    <a href="#" class="btn-footer-hide">
+      <span class="sprites-zukkin-logo-mobile"></span>
+    </a>
   </footer>
   <!--/Footer-->
+
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="../assets/vendor/jquery1.11.1.min.js"></script>
@@ -599,6 +998,7 @@
   <!-- build:inlinejs -->
   <script src="../assets/js/async.js"></script>
   <!-- endbuild -->
+
   <!--modais-->
   <div id="modal"></div>
   <!--/modais-->

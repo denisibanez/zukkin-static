@@ -154,7 +154,7 @@
         $('.footer-fixe').addClass('show');
         $('.btn-footer-hide').addClass('hidden');
 
-        $('footer .footer-content').css('margin-bottom','70xpx');
+        $('footer .footer-content').css('margin-bottom','70px');
       });
     },
     tempo:function(){
@@ -173,6 +173,10 @@
           $(".content-vertical").mCustomScrollbar({
             axis:"y"
           });
+        });
+
+        $("#detail-page .content-vertical").mCustomScrollbar({
+          axis:"y"
         });
 
         //range-filter

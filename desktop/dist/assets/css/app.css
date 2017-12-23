@@ -19,10 +19,10 @@ body {
   body .tooltip.right > .tooltip-arrow {
     border-right: 5px solid #a73838; }
 
-.comparativo.comparacao-page .body .product-list-select, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select, #carrinho .modal-content .modal-body .product-list-select, .productContent .product-info--content .product-list-select {
+.content-product--vitrine .product-list .products-group .products-group--item .product-list-select, #carrinho .modal-content .modal-body .product-list-select, .productContent .product-info--content .product-list-select {
   width: 50%;
   display: flex; }
-  .comparativo.comparacao-page .body .product-list-select select, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select select, #carrinho .modal-content .modal-body .product-list-select select, .productContent .product-info--content .product-list-select select {
+  .content-product--vitrine .product-list .products-group .products-group--item .product-list-select select, #carrinho .modal-content .modal-body .product-list-select select, .productContent .product-info--content .product-list-select select {
     border: 1px solid #cfd8dc;
     padding: 5px;
     height: 50px;
@@ -35,9 +35,9 @@ body {
     text-indent: 1px;
     text-overflow: '';
     border-radius: 5px; }
-  .comparativo.comparacao-page .body .product-list-select .controller, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller, #carrinho .modal-content .modal-body .product-list-select .controller, .productContent .product-info--content .product-list-select .controller {
+  .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller, #carrinho .modal-content .modal-body .product-list-select .controller, .productContent .product-info--content .product-list-select .controller {
     margin-left: 5px; }
-    .comparativo.comparacao-page .body .product-list-select .controller .more, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller .more, #carrinho .modal-content .modal-body .product-list-select .controller .more, .productContent .product-info--content .product-list-select .controller .more {
+    .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller .more, #carrinho .modal-content .modal-body .product-list-select .controller .more, .productContent .product-info--content .product-list-select .controller .more {
       background-color: #009c87;
       width: 35px;
       height: 25px;
@@ -47,7 +47,7 @@ body {
       text-align: center;
       border-radius: 5px;
       margin-bottom: 1px; }
-    .comparativo.comparacao-page .body .product-list-select .controller .minus, .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller .minus, #carrinho .modal-content .modal-body .product-list-select .controller .minus, .productContent .product-info--content .product-list-select .controller .minus {
+    .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller .minus, #carrinho .modal-content .modal-body .product-list-select .controller .minus, .productContent .product-info--content .product-list-select .controller .minus {
       background-color: #00bfa5;
       width: 35px;
       height: 25px;
@@ -79,7 +79,7 @@ body {
   .modal-dialog .modal-content .modal-footer .container-btn--confirm .btn-blue--confirm {
     width: 100%; } }
 
-.comparativo #accordioninfo .panel-heading h4:after, .collapse-btn:after, .btn-red--comparar:before {
+.collapse-btn:after, .btn-red--comparar:before {
   content: "";
   width: 30px;
   height: 30px;
@@ -89,7 +89,7 @@ body {
   position: relative;
   top: 8px; }
 
-.comparativo #accordioninfo .panel-heading h4.arrow-up:after, .collapse-btn.arrow-up:after {
+.collapse-btn.arrow-up:after {
   background: url("../../images/static/png-sprites/arrow-select-fake-up.png") no-repeat; }
 
 .content-product--vitrine h2 a {
@@ -191,22 +191,22 @@ body {
     font-size: 20px;
     font-weight: bold; }
 
-.comparativo #accordionsp .panel-heading, .pedidos .panel-heading {
+.pedidos .panel-heading {
   background-color: #b0bec5;
   border-radius: 5px;
   text-align: center; }
-  .comparativo #accordionsp .panel-heading a.btn-detail, .pedidos .panel-heading a.btn-detail {
+  .pedidos .panel-heading a.btn-detail {
     color: #ffffff;
     width: 100%;
     padding: 15px; }
-    .comparativo #accordionsp .panel-heading a.btn-detail:after, .pedidos .panel-heading a.btn-detail:after {
+    .pedidos .panel-heading a.btn-detail:after {
       content: '';
       background: url("../../assets/images/static/png-sprites/arrow-white-down.png") no-repeat;
       width: 14px;
       height: 12px;
       display: block;
       float: right; }
-    .comparativo #accordionsp .panel-heading a.btn-detail.arrow-up:after, .pedidos .panel-heading a.btn-detail.arrow-up:after {
+    .pedidos .panel-heading a.btn-detail.arrow-up:after {
       content: '';
       background: url("../../assets/images/static/png-sprites/arrow-white-up.png") no-repeat;
       width: 14px;
@@ -446,150 +446,124 @@ input[type="checkbox"]:checked + span .fake-checkbox:after {
 .pm_menu-body li {
   margin-left: 0 !important; }
 
-.comparativo header {
-  background-color: #3d68af; }
-  .comparativo header .item {
-    width: 25%; }
-    .comparativo header .item .compare-item {
-      background-color: #18376a;
-      height: 60px;
-      margin-top: -16px;
-      color: #ffffff;
-      padding: 15px; }
-  .comparativo header #pm_menu {
-    background: #3d68af; }
-  .comparativo header .btn-red--comparar {
-    background: #18376a; }
+.comparativo .header-bar {
+  background-color: #2f4c82; }
+  .comparativo .header-bar .list-options li {
+    border-left: 1px solid #233960; }
+    .comparativo .header-bar .list-options li:last-child {
+      border-right: 1px solid #233960; }
+    .comparativo .header-bar .list-options li:hover {
+      background-color: #233960; }
+  .comparativo .header-bar #menu-lista-drop.dropdown .dropdown-menu li {
+    background-color: #233960; }
+  .comparativo .header-bar .btn-red--comparar {
+    background-color: #233960 !important; }
 
-.comparativo .content-pills ol.carousel-indicators li {
-  background: #3d68af; }
-  .comparativo .content-pills ol.carousel-indicators li.active {
-    background: #18376a; }
+.comparativo .btn.btn-red--comparar {
+  background-color: #3d68af;
+  width: 180px; }
+  .comparativo .btn.btn-red--comparar.change:before {
+    background: none; }
+
+.comparativo footer .footer-fixe .arrow-info {
+  background-color: #2f4c82; }
+  .comparativo footer .footer-fixe .arrow-info:after {
+    border-color: transparent transparent transparent #2f4c82; }
+
+.comparativo footer .footer-fixe .store-buy-content .text {
+  width: 100%;
+  padding: 15px 5px; }
+
+.comparativo header .header-navbar .navbar-header {
+  background-color: #1268b3; }
+
+.comparativo header .header-navbar .navbar-toggle:hover, .comparativo header .header-navbar .navbar-toggle:focus {
+  background-color: #1268b3 !important; }
 
 .comparativo .red-button.add-active {
   background-color: #1268b3; }
 
-.comparativo .content-product--vitrine .product-list .products-group .products-group--item .products-group--text h4,
-.comparativo .content-product--vitrine .product-list .products-group .products-group--item .products-group--text h1 {
-  font-size: 20px; }
+.comparativo .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller.red-btn .more {
+  background-color: #0089e9; }
 
-.comparativo .content-product--vitrine .product-list .products-group .products-group--item .products-group--text h1 {
-  width: 60%;
-  float: right;
-  text-align: left; }
+.comparativo .content-product--vitrine .product-list .products-group .products-group--item .product-list-select .controller.red-btn .minus {
+  background-color: #6fcbfb; }
 
-.comparativo .content-product--vitrine .product-list .products-group .products-group--item .products-group--text span {
-  width: 40%;
-  float: left;
-  text-align: right;
-  height: 32px;
-  padding-top: 7px; }
-
-.comparativo .you-are {
-  height: 70px;
-  padding: 15px; }
-  .comparativo .you-are .you-are--text {
-    display: flex; }
-  .comparativo .you-are .item-store {
-    width: 100%; }
-  .comparativo .you-are .itens {
-    color: #0066c4; }
-    .comparativo .you-are .itens span {
-      font-weight: bold; }
-
-.comparativo .breadcrumbie-content {
-  background-color: #182d50; }
-  .comparativo .breadcrumbie-content ul li {
-    color: #3775dd; }
-    .comparativo .breadcrumbie-content ul li a {
-      color: #3775dd; }
-
-.comparativo .grafic {
-  background-color: #ffffff;
-  margin: -15px;
-  padding: 15px; }
-  .comparativo .grafic h1 {
-    color: #37474f;
-    font-weight: bold;
-    font-size: 25px; }
-
-.comparativo .product-info--content .prices {
+.comparativo .price.produto {
   display: flex; }
-  .comparativo .product-info--content .prices .price {
-    padding: 0 5px; }
-
-.comparativo .product-info--content .content-description {
-  border-bottom: 0; }
-
-.comparativo .alert {
-  margin: -15px; }
-  .comparativo .alert .bg-red-light {
-    height: 70px;
-    padding: 15px; }
-  .comparativo .alert p {
-    padding: 0;
-    color: #ffffff;
-    text-align: left;
+  .comparativo .price.produto span.ate {
+    color: #37474f;
     font-size: 10px;
-    line-height: 20px; }
+    padding: 0 5px;
+    margin-top: 5px; }
 
-.comparativo .achei-caro--content {
-  border-bottom: 0; }
+.comparativo .content-product--vitrine .product-list .products-group .products-group--item.pd {
+  padding: 0; }
 
 .comparativo .outros-supermercados--content {
-  margin-top: 30px;
-  border-bottom: 0; }
+  background-color: #ffffff;
+  padding: 25px;
+  border: 0; }
 
-.comparativo #accordionsp, .comparativo #accordioninfo {
-  margin: -15px; }
+.comparativo .outros-supermercados--content h1.name {
+  font-size: 15px; }
 
-.comparativo #accordionsp .panel-body {
-  margin: 15px -15px; }
-  .comparativo #accordionsp .panel-body .title {
-    font-weight: bold; }
+.comparativo .supermercados-item img {
+  margin-top: 35px; }
 
-.comparativo #accordionsp .off-content {
+.comparativo .atual {
+  line-height: 110px; }
+
+.comparativo .outros-supermercados--content .off-content {
   background-color: #1a2e35;
-  padding: 2px;
+  padding: 0px;
   text-align: center;
-  color: #ffffff;
-  width: 80px; }
+  max-width: 80px;
+  margin: 15px 0 -20px;
+  font-size: 5px; }
 
-.comparativo .update {
-  color: #37474f; }
-  .comparativo .update span {
-    font-weight: bold; }
+.comparativo .outros-supermercados--content .select-order .form-control {
+  background-color: transparent; }
 
-.comparativo .nutricional-description--content {
-  border-bottom: 0; }
+.comparativo .outros-supermercados--content {
+  margin-top: 15px; }
 
-.comparativo #accordioninfo .panel-heading h4 {
-  border-bottom: 1px solid #cfd8dc; }
-  .comparativo #accordioninfo .panel-heading h4:after {
-    background: url("../images/static/png-sprites/arrow-select-fake.png") no-repeat !important;
-    top: -27px; }
-  .comparativo #accordioninfo .panel-heading h4.arrow-up:after {
-    background: url("../images/static/png-sprites/arrow-select-fake-up.png") no-repeat !important;
-    top: -27px; }
+.comparativo .grafico {
+  background-color: #ffffff; }
+  .comparativo .grafico .grafic {
+    padding: 15px; }
+
+.comparativo footer .store-buy-content .text span {
+  font-size: 12px;
+  line-height: 40px; }
+
+.comparativo footer .store-buy-content {
+  height: 80px; }
+
+.comparativo .btn-footer-hide {
+  background-color: #124b85; }
 
 .comparativo #accordioninfo .panel-heading a:first-child {
   border-top: 1px solid #cfd8dc; }
 
 .comparativo.comparacao-page .header-left {
   margin-top: 50px; }
-  .comparativo.comparacao-page .header-left h1 {
-    color: #00c853;
-    font-size: 50px;
-    margin: 10px 0; }
-  .comparativo.comparacao-page .header-left h2 {
-    color: #37474f;
-    font-weight: bold;
-    margin: 0;
-    font-size: 25px; }
-  .comparativo.comparacao-page .header-left h3 {
-    margin: 0;
-    font-size: 15px;
-    font-weight: bold; }
+
+.comparativo.comparacao-page .header-left h1 {
+  color: #00c853;
+  font-size: 50px;
+  margin: 10px 0; }
+
+.comparativo.comparacao-page .header-left h2 {
+  color: #37474f;
+  font-weight: bold;
+  margin: 0;
+  font-size: 25px; }
+
+.comparativo.comparacao-page .header-left h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold; }
 
 .comparativo.comparacao-page .header-right .store-logo {
   margin: 0; }
@@ -612,11 +586,30 @@ input[type="checkbox"]:checked + span .fake-checkbox:after {
 
 .comparativo.comparacao-page .body {
   margin-bottom: 15px; }
-  .comparativo.comparacao-page .body .change-store .btn-transparent {
-    color: #1268b3;
-    border: 1px solid #1268b3;
-    margin-top: 15px;
-    font-weight: normal; }
+
+.comparativo.comparacao-page .body .change-store .btn-transparent {
+  color: #1268b3;
+  border: 1px solid #1268b3;
+  margin-top: 15px;
+  font-weight: normal; }
+
+.comparativo.comparacao-page .body .more {
+  background-color: #0089e9 !important; }
+
+.comparativo.comparacao-page .body .minus {
+  background-color: #6fcbfb !important; }
+
+.comparacao-page .body .content-itens {
+  border: 0;
+  padding: 0; }
+
+.comparacao-page .body .content-vertical--wrap {
+  border: 0; }
+
+.comparacao-page .table-left td {
+  padding: 0 !important;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd; }
 
 .red-button.add-active {
   background-color: #670909;
@@ -1819,8 +1812,12 @@ input, select {
   .filter-catalogo .content-product--vitrine {
     margin: 15px 0; }
 
+body.checkout {
+  background-color: #fafafa; }
+
 .accordion-payment {
-  margin: 15px 0; }
+  background-color: #ffffff;
+  border: 1px solid #cfd8dc; }
   .accordion-payment input {
     height: 40px; }
   .accordion-payment h4 a {
@@ -1829,8 +1826,6 @@ input, select {
     font-size: 15px; }
   .accordion-payment .sprites-card-payment, .accordion-payment .sprites-user-payment, .accordion-payment .sprites-gps-payment {
     margin-right: 15px; }
-  .accordion-payment .green-button.add-inactive {
-    max-width: 190px; }
   .accordion-payment .btn-blue--new, .accordion-payment .green-button.green-button {
     width: 100%;
     margin: 0;
@@ -1878,8 +1873,7 @@ input, select {
     margin-top: 15px; }
     .accordion-payment .accordion-payment--content.payment h1 {
       font-size: 13px;
-      text-align: center;
-      padding: 0 115px;
+      text-align: left;
       line-height: 20px;
       color: #37474f;
       font-weight: bold; }
@@ -1919,10 +1913,13 @@ input, select {
           width: 100%;
           color: #37474f;
           font-weight: bold;
-          height: 40px;
+          height: 17px;
           padding: 0; }
+          .accordion-payment .accordion-payment--content.payment .nav.nav-tabs li a:focus, .accordion-payment .accordion-payment--content.payment .nav.nav-tabs li a:hover {
+            background: white;
+            border: 0; }
     .accordion-payment .accordion-payment--content.payment .tab-content {
-      padding: 0; }
+      padding: 0 15px 0 0; }
       .accordion-payment .accordion-payment--content.payment .tab-content select {
         height: 40px; }
       .accordion-payment .accordion-payment--content.payment .tab-content .content-input {
@@ -1946,15 +1943,29 @@ input, select {
 .pedidos #accordionpedidos .pedidos-item {
   margin: 30px 0; }
 
+.pedidos .tpp {
+  margin-top: 50px; }
+
+.pedidos .bread-top {
+  margin-top: 20px; }
+
 .pedidos .status {
   display: flex;
-  margin: 15px 0; }
+  margin: 40px 0; }
   .pedidos .status .status-item {
     color: #37474f;
     margin-right: 15px;
     padding-top: 13px; }
   .pedidos .status .status-content {
     color: #37474f; }
+
+.pedidos .address {
+  margin-top: 25px; }
+  .pedidos .address span {
+    line-height: 45px; }
+  .pedidos .address p {
+    margin: 0;
+    font-weight: bold; }
 
 .pedidos .panel-body {
   text-align: center; }
@@ -1969,8 +1980,7 @@ input, select {
   margin: 0; }
 
 .pedidos .info-pedido {
-  margin: 30px 50px;
-  text-align: center; }
+  margin-top: 25px; }
   .pedidos .info-pedido .valor {
     color: #70c75c;
     font-size: 30px;
@@ -1985,13 +1995,21 @@ input, select {
       color: #000000; }
 
 .pedidos .payment-list {
-  margin: 30px 50px;
-  text-align: center; }
-  .pedidos .payment-list ul li {
-    padding: 15px 0; }
-    .pedidos .payment-list ul li span.text {
-      color: #78909c;
-      padding: 0 15px; }
+  text-align: center;
+  margin-top: 35px; }
+  .pedidos .payment-list.reset ul {
+    display: block; }
+  .pedidos .payment-list ul {
+    display: flex;
+    width: 100%; }
+    .pedidos .payment-list ul li {
+      padding: 15px 5px;
+      max-width: 200px; }
+      .pedidos .payment-list ul li span.text {
+        color: #78909c;
+        padding: 0 5px; }
+      .pedidos .payment-list ul li a {
+        display: flex; }
 
 .pedidos .btn-red--comparar {
   margin-top: 15px;
@@ -1999,37 +2017,47 @@ input, select {
   .pedidos .btn-red--comparar:before {
     content: none; }
 
-.pedidos .iten-detail--content {
-  display: none; }
-  .pedidos .iten-detail--content h1 {
-    color: #37474f;
-    font-size: 15px;
+.pedidos .iten-detail--content h1 {
+  color: #37474f;
+  font-size: 15px;
+  border-bottom: 1px solid #cfd8dc;
+  padding: 15px 0;
+  font-weight: bold;
+  text-align: left; }
+
+.pedidos .iten-detail--content .content-vertical {
+  max-height: 500px; }
+
+.pedidos .iten-detail--content .product-list-cart {
+  padding: 15px 0; }
+  .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap {
     border-bottom: 1px solid #cfd8dc;
-    padding: 15px 0;
-    font-weight: bold;
-    text-align: left; }
-  .pedidos .iten-detail--content .content-vertical {
-    max-height: 250px; }
-  .pedidos .iten-detail--content .product-list-cart {
-    padding: 15px 0; }
-    .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap {
-      display: flex;
-      margin: 15px 0; }
-      .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-item {
-        width: 15%; }
-      .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-name {
-        width: 25%; }
-        .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-name p {
-          color: #0066c4;
-          text-align: left; }
-      .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-select {
-        width: 35%; }
-        .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-select span {
-          color: #0066c4; }
-      .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-prices {
-        width: 35%; }
-      .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .price-strike, .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .price {
+    display: flex;
+    margin: 15px 0;
+    padding-bottom: 10px; }
+    .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-item {
+      width: 15%; }
+    .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-name {
+      width: 100%; }
+      .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-name p {
+        color: #0066c8;
+        font-size: 18px;
         text-align: left; }
+    .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-select {
+      width: 100%; }
+      .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-select span {
+        color: #0066c4; }
+    .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .product-list-prices {
+      width: 35%; }
+    .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .price-strike, .pedidos .iten-detail--content .product-list-cart .content-vertical--wrap .price {
+      text-align: left; }
+
+.pedidos .tppp {
+  margin-top: -10px; }
+
+.pedidos .xs span {
+  font-size: 14px;
+  color: #78909c; }
 
 .comparacao-page .itens {
   color: #37474f; }
